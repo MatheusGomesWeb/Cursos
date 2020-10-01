@@ -1,0 +1,532 @@
+:root {
+    --preto: #252525;
+    --branco: #fff;
+    --cinza: #e7e4d8;
+    --fonte-1: Georgia, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: var(--fonte-1);
+    color: var(--preto);
+}
+
+/* Menu */
+header {
+    background: var(--preto);
+    padding: 20px 0;
+}
+
+header .menu-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header .menu-container::before,
+header .menu-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header .menu-container a.menu-logo {
+    float: left;
+    display: block;
+    margin-left: 10px
+}
+
+header .menu-container nav {
+    float: right;
+    margin-right: 10px
+}
+
+header .menu-container nav li {
+    display: inline-block;
+}
+
+header .menu-container nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.125em;
+}
+
+/* breakpoints */
+@media (max-width: 739px) {
+    header .menu-container nav {
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+
+    header .menu-container a.menu-logo {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* breakpoints */
+
+/* Menu */
+
+/* introducao */
+main.intro {
+    background: url('./img/bg-intro.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+    color: var(--branco);
+    text-align: center;
+}
+
+main.intro h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+main.intro h1::after {
+    content: "";
+    width: 20px;
+    height: 4px;
+    background: var(--branco);
+    margin: 10px auto;
+    display: block;
+}
+
+main.intro p {
+    font-style: italic;
+    font-size: 1.125em;
+}
+
+/* breakpoints */
+@media (max-width: 739px) {
+    main.intro {
+        padding: 60px 0;
+    }
+}
+
+/* breakpoints */
+
+/* introducao */
+
+/* sobre */
+section.sobre {
+    padding: 60px 0;
+}
+
+section.sobre h2 {
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 60px;
+}
+
+section.sobre .sobre-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section.sobre>p {
+    text-align: center;
+    max-width: 460px;
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-style: italic;
+    margin: 20px auto;
+}
+
+section.sobre .sobre-container::before,
+section.sobre .sobre-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section.sobre .sobre-container .sobre-item {
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+}
+
+section.sobre .sobre-container .sobre-item img {
+    display: block;
+    max-width: 100%;
+}
+
+section.sobre .sobre-container .sobre-item h3 {
+    font-size: 2.25em;
+    background: var(--preto);
+    width: 220px;
+    color: var(--branco);
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1em;
+    padding: 5px 0 10px 0;
+    position: relative;
+    top: -25px
+}
+
+/* breakpoints */
+@media (min-width: 739px) and (max-width: 980px) {
+    section.sobre .sobre-container {
+        max-width: 720px;
+    }
+
+    section.sobre .sobre-container .sobre-item {
+        width: 340px;
+    }
+}
+
+@media (max-width: 739px) {
+    section.sobre .sobre-container {
+        max-width: 300px;
+    }
+
+    section.sobre .sobre-container .sobre-item {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* breakpoints */
+
+/* sobre */
+
+/* produtos */
+section.produtos {
+    background: var(--cinza);
+    padding: 60px 0;
+    border-top: 3px solid #d6d3c8;
+    border-bottom: 3px solid #d6d3c8;
+}
+
+section.produtos .produtos-btn {
+    width: 180px;
+    border: 3px solid;
+    color: var(--preto);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+section.produtos .produtos-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section.produtos .produtos-container::before,
+section.produtos .produtos-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+section.produtos .produtos-container .produtos-item {
+    width: 300px;
+    float: left;
+    margin: 0 10px 20px 10px;
+}
+
+section.produtos .produtos-container .produtos-item h2 {
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+
+section.produtos .produtos-container .produtos-item h2::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: currentColor;
+    margin: 20px auto;
+    border: 5px solid var(--cinza);
+    box-shadow: 0 0 0 10px currentColor;
+}
+
+section.produtos .produtos-container .produtos-item h2.produtos-paulista::before {
+    color: #492901;
+}
+
+section.produtos .produtos-container .produtos-item h2.produtos-carioca::before {
+    color: #c17139
+}
+
+section.produtos .produtos-container .produtos-item h2.produtos-mineiro::before {
+    color: #d7a54d
+}
+
+section.produtos .produtos-container .produtos-item p {
+    font-size: 0.875em;
+    line-height: 1.4em;
+}
+
+/* breakpoints */
+@media (min-width: 739px) and (max-width: 980px) {
+    section.produtos .produtos-container {
+        max-width: 720px;
+    }
+
+    section.produtos .produtos-container .produtos-item {
+        width: 220px;
+    }
+}
+
+@media (max-width: 739px) {
+    section.produtos .produtos-container {
+        max-width: 300px;
+    }
+
+    section.produtos .produtos-container .produtos-item {
+        margin: 0 auto 20px auto;
+    }
+}
+
+/* breakpoints */
+
+/* produtos */
+
+/* locais */
+section.locais {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+section.locais .locais-item::before,
+section.locais .locais-item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+section.locais .locais-item {
+    clear: both;
+    margin: 60px auto;
+}
+
+section.locais .locais-item img {
+    display: block;
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+}
+
+section.locais .locais-item>div {
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+}
+
+section.locais .locais-item h2 {
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+
+section.locais .locais-item p {
+    font-size: 1.125em;
+    line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 40px;
+}
+
+section.locais .locais-item a {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid;
+    color: var(--preto);
+    padding: 10px 20px;
+}
+
+/* breakpoints */
+@media (min-width: 739px) and (max-width: 980px) {
+    section.locais {
+        max-width: 720px;
+    }
+
+    section.locais .locais-item>div,
+    section.locais .locais-item img {
+        width: 340px;
+    }
+}
+
+@media (max-width: 739px) {
+    section.locais {
+        max-width: 300px;
+    }
+
+    section.locais .locais-item>div,
+    section.locais .locais-item img {
+        width: 300px;
+        margin: 0;
+    }
+}
+
+/* breakpoints */
+
+/* locais */
+
+/* newsletter */
+section.assine {
+    background: var(--cinza);
+    padding: 30px 0;
+}
+
+
+section.assine .assine-info {
+    width: 460px;
+    margin: 0 10px;
+    float: left;
+}
+
+section.assine .assine-info h2 {
+    font-size: 2.25em;
+}
+
+section.assine .assine-info p {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+section.assine form {
+    width: 460px;
+    margin: 30px 10px 0 10px;
+    float: left;
+}
+
+section.assine form label {
+    display: none;
+}
+
+section.assine form input {
+    width: 320px;
+    border: 3px solid var(--preto);
+    background: none;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: var(--fonte-1);
+    padding: 10px;
+    float: left;
+}
+
+section.assine form button {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    background: var(--preto);
+    width: 140px;
+    padding: 13px 0;
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+}
+
+section.assine .assine-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section.assine .assine-container::after,
+section.assine .assine-container::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* breakpoints */
+@media (min-width: 739px) and (max-width: 980px) {
+    section.assine .assine-container {
+        max-width: 720px;
+    }
+
+    section.assine .assine-info,
+    section.assine form,
+    section.assine form input {
+        width: 340px;
+    }
+
+}
+
+@media (max-width: 739px) {
+    section.assine .assine-container {
+        max-width: 300px;
+    }
+
+    section.assine .assine-info,
+    section.assine .assine-container form,
+    section.assine .assine-container form input {
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+/* newsletter */
+
+/* footer */
+footer {
+    background: #d6d3c8;
+    padding: 40px 0;
+}
+
+footer .footer-container img {
+    float: right;
+    margin: 0 10px;
+    display: block;
+}
+
+footer .footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+footer .footer-container::after,
+footer .footer-container::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer .footer-container p {
+    float: left;
+    margin: 0 10px;
+    font-size: 1.125em;
+    line-height: 1.4em;
+}
+
+/* breakpoints */
+
+@media (max-width: 739px) {
+    footer .footer-container {
+        max-width: 300px;
+    }
+
+    footer .footer-container p {
+        float: none;
+        margin: 0;
+    }
+
+    footer .footer-container img {
+        float: none;
+        margin: 20px auto;
+    }
+}
+
+
+/* footer */
