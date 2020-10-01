@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 2 - Exercicio 02</title>
+</head>
+<body>
+
+    <button onClick="criarElemento();">Criar Elemento</button>
+
+    <script>
+
+        // gera cores randomicas
+        function getRandomColors() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+
+            for(var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // cria um quadrado vermelho dinamicamente
+        function criarElemento() {
+            var el = document.createElement('div');
+            var botao = document.querySelector('button');
+            
+            el.style.width = '100px';
+            el.style.height = '100px';
+            el.style.backgroundColor = 'red';
+            el.style.margin = "5px";
+            el.style.display = 'inline-block';            
+
+            botao.style.display = 'block';
+
+            document.body.insertBefore(el, botao);
+
+            el.addEventListener('mouseover', function() {
+                el.style.backgroundColor = getRandomColors();
+            });
+
+        }
+
+    </script>
+    
+</body>
+</html>

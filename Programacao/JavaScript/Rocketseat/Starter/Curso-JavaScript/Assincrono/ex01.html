@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 4 - Ex01</title>
+</head>
+
+<body>
+
+
+    <script>
+        function checarIdade(idade) {
+
+            return new Promise(function (resolve, reject) {
+                if (idade > 18) {
+                    setTimeout(function () {
+                        resolve();
+                    }, 2000);
+                } else {
+                    setTimeout(function () {
+                        reject();
+                    }, 2000);
+                }
+            });
+
+        }
+
+        checarIdade(20)
+            .then(function () {
+                console.log("Maior que 18");
+            })
+            .catch(function () {
+                console.log("Menor que 18");
+            });
+    </script>
+</body>
+
+</html>

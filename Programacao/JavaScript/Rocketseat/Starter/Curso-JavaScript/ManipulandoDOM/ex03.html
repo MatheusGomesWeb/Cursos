@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 2 - Exercicio 3</title>
+</head>
+
+<body>
+
+    <div class="lista">
+
+    </div>
+
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        function criarLista(list) {
+            var el = document.createElement('ul');
+
+            var el2 = document.querySelector('.lista');
+            el2.appendChild(el);
+
+            for (var n in list) {
+                var eli = document.createElement('li');
+                eli.innerText = list[n];
+                el.appendChild(eli);
+            }
+        }
+
+        criarLista(nomes);
+    </script>
+</body>
+
+</html>

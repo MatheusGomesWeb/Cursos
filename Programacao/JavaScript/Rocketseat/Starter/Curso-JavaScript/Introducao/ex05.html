@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 1 - Exercicio 5</title>
+</head>
+
+<body>
+
+
+    <script>
+        var usuarios = [
+
+            {
+                nome: "Diego",
+                habilidades: ["JavaScript", "ReactJS", "Redux"],
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+
+        ]
+
+
+        function mostrarHabilidades(nome) {
+            for (var hab in usuarios) {
+                if (usuarios[hab].nome == nome) {
+                    console.log("O " + usuarios[hab].nome + " possui as habilidades: " + usuarios[hab].habilidades);
+                }
+            }
+        }
+        function mostrarTodasHabilidades() {
+
+            for (var hab in usuarios) {
+                console.log("O " + usuarios[hab].nome + " possui as habilidades: " + usuarios[hab].habilidades.join(', '));
+            }
+        }
+
+
+        mostrarHabilidades("Gabriel");
+        console.log("================");
+        mostrarTodasHabilidades();
+    </script>
+
+</body>
+
+</html>

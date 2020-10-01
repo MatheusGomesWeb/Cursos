@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 2 - Exercicio 01</title>
+</head>
+<body>
+    
+    <button onClick='criarElemento();'>Criar Elemento</button>
+
+    <script>
+        
+        function criarElemento() {
+            var el = document.createElement('div');
+            var botao = document.querySelector('button');
+            
+            el.style.width = '100px';
+            el.style.height = '100px';
+            el.style.backgroundColor = 'red';
+            el.style.margin = "5px";
+            el.style.display = 'inline-block';
+
+            botao.style.display = 'block';
+            document.body.insertBefore(el, botao);
+
+        }
+    </script>
+</body>
+</html>

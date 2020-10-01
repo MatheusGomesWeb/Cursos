@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 2 - Exercicio 4</title>
+</head>
+
+<body>
+
+    <div class="lista">
+
+    </div>
+
+    <input type="text" name="nome" id="nome">
+    <button onclick="adicionar();">Adicionar</button>
+
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        function criarLista(list) {
+            
+            var el2 = document.querySelector('.lista');
+            var el = document.createElement('ul');
+
+            el2.innerHTML = "";
+
+            el2.append(el);
+
+            for (var n in list) {
+                var eli = document.createElement('li');
+                eli.innerText = list[n];
+                el.appendChild(eli);
+            }
+
+        }
+
+        function adicionar() {
+
+            var nome = document.getElementById('nome');
+            
+            nomes.push(nome.value);
+
+            nome.value = "";
+
+            criarLista(nomes);
+        }
+
+        criarLista(nomes);
+    </script>
+</body>
+
+</html>

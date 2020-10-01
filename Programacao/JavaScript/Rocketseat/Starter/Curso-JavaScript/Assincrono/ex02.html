@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 4 - Ex02</title>
+</head>
+
+<body>
+
+    <input type="text" name="usuario">
+    <button onclick='buscar();'>Buscar</button>
+
+    <div class="resultado">
+        <ul></ul>
+    </div>
+    <script>
+
+        function buscar() {
+
+            var prom = new Promise(function (resolve, reject) {
+
+                var url = 'https://api.github.com/users/diego3g/repos';
+                var xhr = new XMLHttpRequest;
+
+                xhr.open('GET', url);
+                xhr.send(null);
+
+                xhr.onreadystatechange = function () {
+
+                    if (xhr.readyState == 4) {
+                        if (xhr.status == 200) {
+                            resolve(JSON.parse(xhr.responseText));
+                        } else if (xhr.status == 404) {
+                            reject("Usuario nao existe");
+                        } else {
+                            reject('Erro na requisição');
+                        }
+
+                    }
+
+                    if (xhr.readyState == 3) {
+                        var el = document.querySelector('.resultado ul');
+                        el.innerHTML = "<li>Carregando...</li>";
+                    }
+
+                }
+            });
+
+            return prom;
+
+        }
+
+        buscar()
+            .then(function (response) {
+
+
+                //  console.log("Carregando...");
+
+
+                for (res in response) {
+                    var el = document.querySelector('.resultado ul');
+                    var elLi = document.createElement('li');
+                    elLi.textContent = response[res].name;
+                    el.appendChild(elLi);
+                }
+            })
+            .catch(function (error) {
+                var el = document.querySelector('.resultado ul');
+                var elLi = document.createElement('li');
+
+                elLi.textContent = error;
+                el.appendChild(elLi);
+            });
+
+    </script>
+</body>
+
+</html>
