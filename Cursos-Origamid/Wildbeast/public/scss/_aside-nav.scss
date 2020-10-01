@@ -1,0 +1,61 @@
+/* aside-nav */
+aside.aside-nav {
+  grid-area: aside-nav;
+  background: $cinza;
+  padding: 30px;
+  nav ul {
+    li {
+      a {
+        display: block;
+        min-width: 60px;
+        max-width: 140px;
+        margin: 0 auto 30px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        transition: 0.1s ease-out;
+        &:hover {
+          background: $roxo-claro;
+        }
+        @include d(m) {
+          margin: 30px 30px 30px 0;
+        }
+      }
+      @include d(m) {
+        flex: 1 0 130px;
+      }
+    }
+    @include d(m) {
+      display: flex;
+    }
+  }
+  @include d(m) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    position: relative;
+  }
+  &::after {
+    content: "→";
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.3);
+    animation: seta 0.5s ease-in 0s infinite alternate;
+    @include d(ex) {
+      display: none;
+    }
+    @include d(l) {
+      display: none;
+    }
+    @include d(m) {
+      display: flex;
+    }
+  }
+  @include d(m) {
+    padding: 0 30px;
+  }
+}
+
+/* aside-nav */

@@ -1,0 +1,18 @@
+{
+  "name": "eslint-curso",
+  "version": "1.0.0",
+  "description": "ESLint é uma ferramenta que ajuda a evitar problemas no código, indica possíveis padrôes problemáticos no código. É muito útil para padronizar e manter a consistência entre diferentes códigos JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "prettier-eslint": "^11.0.0"
+  }
+}

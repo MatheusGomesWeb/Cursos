@@ -1,0 +1,35 @@
+{
+  "name": "Cursos-Origamid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.5.1",
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "browser-sync": "^2.26.12",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusGomesWeb/Cursos-Origamid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatheusGomesWeb/Cursos-Origamid/issues"
+  },
+  "homepage": "https://github.com/MatheusGomesWeb/Cursos-Origamid#readme"
+}

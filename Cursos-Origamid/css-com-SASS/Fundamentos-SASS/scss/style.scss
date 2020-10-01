@@ -1,0 +1,31 @@
+@import "_buttons.scss";
+
+$tema: azul;
+
+@if $tema == padrao {
+  body {
+    background: #fb5;
+  }
+} @else if $tema == azul {
+  body {
+    background: lighten(#e5e, 20%);
+  }
+}
+div {
+  background: red;
+  button {
+    @include button-large;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+h1 {
+  font-size: 20px;
+  @include mobile {
+    font-size: 10px;
+  }
+}
