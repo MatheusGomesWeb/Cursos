@@ -6,7 +6,7 @@
 
 **Categoria**: Programação
 
-- [JavaScript ES6 - Completo](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/JavaScript-ES6-Completo) - Curso Completo de JavaScript ES6, prática intensiva das novidades do JavaScript, como por ex. const,let, desestruturação, classes, arrow funcions, fetch api, etc...
+- [JavaScript ES6 - Completo](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/JavaScript-ES6-Completo) - Curso Completo de JavaScript ES6, prática intensiva das novidades do JavaScript, como por ex. const,let, desestruturação, classes, arrow funcions, fetch api, modulos, async, await, rest, spread, objetos, manipulação do dom, RegEx, etc...
 
 **Categoria**: Front-End
 
