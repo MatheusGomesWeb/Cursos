@@ -11,16 +11,13 @@ Foram criados 3 projetos diferentes durante o curso. Cada um dos projetos foram 
 - A terceira com o Flexbox 
 - e por último usando o Bootstrap.
 
+___
+
 ## Demos
 
-**Puro**
-[Brafé 1](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md), [Brafé 2](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md), [Brafé 3](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md) 
+### Brafé - 1
 
-**Grid**
-[Brafé 1](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md), [Brafé 2](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md), [Brafé 3](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md) 
-
-**Flexbox**
-[Brafé 1](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md), [Brafé 2](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md), [Brafé 3](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md) 
-
-**Bootstrap**
-[Brafé 1](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md), [Brafé 2](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md), [Brafé 3](https://github.com/MatheusGomesWeb/cursos-origamid/edit/master/CSS-Avancado-Posicionamento/README.md) 
+- [Puro](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-Avancado-Posicionamento/Brafe-1/Brafe-Puro/index.html)
+- [Grid](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-Avancado-Posicionamento/Brafe-1/Brafe-Grid/index.html)
+- [Flexbox](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-Avancado-Posicionamento/Brafe-1/Brafe-Flexbox/index.html)
+- [Bootstrap](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-Avancado-Posicionamento/Brafe-1/Brafe-Bootstrap/index.html)
