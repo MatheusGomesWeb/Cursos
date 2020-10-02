@@ -4,6 +4,14 @@
 
 Ensinar na prática como criar um **site responsivo do zero**, do **Design ao Código**, sem a necessidade de conhecimentos anteriores na área.
 
+___
+
+## Projeto do Curso - [bikecraft](https://bikcraft.com/)
+
+[<img src="./readme/bikcraft.png" width="100%" height="450"/>](https://bikcraft.com/)
+
+___
+
 ## Oque aprendi
 
 * **Etapas de Levantamento de Requisitos do Software**
@@ -29,15 +37,8 @@ Ensinar na prática como criar um **site responsivo do zero**, do **Design ao C�
   + Analytics
 
 * **Dicas**
-  + Buscar inspiração em projetos Bons
-
+  + Buscar inspiração em projetos Bons 
   
-___
-
-## Projeto do Curso - [bikecraft](https://bikcraft.com/)
-
-[<img src="./readme/bikcraft.png" width="100%" height="450"/>](https://bikcraft.com/)
-
 ___
 
 ## Etapas para Construção de um site
