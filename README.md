@@ -1,8 +1,6 @@
 # Cursos de Programação e Tecnologia que realizei, ou estou finalizando
 
-Este Repositório possui os Cursos que finalizei, ou estou finalizando e os Projetos Finais dos mesmos.
-
-Os cursos estão separados por Categoria e o nome da Escola que foi realizado o Curso, clique neles para visualizar o Projeto Final e todo o conteudo aprendido no Curso.
+**Clique no Curso** para visualizar o Projeto Final e todo o conteudo adquirido no Curso.
 
 ## Cursos Front-end - Escola: Origamid
 
