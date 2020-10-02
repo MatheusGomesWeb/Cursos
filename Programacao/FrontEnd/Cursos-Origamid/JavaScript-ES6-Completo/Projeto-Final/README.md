@@ -1,4 +1,4 @@
-# Animais Fantásticos - [Demo](https://matheusgomesweb.github.io/cursos-origamid/AnimaisFantasticos/)
+# Animais Fantásticos - [Demo](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/JavaScript-ES6-Completo/Projeto-Final/index.html)
 
 <img src="./readme/animais.png" height="450"/>
 
@@ -33,6 +33,6 @@ e muitas novidades do JavaScript ES6
 
 ## Extra
 
-### Slide Complexo - [Demo](https://matheusgomesweb.github.io/cursos-origamid/SlideAnimaisFantasticos/)
+### Slide Complexo - [Demo](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/JavaScript-ES6-Completo/Extras/slide/index.html)
 
 Criação de um slide complexo com miniaturas, eventos de touch no mobile etc...

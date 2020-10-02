@@ -2,7 +2,9 @@
 
 <img src="./Projeto-Final/readme/animais.png" height="450">
 
-Projeto Final: Animais Fantásticos - [Demo](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/JavaScript-ES6-Completo/Projeto-Final/index.html)
+## Projeto Final: Animais Fantásticos - [Demo](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/JavaScript-ES6-Completo/Projeto-Final/index.html)
+
+___
 
 ## Modulos do Curso
 
