@@ -1,14 +1,14 @@
-# CSS Grid Layout
+# CSS Grid Layout - Concluído
 
-## Projeto: Wildbeast - [Demo](https://matheusgomesweb.github.io/cursos-origamid/Wildbeast/)
+<img src="./readme/Wildbeast.png" width="auto" height="450"/>
+
+## Projeto: Wildbeast - [Demo](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-com-Grid-layout/index.html)
 
 ___
 
 ## Sobre
 
 Projeto desenvolvido no Curso [CSS Grid Layout](https://www.origamid.com/curso/css-grid-layout/) da [Origamid](origamid.com/)
-
-<img src="./readme/Wildbeast.png" width="auto" height="450"/>
 
 ___
 
