@@ -1,6 +1,8 @@
-# FlexBlog - [Demo](https://matheusgomesweb.github.io/cursos-origamid/FlexBlog/)
+## CSS com Flexbox - Concluído
 
 <img src="./readme/flexblog.png" alt="flexblog" height="450">
+
+## Projeto Final: FlexBlog - [Demo](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-com-Flexbox/FlexBlog/index.html)
 
 ## Sobre
 
