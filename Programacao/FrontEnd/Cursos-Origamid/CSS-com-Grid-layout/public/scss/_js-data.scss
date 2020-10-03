@@ -3,6 +3,7 @@
   display: block;
   animation: fadeIn 0.9s forwards;
 }
+
 // ACTIVE CLASS
 
 // anima ao scroll
@@ -19,8 +20,10 @@
   height: 100%;
 
   span {
-    border: 16px solid $cinza; /* Light grey */
-    border-top: 16px solid $roxo-escuro; /* Blue */
+    border: 16px solid $cinza;
+    /* Light grey */
+    border-top: 16px solid $roxo-escuro;
+    /* Blue */
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -29,14 +32,17 @@
     color: $roxo-escuro;
   }
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 // LOADER
 
 // MODAL
@@ -72,6 +78,7 @@
     align-items: center;
     z-index: 300;
     font-weight: bold;
+
     &:hover {
       background: transparent;
       color: white;
@@ -92,6 +99,7 @@
     width: 30vw;
     text-align: right;
     position: relative;
+
     @include d(m) {
       width: 70vw;
     }
@@ -101,9 +109,10 @@
       margin-top: 25px;
       text-align: left;
     }
+
     // imagens
     img {
-      width: 100%;
+      max-width: 100%;
       max-height: 70vh;
       border-radius: 15px;
       border: 1px solid #8844ee;
@@ -116,6 +125,7 @@
 [data-modal] {
   cursor: pointer;
 }
+
 [data-modal]:hover {
   opacity: 0.9;
   transition: 0.3s opacity;
@@ -127,22 +137,27 @@
 [data-activetab] {
   display: grid !important;
 }
+
 [data-anime] {
   animation: fadeIn 0.3s forwards;
 }
+
 [data-tabactive] {
   border: 1px solid $roxo-escuro;
   background: $roxo-claro !important;
 }
+
 // Animais tabnav
 main.content.animais {
   display: none;
 }
+
 // ACTIVE TAB NAV
 
 // menu mobile
 [data-menu="button"] {
   display: none;
+
   @include d(m) {
     grid-area: nav;
     grid-column: span 1;
@@ -163,6 +178,7 @@ main.content.animais {
     max-width: 90px;
     box-shadow: $box-shadow;
   }
+
   &::before {
     @include d(m) {
       content: "";
@@ -175,10 +191,12 @@ main.content.animais {
       box-shadow: 0 4px #fff, 0 -4px #fff;
     }
   }
+
   &.active {
     @include d(m) {
       display: flex !important;
     }
+
     &::before {
       @include d(m) {
         transform: rotate(90deg);
