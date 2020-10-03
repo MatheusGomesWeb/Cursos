@@ -1,6 +1,12 @@
 # CSS Avançado Posicionamento - Em Andamento
 
-<img src="./readme/brafe1.png" alt="brafe 1" height="450">
+<p float="left">
+  <img src="./readme/brafe1.png" alt="brafe 1" width="auto" height="450">
+<img src="./readme/brafe2.png" alt="brafe 2" width="300px" height="450">
+<img src="./readme/brafe3.png" alt="brafe 3" width="400px" height="450">
+</p>
+
+
 
 Curso de [CSS Avançado Posicionamento](https://www.origamid.com/curso/css-avancado-posicionamento) da [Origamid](https://www.origamid.com/), tem como objetivo passar de maneira exaustiva nos fundamentos das propriedades e como elas agem no layout do site.
 
@@ -30,3 +36,11 @@ ___
 - [Grid](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-Avancado-Posicionamento/Brafe-1/Brafe-2-Grid/index.html)
 - [Flexbox](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-Avancado-Posicionamento/Brafe-1/Brafe-2-Flexbox/index.html)
 - [Bootstrap](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-Avancado-Posicionamento/Brafe-1/Brafe-2-Bootstrap/index.html)
+
+___
+
+### Brafé - 3
+
+- [Puro](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-Avancado-Posicionamento/Brafe-1/Brafe-3-Puro/index.html)
+- [Flexbox](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-Avancado-Posicionamento/Brafe-1/Brafe-3-Flexbox/index.html)
+- [Bootstrap](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-Avancado-Posicionamento/Brafe-1/Brafe-3-Bootstrap/index.html)
