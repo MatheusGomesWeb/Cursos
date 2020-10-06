@@ -217,3 +217,25 @@ main.content.animais {
   animation: fadeIn .4s forwards;
 }
 // animar ao scroll
+
+// scroll-top 
+[data-scroll-top] {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 55px;
+  background: $roxo-escuro;
+  color:$cinza;
+  box-shadow: $box-shadow;
+  border: none;
+  font-size: em(60);
+  cursor: pointer;
+  display: none;
+  animation: fadeIn .4s forwards;
+  &:hover {
+    background: $roxo-claro;
+    transition: .3s all;
+  }
+}
+// scroll-top 

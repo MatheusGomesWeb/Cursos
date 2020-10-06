@@ -14,8 +14,6 @@ export default class AnimarAoScroll {
             el.setAttribute('data-scroll', 'scroll');
         } else {
             el.setAttribute('data-scroll', '');
-            console.log('debounce');
-
         }
     }
 
