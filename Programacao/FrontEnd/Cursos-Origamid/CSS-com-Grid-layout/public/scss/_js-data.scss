@@ -208,3 +208,12 @@ main.content.animais {
 }
 
 // menu mobile
+
+// animar ao scroll
+[data-scroll=""] {
+  animation: fadeOut .4s forwards;
+}
+[data-scroll="scroll"] {
+  animation: fadeIn .4s forwards;
+}
+// animar ao scroll

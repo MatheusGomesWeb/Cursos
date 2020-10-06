@@ -1,6 +1,8 @@
 import fetchAnimais from '../Animais/fetchAnimais.js';
 import AnimaNumeros from './AnimaNumeros.js';
 import Modal from './Modal.js';
+import AnimarAoScroll from './AnimarAoScroll.js';
+
 
 export default class TabNav {
   constructor(tabMenu, tabContent) {
@@ -56,7 +58,7 @@ export default class TabNav {
       const paginaMontada = `
       <!--main-->  
         <!--titulo-->
-        <div class="titulo" data-anime data-scroll>
+        <div class="titulo" data-anime>
           <h1>${nome}</h1>
           <span>${familia}</span>
         </div>
@@ -106,7 +108,7 @@ export default class TabNav {
         </div>
         <!--informacoes-->
   
-        <img src="${url3}" alt="${alt3}" class="col-wide imagem-3" id="imagem" data-modal data-anime>
+        <img src="${url3}" alt="${alt3}" class="col-wide imagem-3" id="imagem" data-modal data-anime data-scroll>
       <!--main-->     
 
       <!-- modal ANIMAIS -->
@@ -131,6 +133,10 @@ export default class TabNav {
       // Modal nas Imagens (imagem que será clicada, botao de fechar, elemento container modal)
       const modal = new Modal('[data-modal]', '.modal .btnFechar', '.modal');
       modal.init();
+
+      // Animar ao Scroll
+      const animarAoScroll = new AnimarAoScroll('[data-scroll]');
+      animarAoScroll.init();
 
       // continuar com os outros dados
     }).catch((erro) => {

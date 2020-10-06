@@ -1,5 +1,5 @@
 {
-  "name": "Wildbeast",
+  "name": "wildbeast",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,9 +14,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.9.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   }

@@ -555,4 +555,12 @@ main.content.animais {
   }
 }
 
+[data-scroll=""] {
+  animation: fadeOut 0.4s forwards;
+}
+
+[data-scroll=scroll] {
+  animation: fadeIn 0.4s forwards;
+}
+
 /*# sourceMappingURL=style.css.map */
