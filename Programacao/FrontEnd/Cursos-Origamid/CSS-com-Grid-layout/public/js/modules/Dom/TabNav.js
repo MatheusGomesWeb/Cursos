@@ -2,6 +2,7 @@ import fetchAnimais from '../Animais/fetchAnimais.js';
 import AnimaNumeros from './AnimaNumeros.js';
 import Modal from './Modal.js';
 import AnimarAoScroll from './AnimarAoScroll.js';
+import Tooltip from './Tooltip.js';
 
 
 export default class TabNav {
@@ -137,6 +138,10 @@ export default class TabNav {
       // Animar ao Scroll
       const animarAoScroll = new AnimarAoScroll('[data-scroll]');
       animarAoScroll.init();
+
+      // Tooltip
+      const tooltip = new Tooltip(this.tabMenu);
+      tooltip.init();
 
       // continuar com os outros dados
     }).catch((erro) => {
