@@ -4,7 +4,6 @@ import Modal from './Modal.js';
 import AnimarAoScroll from './AnimarAoScroll.js';
 import Tooltip from './Tooltip.js';
 
-
 export default class TabNav {
   constructor(tabMenu, tabContent) {
     // selecionando links do menu e o conteudo que irá aparecer

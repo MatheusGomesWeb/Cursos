@@ -14,7 +14,6 @@ export default function fetchAnimais() {
       result = animaisJSON;
     } catch (erro) {
       result = erro;
-      console.log(erro);
     }
 
     return result;
