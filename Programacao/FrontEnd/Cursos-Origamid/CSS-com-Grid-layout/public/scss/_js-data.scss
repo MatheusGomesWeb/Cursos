@@ -239,3 +239,15 @@ main.content.animais {
   }
 }
 // scroll-top 
+
+// dropdown
+[data-dropdown=""] {
+  display: flex !important;
+  flex-direction: column;
+  animation: fadeIn .4s forwards;
+
+  @include d(m) {
+    position: inherit !important;
+  }
+}
+// dropdown

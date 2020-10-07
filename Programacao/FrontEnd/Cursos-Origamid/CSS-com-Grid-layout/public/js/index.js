@@ -2,6 +2,7 @@ import MenuMobile from './modules/Dom/MenuMobile.js';
 import ScrollSuave from './modules/Dom/ScrollSuave.js';
 import TabNav from './modules/Dom/TabNav.js';
 import ScrollTop from './modules/Dom/ScrollTop.js';
+import DropdownMenu from './modules/Dom/DropdownMenu.js';
 
 // Deslizar para a seção suavemente (Links do menu)
 const scrollSuave = new ScrollSuave('nav.menu a[href^="#"]');
@@ -15,6 +16,11 @@ tabnav.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
+// Dropdown Menu
+const dropdownMenu = new DropdownMenu('.img-dropdown', '.dropdown', '.dropdown a');
+dropdownMenu.init();
+
 // Scroll to top
 ScrollTop('header');
+
 
