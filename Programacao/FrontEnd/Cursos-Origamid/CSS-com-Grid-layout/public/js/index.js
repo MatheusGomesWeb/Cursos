@@ -22,5 +22,3 @@ dropdownMenu.init();
 
 // Scroll to top
 ScrollTop('header');
-
-
