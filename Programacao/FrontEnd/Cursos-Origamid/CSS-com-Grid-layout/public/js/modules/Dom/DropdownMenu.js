@@ -1,4 +1,4 @@
-// import debounce from '../Helpers/debounce.js';
+import debounce from '../Helpers/debounce.js';
 
 export default class DropdownMenu {
     constructor(dropdownElement, dropdownContent, dropdownLinks) {
@@ -8,8 +8,7 @@ export default class DropdownMenu {
 
         // bind
         this.initDropdown = this.initDropdown.bind(this);
-        this.closeDropdown = this.closeDropdown.bind(this);
-        //  this.closeDropdown = debounce(this.closeDropdown.bind(this), 100);
+        this.closeDropdown = debounce(this.closeDropdown.bind(this), 100);
     }
 
     // fecha o dropdown ao clicar fora
@@ -22,11 +21,13 @@ export default class DropdownMenu {
             this.dropdownLinks.forEach((link) => link.removeAttribute('data-dropdown'));
 
         }
+
+        console.log(event);
     }
 
     // Abre o dropdown ao passar o mouse em cima do link do menu
-    initDropdown() {
-
+    initDropdown(event) {
+        event.preventDefault();
         this.dropdownElement.setAttribute('data-dropdown', '');
         this.dropdownContent.setAttribute('data-dropdown', '');
 
@@ -35,8 +36,9 @@ export default class DropdownMenu {
 
     // adiciona os eventos
     addEvent() {
-        this.dropdownElement.addEventListener('mouseover', this.initDropdown);
-        document.documentElement.addEventListener('click', this.closeDropdown);
+
+        this.dropdownElement.addEventListener('mouseover', this.initDropdown)
+        document.documentElement.addEventListener('mouseover', this.closeDropdown);
 
     }
 

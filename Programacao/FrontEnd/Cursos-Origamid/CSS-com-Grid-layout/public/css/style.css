@@ -351,12 +351,17 @@ footer p {
 
 /* footer */
 nav ul.dropdown {
-  background: #b07dfb;
   display: none;
   position: absolute;
-  padding: 10px;
   right: 15px;
   top: 65px;
+}
+nav ul.dropdown li {
+  background: linear-gradient(135deg, #b07dfb, #8844ee);
+  border-radius: 8px;
+}
+nav ul.dropdown li:nth-child(1) {
+  margin-top: 15px;
 }
 nav ul.dropdown li {
   margin: 5px 0;
@@ -581,7 +586,7 @@ main.content.animais {
   right: 25px;
   width: 50px;
   height: 55px;
-  background: #8844ee;
+  background: linear-gradient(135deg, #b07dfb, #8844ee);
   color: #fafbfc;
   box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
   border: none;
