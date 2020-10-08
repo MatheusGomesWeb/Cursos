@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Funcionamento.js */ \"./src/js/modules/Funcionamento.js\");\n\n\nObject(_modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\nconsole.log('test');\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Funcionamento.js */ \"./src/js/modules/Funcionamento.js\");\n/* harmony import */ var _modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menuMobile.js */ \"./src/js/modules/menuMobile.js\");\n\n\n\nObject(_modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nObject(_modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('[data-menu=\"menuMobileButton\"]', '[data-menu=\"menuMobileContent]');\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
@@ -106,7 +106,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Funcionamento; });\nfunction Funcionamento() {\n    console.log('funcionamento');\n}\n\n//# sourceURL=webpack:///./src/js/modules/Funcionamento.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Funcionamento; });\nfunction Funcionamento() {\n  console.log('funcionamento');\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/Funcionamento.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/menuMobile.js":
+/*!**************************************!*\
+  !*** ./src/js/modules/menuMobile.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return menuMobile; });\nfunction menuMobile(button, content) {\n  if (button && content) {\n    const btn = document.querySelector(button);\n    const contentMenu = document.querySelector(content);\n\n    console.log(btn);\n    console.log(contentMenu);\n  }\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/menuMobile.js?");
 
 /***/ })
 

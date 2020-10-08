@@ -1,5 +1,5 @@
 import funcionamento from './modules/Funcionamento.js';
+import menuMobile from './modules/menuMobile.js';
 
 funcionamento();
-
-console.log('test');
+menuMobile('[data-menu="menuMobileButton"]', '[data-menu="menuMobileContent]');

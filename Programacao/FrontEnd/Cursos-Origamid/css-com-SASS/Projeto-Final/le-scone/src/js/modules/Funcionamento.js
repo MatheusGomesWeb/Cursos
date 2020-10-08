@@ -1,3 +1,3 @@
 export default function Funcionamento() {
-    console.log('funcionamento');
+  console.log('funcionamento');
 }
