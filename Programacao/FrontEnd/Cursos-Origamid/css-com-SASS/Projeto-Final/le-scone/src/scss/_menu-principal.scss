@@ -1,100 +1,114 @@
 header.header {
-    display: flex;
-    margin-bottom: 30px;
+  display: flex;
+  margin-bottom: 30px;
 
-    nav.menu-principal {
-        background: $bege-medio;
-        max-width: 300px;
-        float: right;
-        @include d(s) {
-            width: 100%;
-            float: none;
-            background: none;
-        }
-        ul {
-            display: flex;
-            padding: 20px;   
-            @include d(s) {
-                justify-content: flex-start;
-                flex-direction: column;
-                padding: 0;
-               }   
-    
-            li {   
-                font-size: em(16);  
-              &:nth-child(3) {
-                margin: 0 20px;
-                @include d(s) {
-                    margin: 20px 0;
-                }                
-              } 
-    
-              & a {
-                  color: $cinza;
-                  text-decoration: none;
-                  &:hover {
-                      color: $bege-claro;
-                      transition: .2s;
-                  }
-              }
+  nav.menu-principal {
+    background: $bege-medio;
+    max-width: 300px;
 
-              // Mobile menu
-              @include d(s) {
-              &:nth-child(1) {
-                  display: flex;
-                  background: $cinza;
-                  max-width: 50px;
-                  padding: 1rem;
-                  border-radius: 4px;
-                  text-transform: uppercase;
-                  font-family: 'IBM Plex Mono', monospace;
-                  font-weight: bold;
-                  color: #fff;
-                  cursor: pointer;
-                  align-items: center;
-                  position: relative;
-                  z-index: 300;
-                  align-self: flex-end;
-                  &:hover, &[data-menu='active'] {
-                  background: $bege-medio;
-                  }
-                  &[data-menu='active'] {
-                    background: $bege-medio;
-                   &::before {
-                    background: $cinza;
-                box-shadow: 0 6px $cinza, 0 -6px $cinza;
-
-                   }
-                 }
-              }
-              &:nth-child(1)::before {
-                content: '';
-                display: inline-block;
-                height: 3px;
-                width: 20px;
-                background: $bege-claro;
-                box-shadow: 0 6px $bege-claro, 0 -6px $bege-claro;
-                transition: transform .3s;                
-            }
-        }
-
-        @include d(s) {
-            &:nth-child(1n+2) {
-               display: none;
-               background: $bege-medio;
-               padding: 10px;
-               margin: 0;               
-            }
-        }
-        
-              // Mobile menu
-
-
-
-            }
-    
-           
-        }
+    @include d(s) {
+      max-width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      background: none;
     }
+    button {
+      display: none;
+    }
+    @include d(s) {
+      button {
+        display: flex;
+        border: none;
+        background: $cinza;
+        width: 50px;
+        padding: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        align-items: center;
+        position: relative;
+        z-index: 300;
+        align-self: flex-end;
+        &[data-mobileButton="active"] {
+          background: $bege-medio;
+          &::before {
+            transition: 0.2s;
+            transform: rotate(-90deg);
+            background: $cinza;
+            box-shadow: 0 6px $cinza, 0 -6px $cinza;
+          }
+        }
+
+        &::before {
+          content: "";
+          width: 20px;
+          height: 3px;
+          background: $bege-claro;
+          box-shadow: 0 6px $bege-claro, 0 -6px $bege-claro;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      @include d(s) {
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0;
+      }
+
+      li {
+        font-size: em(16);
+
+        @include d(s) {
+          background: $bege-medio;
+          padding: 10px;
+          margin: 0 !important;
+        }
+
+        &:nth-child(2) {
+          margin: 0 20px;
+          @include d(s) {
+            margin: 20px 0;
+          }
+        }
+
+        & a {
+          color: $cinza;
+          text-decoration: none;
+          &:hover {
+            color: $bege-claro;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+  }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+[data-menu] {
+  display: none !important;
+}
+
+[data-menu="active"] {
+  display: flex !important;
+  animation: fadeIn 0.4s ease-in-out;
+}

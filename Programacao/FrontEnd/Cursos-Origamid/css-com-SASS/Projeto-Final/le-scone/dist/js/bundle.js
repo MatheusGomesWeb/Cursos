@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Funcionamento.js */ \"./src/js/modules/Funcionamento.js\");\n/* harmony import */ var _modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menuMobile.js */ \"./src/js/modules/menuMobile.js\");\n\n\n\nObject(_modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nObject(_modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('[data-menu=\"menuMobileButton\"]', '[data-menu=\"menuMobileContent]');\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Funcionamento.js */ \"./src/js/modules/Funcionamento.js\");\n/* harmony import */ var _modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menuMobile.js */ \"./src/js/modules/menuMobile.js\");\n\n\n\nObject(_modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nObject(_modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('[data-mobileButton]', '[data-menu]');\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
@@ -110,6 +110,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/js/modules/Helpers/outsideClick.js":
+/*!************************************************!*\
+  !*** ./src/js/modules/Helpers/outsideClick.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return outsideClick; });\nfunction outsideClick(element, eventos, callback) {\n  const html = document.documentElement;\n\n  // verifica se o elemento clicado é filho do menu e fecha caso não seja\n  function handleOutsideClick() {\n    html.addEventListener(eventos, (event) => {\n      if (!element.contains(event.target) && !event.target.hasAttribute('data-mobileButton')) {\n        setTimeout(() => callback());\n      }\n    });\n  }\n  // executa o callback e remove o evento do documentElement\n  handleOutsideClick();\n  html.removeEventListener(eventos, handleOutsideClick);\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/Helpers/outsideClick.js?");
+
+/***/ }),
+
 /***/ "./src/js/modules/menuMobile.js":
 /*!**************************************!*\
   !*** ./src/js/modules/menuMobile.js ***!
@@ -118,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return menuMobile; });\nfunction menuMobile(button, content) {\n  if (button && content) {\n    const btn = document.querySelector(button);\n    const contentMenu = document.querySelector(content);\n\n    console.log(btn);\n    console.log(contentMenu);\n  }\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/menuMobile.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return menuMobile; });\n/* harmony import */ var _Helpers_outsideClick_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Helpers/outsideClick.js */ \"./src/js/modules/Helpers/outsideClick.js\");\n\n\nfunction menuMobile(button, content) {\n  const btn = document.querySelector(button);\n  const contentMenu = document.querySelector(content);\n\n  // Abre o menu ao clicar\n  function openMenu(event) {\n    event.preventDefault();\n\n    // abre e fecha menu\n    if (contentMenu.getAttribute('data-menu') === '') {\n      contentMenu.setAttribute('data-menu', 'active');\n      btn.setAttribute('data-mobileButton', 'active');\n    } else {\n      contentMenu.setAttribute('data-menu', '');\n      btn.setAttribute('data-mobileButton', '');\n    }\n\n    // Adiciona dataset no botao e no menu\n    contentMenu.setAttribute('data-outside', '');\n\n    // Verifica se clicou fora e fecha o menu\n    Object(_Helpers_outsideClick_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(contentMenu, 'click', () => {\n      contentMenu.setAttribute('data-menu', '');\n      btn.setAttribute('data-mobileButton', '');\n    });\n  }\n\n  // adiciona o evento de click ao botao\n  function addEvent() {\n    btn.addEventListener('click', openMenu);\n  }\n\n  // verifica se o botao e o menu existe e adiciona o evento\n  if (button && content) {\n    addEvent();\n  }\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/menuMobile.js?");
 
 /***/ })
 

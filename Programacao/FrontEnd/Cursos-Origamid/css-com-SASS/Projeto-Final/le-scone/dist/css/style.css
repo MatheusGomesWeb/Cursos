@@ -350,17 +350,52 @@ header.header {
 header.header nav.menu-principal {
   background: #cbc6b9;
   max-width: 300px;
-  float: right;
 }
 @media screen and (max-width: 759px) {
   header.header nav.menu-principal {
-    width: 100%;
-    float: none;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: column;
     background: none;
+  }
+}
+header.header nav.menu-principal button {
+  display: none;
+}
+@media screen and (max-width: 759px) {
+  header.header nav.menu-principal button {
+    display: flex;
+    border: none;
+    background: #2a2426;
+    width: 50px;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+    z-index: 300;
+    align-self: flex-end;
+  }
+  header.header nav.menu-principal button[data-mobileButton=active] {
+    background: #cbc6b9;
+  }
+  header.header nav.menu-principal button[data-mobileButton=active]::before {
+    transition: 0.2s;
+    transform: rotate(-90deg);
+    background: #2a2426;
+    box-shadow: 0 6px #2a2426, 0 -6px #2a2426;
+  }
+  header.header nav.menu-principal button::before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background: #edece4;
+    box-shadow: 0 6px #edece4, 0 -6px #edece4;
   }
 }
 header.header nav.menu-principal ul {
   display: flex;
+  justify-content: center;
   padding: 20px;
 }
 @media screen and (max-width: 759px) {
@@ -373,11 +408,18 @@ header.header nav.menu-principal ul {
 header.header nav.menu-principal ul li {
   font-size: 1em;
 }
-header.header nav.menu-principal ul li:nth-child(3) {
+@media screen and (max-width: 759px) {
+  header.header nav.menu-principal ul li {
+    background: #cbc6b9;
+    padding: 10px;
+    margin: 0 !important;
+  }
+}
+header.header nav.menu-principal ul li:nth-child(2) {
   margin: 0 20px;
 }
 @media screen and (max-width: 759px) {
-  header.header nav.menu-principal ul li:nth-child(3) {
+  header.header nav.menu-principal ul li:nth-child(2) {
     margin: 20px 0;
   }
 }
@@ -389,50 +431,30 @@ header.header nav.menu-principal ul li a:hover {
   color: #edece4;
   transition: 0.2s;
 }
-@media screen and (max-width: 759px) {
-  header.header nav.menu-principal ul li:nth-child(1) {
-    display: flex;
-    background: #2a2426;
-    max-width: 50px;
-    padding: 1rem;
-    border-radius: 4px;
-    text-transform: uppercase;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: bold;
-    color: #fff;
-    cursor: pointer;
-    align-items: center;
-    position: relative;
-    z-index: 300;
-    align-self: flex-end;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  header.header nav.menu-principal ul li:nth-child(1):hover, header.header nav.menu-principal ul li:nth-child(1)[data-menu=active] {
-    background: #cbc6b9;
-  }
-  header.header nav.menu-principal ul li:nth-child(1)[data-menu=active] {
-    background: #cbc6b9;
-  }
-  header.header nav.menu-principal ul li:nth-child(1)[data-menu=active]::before {
-    background: #2a2426;
-    box-shadow: 0 6px #2a2426, 0 -6px #2a2426;
-  }
-  header.header nav.menu-principal ul li:nth-child(1)::before {
-    content: "";
-    display: inline-block;
-    height: 3px;
-    width: 20px;
-    background: #edece4;
-    box-shadow: 0 6px #edece4, 0 -6px #edece4;
-    transition: transform 0.3s;
+  to {
+    opacity: 1;
   }
 }
-@media screen and (max-width: 759px) {
-  header.header nav.menu-principal ul li:nth-child(1n+2) {
-    display: none;
-    background: #cbc6b9;
-    padding: 10px;
-    margin: 0;
+@keyframes fadeOut {
+  from {
+    opacity: 1;
   }
+  to {
+    opacity: 0;
+  }
+}
+[data-menu] {
+  display: none !important;
+}
+
+[data-menu=active] {
+  display: flex !important;
+  animation: fadeIn 0.4s ease-in-out;
 }
 
 .intro {
