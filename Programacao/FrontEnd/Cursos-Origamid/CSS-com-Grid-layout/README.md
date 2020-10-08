@@ -24,6 +24,11 @@ ___
   + Animação na contagem dos números.
   + Scroll Suave ao clicar nos links do menu
   + Menu Mobile
+  + Menu Dropdown
+  + Tooltip
+  + TabNav
+  + Animaçao ao Scroll
+  + Debounce
 
 ___
 
