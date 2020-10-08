@@ -22,7 +22,7 @@ export default class ScrollSuave {
     const href = event.target.getAttribute('href');
     // pega o id da secao que vai dar o scroll (section#href do link)
     const section = document.querySelector(href);
-
+    
     // faz o efeito de scroll suave, com as propriedades definidas no construtor
     section.scrollIntoView(this.options);
   }
