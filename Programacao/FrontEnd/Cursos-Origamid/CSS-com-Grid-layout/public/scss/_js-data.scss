@@ -221,10 +221,11 @@ main.content.animais {
 // scroll-top 
 [data-scroll-top] {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 6vh;
+  right: 1vw;
   width: 50px;
   height: 55px;
+  border-radius: 15px;
   background: linear-gradient(135deg, #b07dfb, #8844ee);
   color:$cinza;
   box-shadow: $box-shadow;

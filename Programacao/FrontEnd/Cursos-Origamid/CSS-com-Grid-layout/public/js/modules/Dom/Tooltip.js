@@ -18,12 +18,11 @@ export default class Tooltip {
     this.toolTipBox.style.color = '#fafbfc';
     this.toolTipBox.style.position = 'absolute';
     this.toolTipBox.style.display = (event.target.alt !== undefined ? 'block' : 'none');
-    this.toolTipBox.style.left = `${event.target.offsetLeft + 80}px`;
+    this.toolTipBox.style.left = `${event.target.offsetLeft + 20}px`;
     this.toolTipBox.style.top = `${event.target.offsetTop - 35}px`;
     this.toolTipBox.style.backgroundColor = '#8844ee';
-    this.toolTipBox.style.width = `${event.target.width - 20}px`;
-    this.toolTipBox.style.paddingTop = '5px';
-    this.toolTipBox.style.paddingBottom = '5px';
+    this.toolTipBox.style.maxWidth = `${event.target.width}px`;
+    this.toolTipBox.style.padding = '7px';
     this.toolTipBox.style.borderRadius = '15px';
     this.toolTipBox.style.textAlign = 'center';
     this.toolTipBox.animate([
