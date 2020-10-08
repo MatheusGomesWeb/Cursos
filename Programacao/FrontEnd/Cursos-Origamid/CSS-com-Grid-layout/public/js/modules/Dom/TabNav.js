@@ -79,9 +79,9 @@ export default class TabNav {
 
         <!--descricao-->
         <p class="col-wide" data-anime>${principal}</p>  
-        <img src="${url}" alt="${alt}" class="imagem-1" data-modal data-anime>  
+        <img src="${url}" alt="${alt}" class="imagem-1" data-modal data-anime id="imagem-1">  
         <p class="destaque" data-anime>${destacado}</p>  
-        <img src="${url2}" alt="${alt2}" class="imagem-2" data-modal data-anime>   
+        <img src="${url2}" alt="${alt2}" class="imagem-2" id="imagem-2" data-modal data-anime>   
         <p data-anime>${figcaption}</p>  
         <p data-anime>${figcaption2}</p>
         <!--descricao-->  
@@ -108,7 +108,7 @@ export default class TabNav {
         </div>
         <!--informacoes-->
   
-        <img src="${url3}" alt="${alt3}" class="col-wide imagem-3" id="imagem" data-modal data-anime data-scroll>
+        <img src="${url3}" alt="${alt3}" class="col-wide imagem-3" id="imagem-3" data-modal data-anime data-scroll>
       <!--main-->     
 
       <!-- modal ANIMAIS -->
