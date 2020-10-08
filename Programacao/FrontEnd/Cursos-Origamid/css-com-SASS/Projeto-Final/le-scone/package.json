@@ -1,0 +1,22 @@
+{
+  "name": "le-scone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack --mode=development --watch",
+    "build": "./node_modules/.bin/webpack --mode=production",
+    "sass-watch": "sass --watch ./src/scss/style.scss ./dist/css/style.css",
+    "sass-build": "sass ./src/scss/style.scss ./dist/css/style.css --style=compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
