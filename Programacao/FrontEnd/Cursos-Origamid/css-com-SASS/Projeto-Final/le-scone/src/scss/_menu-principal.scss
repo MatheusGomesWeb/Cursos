@@ -28,10 +28,12 @@ header.header {
         position: relative;
         z-index: 300;
         align-self: flex-end;
+
         &[data-mobileButton="active"] {
           background: $bege-medio;
+
           &::before {
-            transition: 0.2s;
+            transition: .4s transform;
             transform: rotate(-90deg);
             background: $cinza;
             box-shadow: 0 6px $cinza, 0 -6px $cinza;
@@ -44,6 +46,7 @@ header.header {
           height: 3px;
           background: $bege-claro;
           box-shadow: 0 6px $bege-claro, 0 -6px $bege-claro;
+          transition: .4s transform;
         }
       }
     }
@@ -60,7 +63,7 @@ header.header {
 
       li {
         font-size: em(16);
-
+        
         @include d(s) {
           background: $bege-medio;
           padding: 10px;
@@ -105,7 +108,9 @@ header.header {
 }
 
 [data-menu] {
-  display: none !important;
+  @include d(s) {
+    display: none !important;
+  }
 }
 
 [data-menu="active"] {

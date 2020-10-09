@@ -17,6 +17,15 @@ export default function menuMobile(button, content) {
       btn.setAttribute('data-mobileButton', '');
     }
 
+    // fecha menu ao clicar nos links
+    const links = contentMenu.querySelectorAll('a');
+    links.forEach((link) => {
+      link.addEventListener('click', () => {
+        contentMenu.setAttribute('data-menu', '');
+        btn.setAttribute('data-mobileButton', '');
+      });
+    });
+
     // Adiciona dataset no botao e no menu
     contentMenu.setAttribute('data-outside', '');
 

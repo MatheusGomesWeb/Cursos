@@ -380,7 +380,7 @@ header.header nav.menu-principal button {
     background: #cbc6b9;
   }
   header.header nav.menu-principal button[data-mobileButton=active]::before {
-    transition: 0.2s;
+    transition: 0.4s transform;
     transform: rotate(-90deg);
     background: #2a2426;
     box-shadow: 0 6px #2a2426, 0 -6px #2a2426;
@@ -391,6 +391,7 @@ header.header nav.menu-principal button {
     height: 3px;
     background: #edece4;
     box-shadow: 0 6px #edece4, 0 -6px #edece4;
+    transition: 0.4s transform;
   }
 }
 header.header nav.menu-principal ul {
@@ -448,8 +449,10 @@ header.header nav.menu-principal ul li a:hover {
     opacity: 0;
   }
 }
-[data-menu] {
-  display: none !important;
+@media screen and (max-width: 759px) {
+  [data-menu] {
+    display: none !important;
+  }
 }
 
 [data-menu=active] {
