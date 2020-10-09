@@ -19,7 +19,7 @@ export default function animarAoScroll(sections) {
     section.forEach((secao) => {
       window.addEventListener('scroll', debounce(() => {
         calculaDistancia(secao);
-      }, 50));
+      }, 30));
     });
   }
 }

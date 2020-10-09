@@ -4,7 +4,7 @@ import scrollSuaveLinksInternos from './modules/scrollSuaveLinksInternos.js';
 import scrollTop from './modules/scrollTop.js';
 import animarAoScroll from './modules/animarAoScroll.js';
 
-funcionamento();
+funcionamento('.fechado');
 
 // Menu mobile
 menuMobile('[data-mobileButton]', '[data-menu]');

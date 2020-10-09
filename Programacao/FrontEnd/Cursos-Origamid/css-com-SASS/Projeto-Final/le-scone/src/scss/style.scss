@@ -18,14 +18,17 @@
     right: 2vw;
     bottom: 10vh;
     width: 50px;
-    height: 50px;
-    font-size: em(55);
+    height: 55px;
+    font-size: em(63);
     border: none;
     background: $bege-medio;
     color: $bege-escuro;
     font-weight: bold;
     display: none;
     transition: .3s all;
+    z-index: 300;
+    cursor: pointer;
+    border-radius: 15px;
     &:hover {
         background: $bege-escuro;
     color: $bege-claro;
