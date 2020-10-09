@@ -7,8 +7,6 @@ export default function scrollSuaveLinksInternos(menu) {
     const section = document.querySelector(event.target.getAttribute('href'));
     const distanciaTopo = section.offsetTop;
 
-    console.log(distanciaTopo);
-
     if (section) {
       // section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       window.scrollTo({ top: (distanciaTopo - 50), left: 0, behavior: 'smooth' });

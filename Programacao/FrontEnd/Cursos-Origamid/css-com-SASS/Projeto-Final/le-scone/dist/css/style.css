@@ -704,6 +704,10 @@ footer a img {
   display: none;
   transition: 0.3s all;
 }
+[data-scrollTop]:hover {
+  background: #988c77;
+  color: #edece4;
+}
 
 @keyframes fadeIn {
   from {
@@ -716,6 +720,15 @@ footer a img {
 [data-scrollTop=active] {
   display: flex;
   animation: fadeIn 0.3s forwards;
+}
+
+[data-scroll] {
+  opacity: 0;
+}
+
+[data-scroll=active] {
+  opacity: 1;
+  animation: fadeIn 0.4s forwards;
 }
 
 /*# sourceMappingURL=style.css.map */

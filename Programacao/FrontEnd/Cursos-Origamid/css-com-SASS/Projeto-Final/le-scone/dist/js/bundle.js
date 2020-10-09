@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Funcionamento.js */ \"./src/js/modules/Funcionamento.js\");\n/* harmony import */ var _modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menuMobile.js */ \"./src/js/modules/menuMobile.js\");\n/* harmony import */ var _modules_scrollSuaveLinksInternos_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/scrollSuaveLinksInternos.js */ \"./src/js/modules/scrollSuaveLinksInternos.js\");\n/* harmony import */ var _modules_scrollTop_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/scrollTop.js */ \"./src/js/modules/scrollTop.js\");\n\n\n\n\n\nObject(_modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n// Menu mobile\nObject(_modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('[data-mobileButton]', '[data-menu]');\n\n// Scroll Suave nos Links do menu\nObject(_modules_scrollSuaveLinksInternos_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.menu-principal ul li a');\n\n// Scroll para o topo\nObject(_modules_scrollTop_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])('[data-scrollTop]');\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Funcionamento.js */ \"./src/js/modules/Funcionamento.js\");\n/* harmony import */ var _modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menuMobile.js */ \"./src/js/modules/menuMobile.js\");\n/* harmony import */ var _modules_scrollSuaveLinksInternos_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/scrollSuaveLinksInternos.js */ \"./src/js/modules/scrollSuaveLinksInternos.js\");\n/* harmony import */ var _modules_scrollTop_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/scrollTop.js */ \"./src/js/modules/scrollTop.js\");\n/* harmony import */ var _modules_animarAoScroll_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/animarAoScroll.js */ \"./src/js/modules/animarAoScroll.js\");\n\n\n\n\n\n\nObject(_modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n// Menu mobile\nObject(_modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('[data-mobileButton]', '[data-menu]');\n\n// Scroll Suave nos Links do menu\nObject(_modules_scrollSuaveLinksInternos_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.menu-principal ul li a');\n\n// Scroll para o topo\nObject(_modules_scrollTop_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])('[data-scrollTop]');\n\n// Animar Ao scroll\nObject(_modules_animarAoScroll_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"])('[data-scroll]');\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
@@ -134,6 +134,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/js/modules/animarAoScroll.js":
+/*!******************************************!*\
+  !*** ./src/js/modules/animarAoScroll.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return animarAoScroll; });\n/* harmony import */ var _Helpers_debounce_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Helpers/debounce.js */ \"./src/js/modules/Helpers/debounce.js\");\n\n\nfunction animarAoScroll(sections) {\n  const section = document.querySelectorAll(sections);\n\n  // Calcula a distancia do elemento referente ao topo e revela / esconde\n  function calculaDistancia(secao) {\n    const distTop = Math.floor(secao.getBoundingClientRect().top + (window.innerHeight / 2) * 0.3);\n\n    if (distTop < window.innerHeight) {\n      secao.setAttribute('data-scroll', 'active');\n    } else {\n      secao.setAttribute('data-scroll', '');\n    }\n  }\n\n  // se existir as seções executa o callback com debounce\n  if (section.length) {\n    section.forEach((secao) => {\n      window.addEventListener('scroll', Object(_Helpers_debounce_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(() => {\n        calculaDistancia(secao);\n      }, 50));\n    });\n  }\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/animarAoScroll.js?");
+
+/***/ }),
+
 /***/ "./src/js/modules/menuMobile.js":
 /*!**************************************!*\
   !*** ./src/js/modules/menuMobile.js ***!
@@ -154,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return scrollSuaveLinksInternos; });\nfunction scrollSuaveLinksInternos(menu) {\n  const menuLinks = document.querySelectorAll(menu);\n\n  function scrollToSection(event) {\n    event.preventDefault();\n\n    const section = document.querySelector(event.target.getAttribute('href'));\n    const distanciaTopo = section.offsetTop;\n\n    console.log(distanciaTopo);\n\n    if (section) {\n      // section.scrollIntoView({ behavior: 'smooth', block: 'start' });\n      window.scrollTo({ top: (distanciaTopo - 50), left: 0, behavior: 'smooth' });\n    }\n  }\n\n  function addEvents() {\n    menuLinks.forEach((link) => link.addEventListener('click', scrollToSection));\n  }\n\n  if (menuLinks.length) {\n    addEvents();\n  }\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/scrollSuaveLinksInternos.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return scrollSuaveLinksInternos; });\nfunction scrollSuaveLinksInternos(menu) {\n  const menuLinks = document.querySelectorAll(menu);\n\n  function scrollToSection(event) {\n    event.preventDefault();\n\n    const section = document.querySelector(event.target.getAttribute('href'));\n    const distanciaTopo = section.offsetTop;\n\n    if (section) {\n      // section.scrollIntoView({ behavior: 'smooth', block: 'start' });\n      window.scrollTo({ top: (distanciaTopo - 50), left: 0, behavior: 'smooth' });\n    }\n  }\n\n  function addEvents() {\n    menuLinks.forEach((link) => link.addEventListener('click', scrollToSection));\n  }\n\n  if (menuLinks.length) {\n    addEvents();\n  }\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/scrollSuaveLinksInternos.js?");
 
 /***/ }),
 

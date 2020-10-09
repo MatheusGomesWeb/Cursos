@@ -26,6 +26,10 @@
     font-weight: bold;
     display: none;
     transition: .3s all;
+    &:hover {
+        background: $bege-escuro;
+    color: $bege-claro;
+    }
 }
 
 @keyframes fadeIn {
@@ -38,5 +42,14 @@
 }
 [data-scrollTop="active"] {
     display: flex;
-    animation: fadeIn .3s forwards;
+    animation: fadeIn .3s forwards;    
+}
+
+[data-scroll] {
+    opacity: 0;
+}
+
+[data-scroll="active"] {
+    opacity: 1;
+    animation: fadeIn .4s forwards;
 }
