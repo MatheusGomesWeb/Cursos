@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Funcionamento.js */ \"./src/js/modules/Funcionamento.js\");\n/* harmony import */ var _modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menuMobile.js */ \"./src/js/modules/menuMobile.js\");\n/* harmony import */ var _modules_scrollSuaveLinksInternos_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/scrollSuaveLinksInternos.js */ \"./src/js/modules/scrollSuaveLinksInternos.js\");\n\n\n\n\nObject(_modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n// Menu mobile\nObject(_modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('[data-mobileButton]', '[data-menu]');\n\n// Scroll Suave nos Links do menu\nObject(_modules_scrollSuaveLinksInternos_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.menu-principal ul li a');\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Funcionamento.js */ \"./src/js/modules/Funcionamento.js\");\n/* harmony import */ var _modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menuMobile.js */ \"./src/js/modules/menuMobile.js\");\n/* harmony import */ var _modules_scrollSuaveLinksInternos_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/scrollSuaveLinksInternos.js */ \"./src/js/modules/scrollSuaveLinksInternos.js\");\n/* harmony import */ var _modules_scrollTop_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/scrollTop.js */ \"./src/js/modules/scrollTop.js\");\n\n\n\n\n\nObject(_modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n// Menu mobile\nObject(_modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('[data-mobileButton]', '[data-menu]');\n\n// Scroll Suave nos Links do menu\nObject(_modules_scrollSuaveLinksInternos_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.menu-principal ul li a');\n\n// Scroll para o topo\nObject(_modules_scrollTop_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])('[data-scrollTop]');\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
@@ -107,6 +107,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Funcionamento; });\nfunction Funcionamento() {\n  console.log('funcionamento');\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/Funcionamento.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/Helpers/debounce.js":
+/*!********************************************!*\
+  !*** ./src/js/modules/Helpers/debounce.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return debounce; });\nfunction debounce(callback, delay) {\n  let timer;\n  return (...args) => {\n    if (timer) clearTimeout(timer);\n\n    timer = setTimeout(() => {\n      callback(...args);\n      timer = null;\n    }, delay);\n  };\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/Helpers/debounce.js?");
 
 /***/ }),
 
@@ -143,6 +155,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return scrollSuaveLinksInternos; });\nfunction scrollSuaveLinksInternos(menu) {\n  const menuLinks = document.querySelectorAll(menu);\n\n  function scrollToSection(event) {\n    event.preventDefault();\n\n    const section = document.querySelector(event.target.getAttribute('href'));\n    const distanciaTopo = section.offsetTop;\n\n    console.log(distanciaTopo);\n\n    if (section) {\n      // section.scrollIntoView({ behavior: 'smooth', block: 'start' });\n      window.scrollTo({ top: (distanciaTopo - 50), left: 0, behavior: 'smooth' });\n    }\n  }\n\n  function addEvents() {\n    menuLinks.forEach((link) => link.addEventListener('click', scrollToSection));\n  }\n\n  if (menuLinks.length) {\n    addEvents();\n  }\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/scrollSuaveLinksInternos.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/scrollTop.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/scrollTop.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return scrollTop; });\n/* harmony import */ var _Helpers_debounce_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Helpers/debounce.js */ \"./src/js/modules/Helpers/debounce.js\");\n\n\nfunction scrollTop(element) {\n  const elemento = document.querySelector(element);\n\n  // Mostra o botao se o scroll for maior que 900\n  function showButton() {\n    const tamanhoScroll = Math.floor(window.pageYOffset);\n\n    if (tamanhoScroll > 900) {\n      elemento.setAttribute('data-scrollTop', 'active');\n    } else {\n      elemento.removeAttribute('data-scrollTop');\n    }\n  }\n\n  // se existir o botao, adiciona o evento de click\n  if (elemento) {\n    elemento.addEventListener('click', () => {\n      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });\n    });\n\n    // controlando scroll com debounce\n    window.addEventListener('scroll', Object(_Helpers_debounce_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(showButton, 100));\n  }\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/scrollTop.js?");
 
 /***/ })
 
