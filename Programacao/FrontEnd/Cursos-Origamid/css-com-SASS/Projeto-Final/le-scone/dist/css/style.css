@@ -351,6 +351,11 @@ header.header nav.menu-principal {
   background: #cbc6b9;
   max-width: 300px;
 }
+@media screen and (min-width: 1200px) {
+  header.header nav.menu-principal {
+    float: right;
+  }
+}
 @media screen and (max-width: 759px) {
   header.header nav.menu-principal {
     max-width: 100% !important;

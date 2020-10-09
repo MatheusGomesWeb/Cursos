@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Funcionamento.js */ \"./src/js/modules/Funcionamento.js\");\n/* harmony import */ var _modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menuMobile.js */ \"./src/js/modules/menuMobile.js\");\n\n\n\nObject(_modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nObject(_modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('[data-mobileButton]', '[data-menu]');\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Funcionamento.js */ \"./src/js/modules/Funcionamento.js\");\n/* harmony import */ var _modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menuMobile.js */ \"./src/js/modules/menuMobile.js\");\n/* harmony import */ var _modules_scrollSuaveLinksInternos_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/scrollSuaveLinksInternos.js */ \"./src/js/modules/scrollSuaveLinksInternos.js\");\n\n\n\n\nObject(_modules_Funcionamento_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n// Menu mobile\nObject(_modules_menuMobile_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('[data-mobileButton]', '[data-menu]');\n\n// Scroll Suave nos Links do menu\nObject(_modules_scrollSuaveLinksInternos_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.menu-principal ul li a');\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
@@ -131,6 +131,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return menuMobile; });\n/* harmony import */ var _Helpers_outsideClick_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Helpers/outsideClick.js */ \"./src/js/modules/Helpers/outsideClick.js\");\n\n\nfunction menuMobile(button, content) {\n  const btn = document.querySelector(button);\n  const contentMenu = document.querySelector(content);\n\n  // Abre o menu ao clicar\n  function openMenu(event) {\n    event.preventDefault();\n\n    // abre e fecha menu\n    if (contentMenu.getAttribute('data-menu') === '') {\n      contentMenu.setAttribute('data-menu', 'active');\n      btn.setAttribute('data-mobileButton', 'active');\n    } else {\n      contentMenu.setAttribute('data-menu', '');\n      btn.setAttribute('data-mobileButton', '');\n    }\n\n    // fecha menu ao clicar nos links\n    const links = contentMenu.querySelectorAll('a');\n    links.forEach((link) => {\n      link.addEventListener('click', () => {\n        contentMenu.setAttribute('data-menu', '');\n        btn.setAttribute('data-mobileButton', '');\n      });\n    });\n\n    // Adiciona dataset no botao e no menu\n    contentMenu.setAttribute('data-outside', '');\n\n    // Verifica se clicou fora e fecha o menu\n    Object(_Helpers_outsideClick_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(contentMenu, 'click', () => {\n      contentMenu.setAttribute('data-menu', '');\n      btn.setAttribute('data-mobileButton', '');\n    });\n  }\n\n  // adiciona o evento de click ao botao\n  function addEvent() {\n    btn.addEventListener('click', openMenu);\n  }\n\n  // verifica se o botao e o menu existe e adiciona o evento\n  if (button && content) {\n    addEvent();\n  }\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/menuMobile.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/scrollSuaveLinksInternos.js":
+/*!****************************************************!*\
+  !*** ./src/js/modules/scrollSuaveLinksInternos.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return scrollSuaveLinksInternos; });\nfunction scrollSuaveLinksInternos(menu) {\n  const menuLinks = document.querySelectorAll(menu);\n\n  function scrollToSection(event) {\n    event.preventDefault();\n\n    const section = document.querySelector(event.target.getAttribute('href'));\n    const distanciaTopo = section.offsetTop;\n\n    console.log(distanciaTopo);\n\n    if (section) {\n      // section.scrollIntoView({ behavior: 'smooth', block: 'start' });\n      window.scrollTo({ top: (distanciaTopo - 50), left: 0, behavior: 'smooth' });\n    }\n  }\n\n  function addEvents() {\n    menuLinks.forEach((link) => link.addEventListener('click', scrollToSection));\n  }\n\n  if (menuLinks.length) {\n    addEvents();\n  }\n}\n\n\n//# sourceURL=webpack:///./src/js/modules/scrollSuaveLinksInternos.js?");
 
 /***/ })
 

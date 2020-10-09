@@ -1,16 +1,21 @@
 header.header {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 30px;  
 
   nav.menu-principal {
     background: $bege-medio;
     max-width: 300px;
+
+    @include d(l) {
+      float: right;
+    }
 
     @include d(s) {
       max-width: 100% !important;
       display: flex;
       flex-direction: column;
       background: none;
+      
     }
     button {
       display: none;
