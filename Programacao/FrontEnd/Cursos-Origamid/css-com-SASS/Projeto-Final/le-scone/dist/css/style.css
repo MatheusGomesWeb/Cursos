@@ -609,6 +609,7 @@ header.header nav.menu-principal ul li a:hover {
   display: block;
 }
 .contato form input[type=text],
+.contato form input[type=email],
 .contato form textarea {
   font-family: "PT Mono", monospace;
   font-size: 1.125em;
@@ -622,6 +623,8 @@ header.header nav.menu-principal ul li a:hover {
   margin-bottom: 1em;
 }
 .contato form input[type=text]:hover, .contato form input[type=text]:focus,
+.contato form input[type=email]:hover,
+.contato form input[type=email]:focus,
 .contato form textarea:hover,
 .contato form textarea:focus {
   outline: none;
@@ -694,6 +697,11 @@ footer a img {
     float: none;
     margin: 20px auto;
   }
+}
+
+[data-erro] {
+  margin-bottom: 20px;
+  color: #e52;
 }
 
 [data-scrollTop] {

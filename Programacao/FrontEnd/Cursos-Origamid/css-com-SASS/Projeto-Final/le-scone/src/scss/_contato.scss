@@ -12,6 +12,7 @@
       display: block;
     }
     input[type="text"],
+    input[type="email"],
     textarea {
       @include tipo-1(18);
       color: $cinza;

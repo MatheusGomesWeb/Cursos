@@ -77,21 +77,26 @@
     <section class="container contato" id="contato" data-scroll>
       <h1 class="grid-4 titulo">Contato</h1>
       <div class="grid-7 offset-1">
-        <form action="#">
+        <form action="#" id="form-contato">
           <label for="nome">Nome</label>
           <input type="text" name="nome" id="nome">
+          <span data-erro></span>
           <div class="row">
             <div class="grid-7">
               <label for="nome">E-mail</label>
-              <input type="text" name="nome" id="nome">
+              <input type="email" name="email" id="email">
+              <span data-erro></span>
             </div>
             <div class="grid-5">
               <label for="nome">Telefone</label>
-              <input type="text" name="nome" id="nome">
+              <input type="text" name="telefone" id="tel">
+              <span data-erro></span>
             </div>
           </div>
           <label for="mensagem">Mensagem</label>
           <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+          <span data-erro></span>
+
           <input class="button" type="button" value="Enviar">
         </form>
 

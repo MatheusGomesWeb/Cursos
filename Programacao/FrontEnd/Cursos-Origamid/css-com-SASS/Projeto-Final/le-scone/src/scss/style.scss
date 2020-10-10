@@ -13,46 +13,51 @@
 
 // dataset
 
+[data-erro] {
+  margin-bottom: 20px;
+  color: #e52;
+}
+
 [data-scrollTop] {
-    position: fixed;
-    right: 2vw;
-    bottom: 10vh;
-    width: 50px;
-    height: 55px;
-    font-size: em(63);
-    border: none;
-    background: $bege-medio;
-    color: $bege-escuro;
-    font-weight: bold;
-    display: none;
-    transition: .3s all;
-    z-index: 300;
-    cursor: pointer;
-    border-radius: 15px;
-    &:hover {
-        background: $bege-escuro;
+  position: fixed;
+  right: 2vw;
+  bottom: 10vh;
+  width: 50px;
+  height: 55px;
+  font-size: em(63);
+  border: none;
+  background: $bege-medio;
+  color: $bege-escuro;
+  font-weight: bold;
+  display: none;
+  transition: 0.3s all;
+  z-index: 300;
+  cursor: pointer;
+  border-radius: 15px;
+  &:hover {
+    background: $bege-escuro;
     color: $bege-claro;
-    }
+  }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 [data-scrollTop="active"] {
-    display: flex;
-    animation: fadeIn .3s forwards;    
+  display: flex;
+  animation: fadeIn 0.3s forwards;
 }
 
 [data-scroll] {
-    opacity: 0;
+  opacity: 0;
 }
 
 [data-scroll="active"] {
-    opacity: 1;
-    animation: fadeIn .4s forwards;
+  opacity: 1;
+  animation: fadeIn 0.4s forwards;
 }
