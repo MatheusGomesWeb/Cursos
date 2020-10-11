@@ -18,5 +18,10 @@
     "eslint-plugin-import": "^2.22.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
-  }
+  },
+  "browserslist": [
+    "last 99 versions",
+    "> 1%",
+    "IE 10"
+  ]
 }
