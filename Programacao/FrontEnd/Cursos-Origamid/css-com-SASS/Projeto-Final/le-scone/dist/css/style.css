@@ -508,6 +508,13 @@ header.header nav.menu-principal ul li a:hover {
   letter-spacing: -90px;
   color: #2a2426;
 }
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .intro-telefone::after {
+    margin-top: 80px;
+    font-size: 160px;
+    letter-spacing: -70px;
+  }
+}
 @media screen and (max-width: 759px) {
   .intro-telefone::after {
     display: none;
@@ -537,10 +544,21 @@ header.header nav.menu-principal ul li a:hover {
   max-height: 875px;
   overflow: hidden;
 }
+@media screen and (max-width: 759px) {
+  #slide {
+    height: calc(875px / 2);
+  }
+}
 #slide img {
   display: none;
-  max-height: 876px;
+  transition: 0.3s all;
+  height: 875px;
   animation: fadeIn 0.2s forwards;
+}
+@media screen and (max-width: 759px) {
+  #slide img {
+    height: calc(875px / 2);
+  }
 }
 
 .menu {
@@ -720,7 +738,7 @@ footer a img {
   right: 2vw;
   bottom: 10vh;
   width: 50px;
-  height: 55px;
+  height: 50px;
   font-size: 3.9375em;
   border: none;
   background: #cbc6b9;
@@ -729,6 +747,7 @@ footer a img {
   display: none;
   transition: 0.3s all;
   z-index: 300;
+  padding-top: 15px;
   cursor: pointer;
   border-radius: 15px;
 }
@@ -747,6 +766,9 @@ footer a img {
 }
 [data-scrollTop=active] {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   animation: fadeIn 0.3s forwards;
 }
 

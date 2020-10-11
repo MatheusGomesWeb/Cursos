@@ -33,7 +33,7 @@
     font-size: 220px;
     letter-spacing: -90px;
     color: $cinza;
-    @include d(n) {
+    @include d(m) {
       margin-top: 80px;
       font-size: 160px;
       letter-spacing: -70px;
@@ -67,9 +67,16 @@
 #slide {
   max-height: 875px;
   overflow: hidden;
+  @include d(s) {
+    height: calc(875px / 2);
+  }
   img {
     display: none;
-    max-height: 876px;
+    transition: .3s all;
+    height: 875px;
     animation: fadeIn .2s forwards;
+    @include d(s) {
+      height: calc(875px / 2);
+    }
   }
 }

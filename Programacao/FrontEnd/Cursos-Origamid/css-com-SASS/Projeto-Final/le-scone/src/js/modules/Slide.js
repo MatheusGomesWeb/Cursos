@@ -21,8 +21,6 @@ export default class Slide {
       }
 
       count += 1;
-
-      console.log(count, this.imagens.length);
     }, delay);
   }
 

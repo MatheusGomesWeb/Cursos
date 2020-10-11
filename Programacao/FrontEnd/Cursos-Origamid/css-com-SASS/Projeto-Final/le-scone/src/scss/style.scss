@@ -23,7 +23,7 @@
   right: 2vw;
   bottom: 10vh;
   width: 50px;
-  height: 55px;
+  height: 50px;
   font-size: em(63);
   border: none;
   background: $bege-medio;
@@ -32,6 +32,7 @@
   display: none;
   transition: 0.3s all;
   z-index: 300;
+  padding-top: 15px;
   cursor: pointer;
   border-radius: 15px;
   &:hover {
@@ -50,6 +51,9 @@
 }
 [data-scrollTop="active"] {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   animation: fadeIn 0.3s forwards;
 }
 
