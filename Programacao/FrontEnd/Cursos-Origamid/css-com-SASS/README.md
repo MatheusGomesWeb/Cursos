@@ -22,5 +22,8 @@
   + Validação de Formulário com RegExp
   + Slideshow
   + Scroll para o Topo
+  
+ ## Ferramentas
   + Webpack
   + Gulp
+  + Eslint
