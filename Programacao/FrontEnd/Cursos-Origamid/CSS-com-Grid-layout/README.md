@@ -29,6 +29,11 @@ ___
   + TabNav
   + Animaçao ao Scroll
   + Debounce
+  
+## Ferramentas
+  + Webpack
+  + Gulp
+  + Eslint
 
 ___
 
