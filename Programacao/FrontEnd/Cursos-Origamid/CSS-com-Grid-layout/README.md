@@ -1,6 +1,6 @@
 # CSS Grid Layout - Concluído
 
-<img src="./readme/Wildbeast.png" width="auto" height="450"/>
+<img src="./readme/Wildbeast.png" height="450"/>
 
 ## Projeto: Wildbeast - [Demo](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/CSS-com-Grid-layout/index.html)
 
@@ -29,6 +29,11 @@ ___
   + TabNav
   + Animaçao ao Scroll
   + Debounce
+  
+## Ferramentas
+  + Webpack
+  + Gulp
+  + Eslint
 
 ___
 

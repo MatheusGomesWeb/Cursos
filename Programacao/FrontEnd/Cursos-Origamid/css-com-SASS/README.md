@@ -11,3 +11,19 @@
   + [Bikecraft](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/css-com-SASS/SASS-na-pratica/bikcraft)
 * [Projeto Final](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/css-com-SASS/Projeto-Final)
   + [Le Scone](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/css-com-SASS/Projeto-Final/le-scone)
+  
+## Minhas modificações
+
+* **JavaScript**
+  + Scroll Suave ao clicar nos links do menu
+  + Menu Mobile
+  + Animaçao das seções ao Scroll
+  + Debounce
+  + Validação de Formulário com RegExp
+  + Slideshow
+  + Scroll para o Topo
+  
+ ## Ferramentas
+  + Webpack
+  + Gulp
+  + Eslint
