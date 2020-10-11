@@ -4,6 +4,7 @@ import scrollSuaveLinksInternos from './modules/scrollSuaveLinksInternos.js';
 import scrollTop from './modules/scrollTop.js';
 import animarAoScroll from './modules/animarAoScroll.js';
 import ValidationForm from './modules/Helpers/ValidationForm.js';
+import Slide from './modules/Slide.js';
 
 // Funcionamento
 funcionamento('.fechado');
@@ -43,3 +44,7 @@ const validaMensagem = new ValidationForm('#form-contato', '#mensagem');
 validaMensagem.insertAttribute('maxlength', 20);
 validaMensagem.insertAttribute('placeholder', 'Mensagem');
 validaMensagem.validaInput('mensagem');
+
+// Slide
+const slide = new Slide('#slide');
+slide.init();

@@ -61,3 +61,15 @@
   border: 10px solid $bege-medio;
   width: 100%;
 }
+
+/* slide */
+
+#slide {
+  max-height: 875px;
+  overflow: hidden;
+  img {
+    display: none;
+    max-height: 876px;
+    animation: fadeIn .2s forwards;
+  }
+}

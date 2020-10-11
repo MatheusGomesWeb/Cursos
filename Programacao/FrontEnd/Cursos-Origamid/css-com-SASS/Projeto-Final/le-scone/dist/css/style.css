@@ -532,6 +532,17 @@ header.header nav.menu-principal ul li a:hover {
   width: 100%;
 }
 
+/* slide */
+#slide {
+  max-height: 875px;
+  overflow: hidden;
+}
+#slide img {
+  display: none;
+  max-height: 876px;
+  animation: fadeIn 0.2s forwards;
+}
+
 .menu {
   margin-top: 120px;
   margin-bottom: 120px;
