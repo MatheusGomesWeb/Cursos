@@ -72,11 +72,16 @@
   }
   img {
     display: none;
-    transition: .3s all;
     height: 875px;
-    animation: fadeIn .2s forwards;
+    animation: fadeOut .6s ease;
     @include d(s) {
       height: calc(875px / 2);
+    }
+    &.fadeIn {
+      animation: fadeIn .3s ease-in-out;
+    }
+    &.fadeOut {
+      animation: fadeOut .3s ease-in-out;
     }
   }
 }

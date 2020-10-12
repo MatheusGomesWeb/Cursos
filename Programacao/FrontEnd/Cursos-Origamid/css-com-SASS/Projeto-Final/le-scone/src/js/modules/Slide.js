@@ -16,8 +16,10 @@ export default class Slide {
       if (count > 0 && count < this.imagens.length) {
         this.imagens[count - 1].style.display = 'none';
         this.imagens[count].style.display = 'flex';
+        this.imagens[count].classList.add('fadeIn');
       } else {
         this.imagens[count].style.display = 'flex';
+        this.imagens[count].classList.add('fadeIn');
       }
 
       count += 1;
