@@ -3,6 +3,8 @@
 **Ambiente**
 
 - [Node.js / NPM](https://nodejs.org/en/download/)
+  - [Webpack](https://webpack.js.org/)
+  - [Babel](https://babeljs.io/)
 - [Git](https://git-scm.com/downloads)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) - Chrome
