@@ -1,0 +1,12 @@
+{
+  "name": "Create-React-App",
+  "version": "1.0.0",
+  "description": "Cria um ambiente de desenvolvimento já configurado e otimizado para a criação de aplicativos com React.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
