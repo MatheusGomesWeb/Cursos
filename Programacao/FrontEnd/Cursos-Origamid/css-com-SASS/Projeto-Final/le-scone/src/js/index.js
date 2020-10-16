@@ -37,7 +37,7 @@ validaEmail.validaInput('email');
 const validaTel = new ValidationForm('#form-contato', '#tel');
 validaTel.insertAttribute('maxlength', 20);
 validaTel.insertAttribute('placeholder', '(13) 9 9999-9999');
-validaTel.validaInput('telngf');
+validaTel.validaInput('tel');
 
 // valida input mensagem
 const validaMensagem = new ValidationForm('#form-contato', '#mensagem');

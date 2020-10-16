@@ -4,6 +4,10 @@ export default class ValidationForm {
     this.form = document.querySelector(form);
     this.inputName = this.form.querySelector(inputName);
 
+    // button
+    this.button = this.form.querySelector('.button');
+    this.button.disabled = true;
+
     // Elemento que irá mostrar a mensgem de erro
     this.elErro = this.form.querySelectorAll('[data-erro]');
 
@@ -25,7 +29,7 @@ export default class ValidationForm {
     this.inputName.style.border = '2px solid #e52';
     el.style.display = 'block';
     el.innerHTML = message;
-    this.form.querySelector('.button').disabled = true;
+    this.button.disabled = true;
   }
 
   // mensagem de sucesso
@@ -33,7 +37,7 @@ export default class ValidationForm {
     const el = element;
     this.inputName.style.border = '2px solid #1ab912';
     el.style.display = 'none';
-    this.form.querySelector('.button').disabled = false;
+    this.button.disabled = false;
   }
 
   // validação de input vazio
@@ -41,7 +45,12 @@ export default class ValidationForm {
     const el = element;
 
     if (this.inputName.value.length < 7) {
-      this.inputDanger(el, `O ${this.inputName.getAttribute('name')} precisa ter no minimo 7 caracteres e não pode estar vazio.`);
+      this.inputDanger(
+        el,
+        `O ${this.inputName.getAttribute(
+          'name',
+        )} precisa ter no minimo 7 caracteres e não pode estar vazio.`,
+      );
     } else {
       this.inputSuccess(el);
     }
@@ -59,7 +68,12 @@ export default class ValidationForm {
     const regexpEMAIL = /[\w.-]+@[\w-]+\.[\w-.]+/gi;
 
     if (!this.inputName.value.match(regexpEMAIL)) {
-      this.inputDanger(this.elErro[1], `O ${this.inputName.getAttribute('name')} informado é inválido ! tente novamente com outro e-mail.`);
+      this.inputDanger(
+        this.elErro[1],
+        `O ${this.inputName.getAttribute(
+          'name',
+        )} informado é inválido ! tente novamente com outro e-mail.`,
+      );
     } else {
       this.inputSuccess(this.elErro[1]);
     }
@@ -71,8 +85,16 @@ export default class ValidationForm {
 
     const regexpTel = /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/g;
 
-    if (!this.inputName.value.match(regexpTel) || this.inputName.value.length > 17) {
-      this.inputDanger(this.elErro[2], `O ${this.inputName.getAttribute('name')} informado é inválido ! (xx) x xxxx-xxxx`);
+    if (
+      !this.inputName.value.match(regexpTel) ||
+      this.inputName.value.length > 17
+    ) {
+      this.inputDanger(
+        this.elErro[2],
+        `O ${this.inputName.getAttribute(
+          'name',
+        )} informado é inválido ! (xx) x xxxx-xxxx`,
+      );
     } else {
       this.inputSuccess(this.elErro[2]);
     }
@@ -93,11 +115,6 @@ export default class ValidationForm {
       this.inputName.addEventListener('change', this.validaTelefone);
     } else if (type === 'mensagem') {
       this.inputName.addEventListener('change', this.validaMensagem);
-    } else {
-      this.inputName.removeEventListener('change', this.validaNome);
-      this.inputName.removeEventListener('change', this.validaEmail);
-      this.inputName.removeEventListener('change', this.validaTelefone);
-      this.inputName.removeEventListener('change', this.validaMensagem);
     }
   }
 }
