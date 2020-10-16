@@ -4,33 +4,28 @@ export default class Slide {
     this.imagens = document.querySelectorAll('#slide img');
   }
 
-  // mudar slide
-  changeSlide(delay) {
-    let count = 0;
+  // transicao
+  transitionSlide() {
+    this.delay = 4000;
+    this.index = 0;
 
     setInterval(() => {
-      if (count === this.imagens.length) {
-        count = 0;
-      }
+      this.imagens.forEach(img => img.classList.remove('active'));
 
-      if (count > 0 && count < this.imagens.length) {
-        this.imagens[count - 1].style.display = 'none';
-        this.imagens[count].style.display = 'flex';
-        this.imagens[count].classList.add('fadeIn');
+      if (this.index <= this.imagens.length - 1) {
+        this.imagens[this.index].classList.add('active');
       } else {
-        this.imagens[count].style.display = 'flex';
-        this.imagens[count].classList.add('fadeIn');
+        this.imagens[0].classList.add('active');
+        this.index = 0;
       }
-
-      count += 1;
-    }, delay);
+      this.index += 1;
+    }, this.delay);
   }
 
   // Inicia o slide
   startSlide() {
-    this.imagens[0].style.display = 'flex';
-
-    this.changeSlide(4000);
+    this.imagens[0].classList.add('active');
+    this.transitionSlide();
   }
 
   // inicia a classe

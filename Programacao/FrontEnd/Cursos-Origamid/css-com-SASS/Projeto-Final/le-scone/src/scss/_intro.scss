@@ -27,7 +27,7 @@
     margin-bottom: 40px;
   }
   &::after {
-    content: "/ / /";
+    content: '/ / /';
     display: block;
     margin-top: 200px;
     font-size: 220px;
@@ -44,7 +44,8 @@
   }
 }
 
-.aberto, .fechado {
+.aberto,
+.fechado {
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -66,22 +67,21 @@
 
 #slide {
   max-height: 875px;
-  overflow: hidden;
+  position: relative;
   @include d(s) {
     height: calc(875px / 2);
   }
   img {
-    display: none;
-    height: 875px;
-    animation: fadeOut .6s ease;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s linear;
+    height: 655px;
+    opacity: 0;
     @include d(s) {
       height: calc(875px / 2);
     }
-    &.fadeIn {
-      animation: fadeIn .3s ease-in-out;
-    }
-    &.fadeOut {
-      animation: fadeOut .3s ease-in-out;
+    &.active {
+      opacity: 1;
     }
   }
 }
