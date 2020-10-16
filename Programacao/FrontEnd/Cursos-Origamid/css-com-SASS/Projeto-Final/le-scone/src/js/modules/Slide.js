@@ -6,7 +6,7 @@ export default class Slide {
 
   // transicao
   transitionSlide() {
-    this.delay = 4000;
+    this.delay = 5000;
     this.index = 0;
 
     setInterval(() => {

@@ -27,7 +27,7 @@
     margin-bottom: 40px;
   }
   &::after {
-    content: '/ / /';
+    content: "/ / /";
     display: block;
     margin-top: 200px;
     font-size: 220px;
@@ -74,7 +74,7 @@
   img {
     position: absolute;
     top: 0;
-    transition: opacity 0.3s linear;
+    transition: opacity 1s linear;
     height: 655px;
     opacity: 0;
     @include d(s) {
