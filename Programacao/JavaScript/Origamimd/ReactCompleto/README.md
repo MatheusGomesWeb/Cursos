@@ -15,3 +15,5 @@
 - [JSX - Parte 2](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/React-para-Iniciantes/JSX-Parte-2)
 - [Eventos](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/React-para-Iniciantes/Eventos)
 - [Componentes](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/React-para-Iniciantes/Componentes)
+- [Propriedades](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/React-para-Iniciantes/Propriedades)
+- [Desafio Componentes](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/React-para-Iniciantes/Desafio-Componentes)
