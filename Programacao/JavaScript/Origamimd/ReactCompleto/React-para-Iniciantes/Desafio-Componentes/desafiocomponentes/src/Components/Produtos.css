@@ -1,0 +1,16 @@
+ul li {
+  list-style: square;
+}
+
+.produto-wrapper {
+  margin: 20px;
+}
+.produto-item {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.produto-item li {
+  margin: 10px 0;
+}
