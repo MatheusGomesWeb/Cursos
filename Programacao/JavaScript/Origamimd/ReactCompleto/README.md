@@ -32,3 +32,4 @@
 - [Textarea](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Formularios/textarea)
 - [Select](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Formularios/select)
 - [Radio](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Formularios/radio)
+- [Checkbox](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Formularios/checkbox)
