@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  padding: 20px;
+  width: 100%;
+}
+
+input {
+  display: block;
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  border: none;
+  background: #fb5;
+  color: white;
+  width: 150px;
+  font-size: 1.5rem;
+}
