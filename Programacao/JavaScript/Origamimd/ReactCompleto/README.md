@@ -29,3 +29,4 @@
 **Formulário**
 
 - [Input](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Formularios/input)
+- [Textarea](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Formularios/textarea)
