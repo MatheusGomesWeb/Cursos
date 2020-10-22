@@ -30,3 +30,5 @@
 
 - [Input](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Formularios/input)
 - [Textarea](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Formularios/textarea)
+- [Select](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Formularios/select)
+- [Radio](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Formularios/radio)
