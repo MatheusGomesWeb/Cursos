@@ -1,0 +1,28 @@
+[26-Oct-2020 22:15:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_stylesheet_directory_url() in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/index.php:18
+Stack trace:
+#0 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-includes/template-loader.php(106): include()
+#1 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-blog-header.php(19): require_once('/home/matheus/\xC3...')
+#2 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/index.php(17): require('/home/matheus/\xC3...')
+#3 {main}
+  thrown in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/index.php on line 18
+[26-Oct-2020 22:15:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_stylesheet_directory_url() in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/index.php:18
+Stack trace:
+#0 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-includes/template-loader.php(106): include()
+#1 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-blog-header.php(19): require_once('/home/matheus/\xC3...')
+#2 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/index.php(17): require('/home/matheus/\xC3...')
+#3 {main}
+  thrown in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/index.php on line 18
+[26-Oct-2020 22:15:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_stylesheet_directory_url() in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/index.php:18
+Stack trace:
+#0 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-includes/template-loader.php(106): include()
+#1 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-blog-header.php(19): require_once('/home/matheus/\xC3...')
+#2 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/index.php(17): require('/home/matheus/\xC3...')
+#3 {main}
+  thrown in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/index.php on line 18
+[26-Oct-2020 22:15:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_stylesheet_directory_url() in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/index.php:18
+Stack trace:
+#0 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-includes/template-loader.php(106): include()
+#1 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-blog-header.php(19): require_once('/home/matheus/\xC3...')
+#2 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/index.php(17): require('/home/matheus/\xC3...')
+#3 {main}
+  thrown in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/index.php on line 18
