@@ -2,6 +2,8 @@
 	// Template Name: Contato
 	get_header();
 ?>
+		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+
 		<section class="introducao-interna interna_contato">
 			<div class="container">
 				<h1>Contato</h1>
@@ -54,6 +56,6 @@
 				<cite>WILLIAM MORRIS</cite>
 			</blockquote>
 		</div>
-
+	<?php endwhile; else: endif; ?>
 <?php get_footer(); ?>
 	

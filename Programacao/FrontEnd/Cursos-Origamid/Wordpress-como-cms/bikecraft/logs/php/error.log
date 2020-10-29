@@ -26,3 +26,21 @@ Stack trace:
 #2 /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/index.php(17): require('/home/matheus/\xC3...')
 #3 {main}
   thrown in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/index.php on line 18
+[29-Oct-2020 16:58:33 UTC] PHP Warning:  Use of undefined constant TEMPLATEPTH - assumed 'TEMPLATEPTH' (this will throw an Error in a future version of PHP) in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/page-home.php on line 59
+[29-Oct-2020 16:58:33 UTC] PHP Stack trace:
+[29-Oct-2020 16:58:33 UTC] PHP   1. {main}() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/index.php:0
+[29-Oct-2020 16:58:33 UTC] PHP   2. require() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/index.php:17
+[29-Oct-2020 16:58:33 UTC] PHP   3. require_once() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-blog-header.php:19
+[29-Oct-2020 16:58:33 UTC] PHP   4. include() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-includes/template-loader.php:106
+[29-Oct-2020 16:58:33 UTC] PHP Warning:  include(TEMPLATEPTH/inc/clientes-portfolio.php): failed to open stream: No such file or directory in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/page-home.php on line 59
+[29-Oct-2020 16:58:33 UTC] PHP Stack trace:
+[29-Oct-2020 16:58:33 UTC] PHP   1. {main}() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/index.php:0
+[29-Oct-2020 16:58:33 UTC] PHP   2. require() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/index.php:17
+[29-Oct-2020 16:58:33 UTC] PHP   3. require_once() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-blog-header.php:19
+[29-Oct-2020 16:58:33 UTC] PHP   4. include() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-includes/template-loader.php:106
+[29-Oct-2020 16:58:33 UTC] PHP Warning:  include(): Failed opening 'TEMPLATEPTH/inc/clientes-portfolio.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/themes/bikcraft/page-home.php on line 59
+[29-Oct-2020 16:58:33 UTC] PHP Stack trace:
+[29-Oct-2020 16:58:33 UTC] PHP   1. {main}() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/index.php:0
+[29-Oct-2020 16:58:33 UTC] PHP   2. require() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/index.php:17
+[29-Oct-2020 16:58:33 UTC] PHP   3. require_once() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-blog-header.php:19
+[29-Oct-2020 16:58:33 UTC] PHP   4. include() /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-includes/template-loader.php:106
