@@ -1,114 +1,127 @@
-# Wordpress como CMS - [Origamid](https://www.origamid.com/curso/wordpress-como-cms) - Em Desenvolvimento
+# Wordpress como CMS - [Origamid](https://www.origamid.com/curso/wordpress-como-cms) - Concluído
 
-* [Oque é CMS (Content Management System)](#cms-content-management-system)
-* [Por que Wordpress ?](#por-que-wordpress)
-* [Wordpress.org x Wordpress.com](#wordpress-org-vs-com)
-* [LocalWP - Software Gerenciador Projetos Wordpress](#localwp-software-gerenciador-de-projetos-wordpress)
-* [Interface do Wordpress](#interface-do-wordpress)
-* [Temas: Criando primeiro tema](#temas-criando-primeiro-tema)
-  + [Configurando Tema](#configurando-tema)
-  + [Funções PHP do Wordpress](#funcoes-php-do-wordpress)
-  + [Arquivos de Templates PHP](#arquivos-de-templates-php)  
-  + [Plugins](#plugins)  
-  + [Menus](#menus)
+- [Oque é CMS (Content Management System)](#cms-content-management-system)
+- [Por que Wordpress ?](#por-que-wordpress)
+- [Wordpress.org x Wordpress.com](#wordpress-org-vs-com)
+- [LocalWP - Software Gerenciador Projetos Wordpress](#localwp-software-gerenciador-de-projetos-wordpress)
+- [Interface do Wordpress](#interface-do-wordpress)
+- [Temas: Criando primeiro tema](#temas-criando-primeiro-tema)
+  - [Configurando Tema](#configurando-tema)
+  - [Funções PHP do Wordpress](#funcoes-php-do-wordpress)
+  - [Arquivos de Templates PHP](#arquivos-de-templates-php)
+  - [Plugins](#plugins)
+  - [Menus](#menus)
+- [Projeto Final](#)
 
-___
+---
 
 ## CMS Content Management System
 
-* **Gerenciador de Conteúdo**
-  + Permite adicionar, remover, modificar e organizar o conteúdo.
+- **Gerenciador de Conteúdo**
 
-* **Funciona através de uma UI**
-  + Tem uma interface para facilitar a adição de conteúdo.
+  - Permite adicionar, remover, modificar e organizar o conteúdo.
 
-* **Reduz a quantidade de código**
-  + Mil produtos utilizam o código de apenas uma página.
+- **Funciona através de uma UI**
 
-* **Separa conteúdo de código**
-  + Geralmente através de um banco de dados onde o conteúdo é armazenado.
+  - Tem uma interface para facilitar a adição de conteúdo.
 
-___
+- **Reduz a quantidade de código**
+
+  - Mil produtos utilizam o código de apenas uma página.
+
+- **Separa conteúdo de código**
+  - Geralmente através de um banco de dados onde o conteúdo é armazenado.
+
+---
 
 ## Por que Wordpress
 
-* **Mais de 50% da Web utiliza**
-  + Em relação aos sites que possuem CMS
+- **Mais de 50% da Web utiliza**
 
-* **Open Source**
-  + È gratuito e de código livre.
+  - Em relação aos sites que possuem CMS
 
-* **PHP e MYSQL**
-  + Fácil aprendizado e baixo custo de servidores.
+- **Open Source**
 
-* **Mais de 11% dos eCommerces**
-  + Utilizan o WooCommerce (Pluginde Wordpress)
+  - È gratuito e de código livre.
 
-* **Comunidade gigantesca**
-  + Sua dúvida com certeza ja foi tirada por alguem
+- **PHP e MYSQL**
 
-* **Milhares de plugins e temas**
-  + Permite soluções rápidas e personalizadas
+  - Fácil aprendizado e baixo custo de servidores.
 
-* **Curtomização sem limites**
-  + O limite é a sua capacidade de codificar
+- **Mais de 11% dos eCommerces**
 
-* **Interface simples**
-  + Bom para o seu cliente
+  - Utilizan o WooCommerce (Pluginde Wordpress)
 
-___
+- **Comunidade gigantesca**
+
+  - Sua dúvida com certeza ja foi tirada por alguem
+
+- **Milhares de plugins e temas**
+
+  - Permite soluções rápidas e personalizadas
+
+- **Curtomização sem limites**
+
+  - O limite é a sua capacidade de codificar
+
+- **Interface simples**
+  - Bom para o seu cliente
+
+---
 
 ## Wordpress ORG vs COM
 
-* [Wordpress.org](Wordpress.org)
-  + **Gratuito**
+- [Wordpress.org](Wordpress.org)
+
+  - **Gratuito**
     - Você baixa sem precisar se cadastrar ou pagar.
-  + **100% livre**
+  - **100% livre**
     - o Código é seu para fazer o que quiser.
-  + **Precisa ser Hospedado**
+  - **Precisa ser Hospedado**
     - Precisa de um servidor para ficar online.
 
-* [Wordpress.com](Wordpress.com)
-  + **Gratuíto até certo ponto**
+- [Wordpress.com](Wordpress.com)
+  - **Gratuíto até certo ponto**
     - Tem recursos pagos, porém já está hospedado gratuitamente.
-  + **O código não é livre**
+  - **O código não é livre**
     - Você não pode entrar no código e fazer as modificações que quiser
-  + **Feito pela Automattic**
+  - **Feito pela Automattic**
     - Dos criadores do WordPress
 
-___
+---
 
 ## LocalWP Software Gerenciador de Projetos Wordpress
 
 O [LocalWP](https://localwp.com/) é um software que auxilia no Gerenciamento e Deploy de um tema Wordpress, ele possui algumas funcionalidades que ajudam e muito o dev.
 
-* Criação de dominio(URL) local personalizado
-* Link provisório para o Cliente visualizar o desenvolvimento
-* Instalação do Wordpress, Mysql, Apache, Nginx isolado do sistema operacional.
-* Facil configuração de bancos de dados pela UI
-* Entre outras funcionalidades...
+- Criação de dominio(URL) local personalizado
+- Link provisório para o Cliente visualizar o desenvolvimento
+- Instalação do Wordpress, Mysql, Apache, Nginx isolado do sistema operacional.
+- Facil configuração de bancos de dados pela UI
+- Entre outras funcionalidades...
 
-___
+---
 
 ## Interface do Wordpress
 
-* **URLS**
-  + **painel login**: localhost:8000/wp-admin
+- **URLS**
 
-* **PÁGINAS**
-  + **Pagina principal**: Informações gerais sobre o tema ativado, quantidade de paginas, comentarios, atividades, logs, novidades do wordpress, noticias, posts, etc...
-  + **Atualizações**: Atualizações do wordpress, como correção de falhas de segurança, novas versões, atualizações de plugins, etc... (**manter sempre tudo atualizado para evitar falhas de segurança**).
-  + **Posts**: Gerenciar todos os posts, comentarios etc do site...
-  + **Mídia**: Gerenciar imagens, adicionar, remover, modificar etc...
-  + **Páginas**: Gerenciar páginas, remover, modificar etc...
-  + **Comentários**: Gerenciar comentários
-  + **Aparência**: Gerenciar aparencia do tema, customizar etc...
-  + **Plugins**: Gerenciar plugins, adicionar, remover etc...
-  + **Usuários**: Gerenciar usuários, editar, remover etc...
-  + **Ferramentas**: Gerenciar o wordpress, Importar, exportar, informações do site, ferramentas, etc...
-  + **Configurações**: Configurações gerais do wordpress, regras de negócio, links, nomes, etc...
+  - **painel login**: localhost:8000/wp-admin
 
-___
+- **PÁGINAS**
+  - **Pagina principal**: Informações gerais sobre o tema ativado, quantidade de paginas, comentarios, atividades, logs, novidades do wordpress, noticias, posts, etc...
+  - **Atualizações**: Atualizações do wordpress, como correção de falhas de segurança, novas versões, atualizações de plugins, etc... (**manter sempre tudo atualizado para evitar falhas de segurança**).
+  - **Posts**: Gerenciar todos os posts, comentarios etc do site...
+  - **Mídia**: Gerenciar imagens, adicionar, remover, modificar etc...
+  - **Páginas**: Gerenciar páginas, remover, modificar etc...
+  - **Comentários**: Gerenciar comentários
+  - **Aparência**: Gerenciar aparencia do tema, customizar etc...
+  - **Plugins**: Gerenciar plugins, adicionar, remover etc...
+  - **Usuários**: Gerenciar usuários, editar, remover etc...
+  - **Ferramentas**: Gerenciar o wordpress, Importar, exportar, informações do site, ferramentas, etc...
+  - **Configurações**: Configurações gerais do wordpress, regras de negócio, links, nomes, etc...
+
+---
 
 ## Temas Criando primeiro Tema
 
@@ -120,13 +133,13 @@ Para criar um novo tema no Wordpress, é necessario colocar todo o site dentro d
 
 Para que o Wordpress reconheça o site como um tema, é necessario criar os seguintes arquivos na raiz do projeto:
 
-* index.php
-* style.css - estilos e configurações do tema
-* screenshot.png - Imagem de pré visualização no painel do wordpress
+- index.php
+- style.css - estilos e configurações do tema
+- screenshot.png - Imagem de pré visualização no painel do wordpress
 
 o **style.css** precisa ter alguns códigos comentádos, que são pré definidos pelo wordpress, entender as configurações do tema
 
-``` 
+```
 /*
 Theme Name: Twenty Thirteen
 Theme URI: http://wordpress.org/themes/twentythirteen
@@ -146,16 +159,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 ### Arquivos de Templates PHP
 
-* **page.php** - Arquivo responsável pelo template das páginas padrão.
-* **posts.php** - Arquivo responsável pelo template padrão dos POSTS.
-* **404.php** - Responsável por mostrar mensagens de erro.
-* **functions.php** - Funções e lógica do tema (wordpress)
+- **page.php** - Arquivo responsável pelo template das páginas padrão.
+- **posts.php** - Arquivo responsável pelo template padrão dos POSTS.
+- **404.php** - Responsável por mostrar mensagens de erro.
+- **functions.php** - Funções e lógica do tema (wordpress)
 
 **template personalizado** - colocar comentado na no arquivo da pagina
 
-``` 
- /* 
-  Template name: NOMEDOTEMPLATE 
+```
+ /*
+  Template name: NOMEDOTEMPLATE
 */
 
 ```
@@ -164,34 +177,36 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 É possivel separar o Header, Footer etc... do site em arquivos .php especificar, e depois inclui-los na index.php.
 
-* **get_stylesheet_directory_uri()** - Retorna o caminho completo do arquivo (style.css) na pasta raiz.
-* **get_footer()** - Include no footer.php do site.
-* **get_header()** - Include no header.php do site.
-* **wp_head()** - Inclui os Headers do Wordpress (para funcionar plugins etc...)
-* **wp_footer()** - Inclui os Footers do Wordpress (para funcionar plugins etc...)
+- **get_stylesheet_directory_uri()** - Retorna o caminho completo do arquivo (style.css) na pasta raiz.
+- **get_footer()** - Include no footer.php do site.
+- **get_header()** - Include no header.php do site.
+- **wp_head()** - Inclui os Headers do Wordpress (para funcionar plugins etc...)
+- **wp_footer()** - Inclui os Footers do Wordpress (para funcionar plugins etc...)
 
-* **bloginfo('name')** - Retorna o atributo do blog (configurações do painel wordpress...)
+- **bloginfo('name')** - Retorna o atributo do blog (configurações do painel wordpress...)
 
-* **have_posts()** - Verifica se tem posts, e retorna uma instancia do post.
-  +  **the_title()** - mostra o titulo do post
-  +  **the_content()** - mostra o conteudo do post
+- **have_posts()** - Verifica se tem posts, e retorna uma instancia do post.
+  - **the_title()** - mostra o titulo do post
+  - **the_content()** - mostra o conteudo do post
 
-___
+---
 
 ### Plugins
 
-* [Advanced Custom Fields](https://www.advancedcustomfields.com/) - Plugin que permite personalizar e automatizar o tema, e tornar uma area ou campo editável atravez do Dashboard.
+- [Advanced Custom Fields](https://www.advancedcustomfields.com/) - Plugin que permite personalizar e automatizar o tema, e tornar uma area ou campo editável atravez do Dashboard.
+- [Duplicator](#)
+- [W3 Total Cache](#)
 
 **Utilizando**
 
-``` 
+```
     <?php if (have_rows('sobre-descricao')) : while (have_rows('sobre-descricao')) : the_row(); ?>
     <?php the_sub_field('titulo') ?>
 ```
 
 **Reutilizando field de outra pagina**
 
-``` 
+```
 <?php  $page = get_page_by_title('contato'); ?>
 <?php the_field('telefone); ?>
 ```
@@ -200,16 +215,16 @@ ___
 
 Para habilitar o menu no tema, é necessario adicionar a seguinte linha do **functions.php**
 
-``` 
+```
 add_theme_support('menus');
 ```
 
-Para habilitar o suporte a menus é 
+Para habilitar o suporte a menus é
 
-## Professor 
+## Professor
 
-* **André Rafael**: - Administrador e Designer - Fundador da Origamid
-  + andre@origamid.com
-  + Formado pela UFRJ e Intituto Infnet
-* **Premios de Webdesign**
-  + Nomeado no CSS Awards e ganhador do CSS Reel
+- **André Rafael**: - Administrador e Designer - Fundador da Origamid
+  - andre@origamid.com
+  - Formado pela UFRJ e Intituto Infnet
+- **Premios de Webdesign**
+  - Nomeado no CSS Awards e ganhador do CSS Reel

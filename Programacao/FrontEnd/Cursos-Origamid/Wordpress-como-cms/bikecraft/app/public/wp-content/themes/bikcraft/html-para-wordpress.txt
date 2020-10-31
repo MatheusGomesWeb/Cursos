@@ -24,6 +24,7 @@ Maque Check All em Global Privileges
 2 - Mudar o index.html para index.php
 
 3 - Colocar/criar o arquivo style.css na raiz do tema
+@import 'css/reset.css';
 
 4 - Adicionar a descrição do tema no topo do style.css
 /*
@@ -52,14 +53,14 @@ Com <?php get_header(); ?> e <?php get_footer(); ?>
 <?php bloginfo('name'); ?>
 Mostra o nome do blog
 
-9 - Adicionar as páginas na interface do Wordpress
-
-10 - Transformar as páginas em HTML, em templates de Páginas
+9 - Transformar as páginas em HTML, em templates de Páginas
 A página index.php deve estar reservada para conteúdo genérico.
 Adicionar o nome page- na frente de cada template de página para facilitar a organização.
 <?php
 // Template Name: Sobre
 ?>
+
+10 - Adicionar as páginas na interface do Wordpress
 
 11 - Adicionar o Loop
 O Loop é utilizado para mostrar o conteúdo dos posts,
@@ -76,6 +77,10 @@ Adicionar o Loop as páginas e ao index.php
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
 
+
+*Pega o diretório do template
+<?php echo get_template_directory_uri(); ?>
+
 12 - Advanced Custom Fields
 
 Adicionar o Plugin Advanced Custom Fields Pro
@@ -84,6 +89,11 @@ Adicionar o Plugin Advanced Custom Fields Pro
 
 Iniciar a troca do conteúdo por fields, <?php the_field('nome_conteudo'); ?>
 Adicionar o conteúdo a interface do Custom Fields.
+
+Podemos criar partes do site que podem ser adicionadas via função PHP include.
+
+include(TEMPLATEPATH . '/inc/introducao.php');
+
 
 13 - Repeater Field
 
@@ -100,8 +110,51 @@ Adicionar o conteúdo a interface do Custom Fields.
 	the_field('telefone', $contato)
 ?>
 
+Verificar se é a página
+
+if(is_page('sobre')) {
+
+}
+
+Não é a página
+if(!is_page('sobre')) {
+
+}
+
+
 15 - Terminar de adicionar os outros campos
 <?php echo date("Y"); ?> (Mostrar a data)
+
+
+// Altera css com um custom field
+<style type="text/css">
+  .titulo {
+    background-image: url(“<?php the_field(‘background’); ?>”);
+  }
+</style>
+
+// Mostrar imagens de tamanhos diferentes
+<?php
+$imagem_id = get_field(‘imagem’);
+$imagem_grande = wp_get_attachment_image_src( $imagem_id, ‘grande’ );
+$imagem_pequena = wp_get_attachment_image_src( $imagem_id, ‘pequena’ );
+?>
+
+<?php echo $imagem_grande[0]; ?>
+
+
+// Adicionar tamanhos de imagens
+function my_custom_sizes() {
+  add_image_size( ‘grande’, 1400, 460, true );
+  add_image_size( ‘pequena’, 360, 260, true );
+}
+add_action( 'after_setup_theme', 'my_custom_sizes' );
+
+large
+medium
+thumb
+
+
 
 16 - Adicionar campos para SEO
 <title><?php bloginfo('name'); ?> - <?php wp_title(''); ?> <?php the_field('title_seo'); ?></title>
@@ -121,7 +174,58 @@ remove_action('admin_print_scripts', 'print_emoji_detection_script');
 remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('admin_print_styles', 'print_emoji_styles');
 
-18 - Adicionar o Menu
+18 - Adicionar Custom Post Types
+
+function custom_post_type_produtos() {
+	register_post_type('produtos', array(
+		'label' => 'Produtos',
+		'description' => 'Produtos',
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'capability_type' => 'post',
+		'map_meta_cap' => true,
+		'hierarchical' => false,
+		'rewrite' => array('slug' => 'produtos', 'with_front' => true),
+		'query_var' => true,
+		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
+
+		'labels' => array (
+			'name' => 'Produtos',
+			'singular_name' => 'Produto',
+			'menu_name' => 'Produtos',
+			'add_new' => 'Adicionar Novo',
+			'add_new_item' => 'Adicionar Novo Produto',
+			'edit' => 'Editar',
+			'edit_item' => 'Editar Produto',
+			'new_item' => 'Novo Produto',
+			'view' => 'Ver Produto',
+			'view_item' => 'Ver Produto',
+			'search_items' => 'Procurar Produtos',
+			'not_found' => 'Nenhum Produto Encontrado',
+			'not_found_in_trash' => 'Nenhum Produto Encontrado no Lixo',
+		)
+	));
+}
+add_action('init', 'custom_post_type_produtos');
+
+O template utilizado é single-slug.php (ou index.php caso não exista)
+
+<?php
+	$args = array (
+		'post_type' => 'produtos'
+	);
+	$the_query = new WP_Query ( $args );
+?>
+
+<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+	<h1><?php the_title(); ?></h1>
+<?php endwhile; else: endif; ?>
+
+
+
+
+19 - Adicionar o Menu
 
 // Habilitar Menus
 add_theme_support('menus');

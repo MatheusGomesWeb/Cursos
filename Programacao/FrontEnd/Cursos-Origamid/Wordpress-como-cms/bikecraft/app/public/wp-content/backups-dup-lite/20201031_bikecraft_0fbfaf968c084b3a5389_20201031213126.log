@@ -1,0 +1,86 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: October 31, 2020 9:31 pm
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.3.38
+WORDPRESS:	5.5.1
+PHP INFO:	7.3.5 | SAPI: fpm-fcgi
+SERVER:		nginx/1.16.0 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (256M default) 
+MEMORY STACK: 2MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported
+TABLES: total:13 | filtered:0 | create:13
+FILTERED: []
+SQL CREATED: 20201031_bikecraft_0fbfaf968c084b3a5389_20201031213126_database.sql
+SQL FILE SIZE: 993.95KB (1017800)
+SQL FILE TIME: 2020-10-31 21:31:35
+SQL RUNTIME: 1.17 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public
+ARCHIVE FILE: 20201031_bikecraft_0fbfaf968c084b3a5389_20201031213126_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	74.5MB
+STATS:	Dirs 490 | Files 4,142
+SQL ADDED: 20201031_bikecraft_0fbfaf968c084b3a5389_20201031213126_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 4632
+    [filename] => /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/backups-dup-lite/tmp/20201031_bikecraft_0fbfaf968c084b3a5389_20201031213126_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 4631
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 25.17MB
+ARCHIVE RUNTIME: 10.13 sec.
+MEMORY STACK: 4MB
+building installer
+add_extra_files1
+add_extra_files2
+add_extra_files3
+add_extra_files4
+Doing archive file check
+add_extra_files5
+add_extra_files6
+add_extra_files8
+Successfully opened zip /home/matheus/Área de Trabalho/Repositorios/Cursos/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms/bikecraft/app/public/wp-content/backups-dup-lite/tmp/20201031_bikecraft_0fbfaf968c084b3a5389_20201031213126_archive.zip
+Adding enhanced installer files to archive using ZipArchive
+Installer files added to archive
+Added to archive
+After ziparchive close when adding installer
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 993.95KB
+INSTALLER FILE: 61.32KB
+ARCHIVE FILE: 26.67MB 
+EXPECTED FILE/DIRECTORY COUNT: 4,632
+ACTUAL FILE/DIRECTORY COUNT: 4,631
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 12.41 sec.
+PEAK PHP MEMORY USED: 6MB
+DONE PROCESSING => 20201031_bikecraft October 31, 2020 9:31 pm
+

@@ -14,6 +14,7 @@ Version: 1.0
 @import './css/produtos.css';
 @import './css/portfolio.css';
 @import './css/contato.css';
+@import './css/blog.css';
 
 /* Estilo Wordpress */
 
@@ -156,7 +157,7 @@ img {
   color: #fff;
 }
 
-.header_menu ul li a.menu_ativo {
+.header_menu ul li.current_page_item a {
   color: #fff;
 }
 
@@ -241,6 +242,10 @@ img {
 .produtos_lista li {
   background: #fec63e;
   text-align: center;
+}
+
+.produtos_lista a {
+  color: #000;
 }
 
 .produtos_lista li img {
@@ -363,8 +368,6 @@ img {
 .quebra {
   width: 100%;
   height: 220px;
-  background: url('./img/bg-footer.jpg') no-repeat center;
-  background-size: cover;
   text-align: center;
   padding-top: 40px;
 }
