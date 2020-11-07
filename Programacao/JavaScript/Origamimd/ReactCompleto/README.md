@@ -60,3 +60,22 @@
 - [nestedRoutes](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/React-Router/Router/router#nestedRoutes)
 - [Head](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/React-Router/Router/router#head)
 - [Desafio Router](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/React-Router/desafio-router-1/desafiorouter1)
+
+**Mais React**
+
+- [PropTypes](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Mais-React#proptypes)
+- [Lazy e Suspense](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Mais-React#lazy-e-suspense)
+- [React.memo](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Mais-React#react.memo)
+- [useReducer](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Mais-React#usereducer)
+- [Classes](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamimd/ReactCompleto/Mais-React#classes)
+
+**Projeto Final - Dogs**
+
+- [Projeto Final - Dogs](https://dogs.origamid.dev/)
+- [Projeto Final - Dogs - Minha Versão](#)
+
+---
+
+**Documentação React - Origamid**
+
+[Documentação para Consulta](https://www.origamid.com/slide/react-completo)
