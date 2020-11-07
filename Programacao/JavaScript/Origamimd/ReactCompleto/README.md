@@ -72,7 +72,7 @@
 **Projeto Final - Dogs**
 
 - [Projeto Final - Dogs](https://dogs.origamid.dev/)
-- [Projeto Final - Dogs - Minha Versão](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamid/ReactCompleto/Projeto/dogs)
+- [Projeto Final - Dogs - Minha Versão](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamid/ReactCompleto/ProjetoFinal/dogs)
 
 ---
 
