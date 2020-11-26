@@ -8,7 +8,7 @@
 
 - [JavaScript ES6 - Completo](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/JavaScript-ES6-Completo) - Curso Completo de JavaScript ES6, prática intensiva das novidades do JavaScript, como por ex. const,let, desestruturação, classes, arrow funcions, fetch api, modulos, async, await, rest, spread, objetos, manipulação do dom, RegEx, etc...
 
-- [React Completo - Em andamento](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamid/ReactCompleto) - Aprender a como utilizar o React do zero para o desenvolvimento de aplicações web reativas, criação de um aplicativo web com funcionalidades parecidas com os das redes sociais como o Instagram. O foco do curso é no entendimento completo do React, com isso praticamente tudo é criado do zero, sem a dependência de pacotes externos.
+- [React Completo - Finalizado](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamid/ReactCompleto) - Aprender a como utilizar o React do zero para o desenvolvimento de aplicações web reativas, criação de um aplicativo web com funcionalidades parecidas com os das redes sociais como o Instagram. O foco do curso é no entendimento completo do React, com isso praticamente tudo é criado do zero, sem a dependência de pacotes externos.
 
 - [JavaScript e JQuery](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/JavaScript-e-Jquery) - Curso Básico de Javascript com Jquery, onde manipulamos o DOM, criando efeitos, menu mobile, slide, tabnavs etc...
 
