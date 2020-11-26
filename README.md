@@ -11,6 +11,8 @@
 - [JavaScript e JQuery](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/JavaScript-e-Jquery) - Curso Básico de Javascript com Jquery, onde manipulamos o DOM, criando efeitos, menu mobile, slide, tabnavs etc...
 - [Wordpress como CMS](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms) - Tranformar website HTML,CSS para ter o conteúdo gerenciado pelo Wordpress.
 
+___
+
 **Categoria**: Front-End
 
 - [Webdesign Completo](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/WebDesign-Completo) - Introdução ao Desenvolvimento web, do planejamento, design, até codificação utilizando html5, css3, jquery, wireframes etc...
@@ -19,6 +21,8 @@
 - [CSS com SASS](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/css-com-SASS) - Utilização do SASS para alta produtividade do CSS, criação de variaveis, mixins, loops etc...
 - [CSS Avançado Posicionamento](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/CSS-Avancado-Posicionamento) - Neste curso criamos de maneira exaustiva, 3 sites com 3 maneiras diferentes cada (9), a primeira é utilizando position, a segunda utilizando grid layout, a terceira utilizando flexbox, e por ultimo utilizando o framework Bootstrap.
 - [Bootstrap 4](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/Bootstrap-4) - Neste curso criamos um website utilizando o framework CSS Bootstrap 4, e personalizamos com SASS.
+
+___
 
 **Categoria**: Ferramentas de Automação de Tarefas
 
