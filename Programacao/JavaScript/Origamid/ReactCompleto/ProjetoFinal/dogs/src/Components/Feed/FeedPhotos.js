@@ -6,18 +6,19 @@ import Erro from '../Helper/Erro';
 import Loading from '../Helper/Loading';
 import styles from './FeedPhotos.module.css';
 
-const FeedPhotos = ({ setModalPhoto }) => {
+const FeedPhotos = ({ setModalPhoto, user, page, setInfinite }) => {
   const { data, loading, error, request } = useFetch();
 
   React.useEffect(() => {
     async function fetchPhotos() {
-      const { url, options } = PHOTOS_GET({ page: 1, total: 6, user: 0 });
-      const { response, json } = await request(url, options);
-      console.log(json);
+      const total = 3;
+      const { url, options } = PHOTOS_GET({ page, total, user });
+      const { resp, json } = await request(url, options);
+      if (resp && resp.ok && json.length < total) setInfinite(false);
     }
 
     fetchPhotos();
-  }, [request]);
+  }, [request, user, page, setInfinite]);
 
   if (error) return <Erro erro={error} />;
   if (loading) return <Loading />;

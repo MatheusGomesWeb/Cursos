@@ -52,7 +52,7 @@ input {
 }
 
 .mainContainer {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .title {
   font-family: var(--type-secound);
@@ -86,4 +86,18 @@ input {
     opacity: 1;
     transform: initial;
   }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 10rem);
+}
+
+.AppBody {
+  flex: 1;
+}
+
+.VictoryContainer {
+  height: initial !important;
 }

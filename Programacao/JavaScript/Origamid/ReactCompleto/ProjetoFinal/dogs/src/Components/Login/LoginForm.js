@@ -8,6 +8,7 @@ import Erro from '../Helper/Erro';
 import useForm from '../Hooks/useForm';
 import styles from './LoginForm.module.css';
 import stylesBtn from '../Forms/Button.module.css';
+import Head from '../Helper/Head';
 
 const LoginForm = () => {
   const username = useForm();
@@ -23,6 +24,7 @@ const LoginForm = () => {
   }
   return (
     <section className="animeLeft">
+      <Head title="Login" />
       <h1 className="title">Login</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />
@@ -32,7 +34,7 @@ const LoginForm = () => {
         ) : (
           <Button>Entrar</Button>
         )}
-        <Erro error={error} />
+        <Erro error={error && 'Dados incorretos.'} />
       </form>
       <Link className={styles.perdeu} to="/login/perdeu">
         Perdeu a Senha?
