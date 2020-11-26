@@ -1,4 +1,4 @@
-# Curso de React Completo - [Origamid](https://www.origamid.com/curso/react-completo/) - Em andamento
+# Curso de React Completo - [Origamid](https://www.origamid.com/curso/react-completo/) - Finalizado
 
 **Modulos**
 
@@ -72,7 +72,6 @@
 **Projeto Final - Dogs**
 
 - [Projeto Final - Dogs](https://dogs.origamid.dev/)
-- [Projeto Final - Dogs - Minha Versão](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/JavaScript/Origamid/ReactCompleto/ProjetoFinal/dogs)
 
 ---
 
