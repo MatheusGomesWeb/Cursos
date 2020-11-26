@@ -1,4 +1,3 @@
-
 # Slide
 
 Anime a entrada de elementos utilizando a propriedade animation
@@ -63,7 +62,7 @@ const Slide = ({ slides }) => {
       <div
         ref={contentRef}
         className={styles.content}
-        style={{ transform: `translateX(${position}px)` }}
+        style={{ transform: 'translateX(${position}px)' }}
       >
         {slides.map((slide) => (
           <div key={slide.id} className={styles.item}>
