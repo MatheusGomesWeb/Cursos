@@ -15,6 +15,7 @@ ___
 
 **Categoria**: Front-End
 
+- [UI Design Avançado]() - Desenhar Interfaces Web, mantendo um padrâo de Cores, Tipografia, Espaçamento, Grid, elementos Web e mais. Utilizando qualquer ferramenta de prototipagem como Figna, Adobe XD etc...
 - [Webdesign Completo](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/WebDesign-Completo) - Introdução ao Desenvolvimento web, do planejamento, design, até codificação utilizando html5, css3, jquery, wireframes etc...
 - [CSS com Flexbox](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/CSS-com-Flexbox/FlexBlog) - Uso da propriedade display: flex do css para posicionar os elementos e criar layouts completamente alinhados em qualquer tipo de tela.
 - [CSS com Grid Layout](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/CSS-com-Grid-layout) - Uso da propriedade display: grid, para criar layouts complexos e responsivos com facilidade.
