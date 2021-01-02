@@ -15,7 +15,7 @@ ___
 **Categoria**: Wordpress
 
 - [Wordpress como CMS](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms) - Tranformar website HTML,CSS para ter o conteúdo gerenciado pelo Wordpress.
-- [Wordpress Rest API DOGS](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/Wordpress-como-cms) - Utilização do Wordpress para a criação de API Rest e endpoints customizados e específicos para o projeto do curso de React Completo. Apenas um plugin foi utilizado para permitir a autenticação de usuários utilizando JSON Web Tokens.
+- [Wordpress Rest API DOGS](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/Wordpress/Origamid/wordpress-rest-api-dogs) - Utilização do Wordpress para a criação de API Rest e endpoints customizados e específicos para o projeto do curso de React Completo. Apenas um plugin foi utilizado para permitir a autenticação de usuários utilizando JSON Web Tokens.
 
 ___
 
