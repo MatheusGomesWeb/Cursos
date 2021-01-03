@@ -321,7 +321,7 @@ Deste forma, as tuplas (registros) serão sempre distintas.
 
 Os valores de chave primária também não podem ser nulos.
 
-#### Integridade Definida pelo Usuário
+#### Integridade Definida pelo Usuario
 
 Diz respeito as regras de negócio específicas que são definidas pelo usuário do banco de dados.
 
