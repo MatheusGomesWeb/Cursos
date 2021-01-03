@@ -30,8 +30,11 @@
   - [Integridade de Vazio](#integridade-de-vazio)
   - [Integridade de Chave](#integridade-de-chave)
   - [Integridade definida pelo Usuário](#integridade-definida-pelo-usuario)
-  
-  
+- [Normalização](#normalizacao)
+  - [Primeira Forma Normal - 1FN](#)
+  - [Segunda Forma Normal - 2FN](#)
+  - [Terceira Forma Normal - 3FN](#)
+  - [Forma Normal de Boyce-Codd - FNBC](#)
 
 ## Conceitos de Bancos de Dados
 
@@ -326,3 +329,18 @@ Os valores de chave primária também não podem ser nulos.
 Diz respeito as regras de negócio específicas que são definidas pelo usuário do banco de dados.
 
 Por exemplo, pode-se definir que uma coluna somente aceitará um conjunto restrito de valores.
+
+---
+
+### Normalizacao
+
+- O processo de normalização, proposto por Codd em 1972, aplica a um esquema de relação uma serie de testes para certificar que ele satisfaça uma Forma Normal (FN).
+- Codd propos originalmente 3 formas normais: 1FN, 2FN, 3FN.
+- Posteriormente, a 3FN foi revisada e uma definição mais robusta foi proposta por Boyce e Codd, denominada Forma Normal de Boyce-Codd (FNBC).
+
+- Normalização consiste em um processo de análise de uma relação para assegurar que seja bem formada.
+- Decompor relações com anomalias para produzir relações menores e bem-estruturadas.
+
+Ou seja, em uma relação normalizada podemos inserir, excluir ou modificar registros sem criar anomalias.
+
+**Obs**: O ideal é que o projeto do banco de dados relacional alcance a FNBC ou a 3FN para cada tabela. Não é adequado normalizar apenas até a 1FN ou á 2FN, pois na verdade essas formas normais são usadas para se chegar á 3FN ou FNBC.
