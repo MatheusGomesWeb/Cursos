@@ -24,6 +24,14 @@
   - [Relacionamento Binário Um para Um (1,1)](#relacionamento-binario-um-para-um)
   - [Relacionamento Binário Um para Muitos (1,N)](#relacionamento-binario-um-para-muitos)
   - [Relacionamento Binário Muitos para Muitos (N,M)](#relacionamento-binario-muitos-para-muitos)
+- [Restrições e Integridade de dados](#restricoes-e-integridade-de-dados)
+  - [Integridade Referencial](#integridade-referencial)
+  - [Integridade de Domínio](#integridade-de-dominio)
+  - [Integridade de Vazio](#integridade-de-vazio)
+  - [Integridade de Chave](#integridade-de-chave)
+  - [Integridade definida pelo Usuário](#integridade-definida-pelo-usuario)
+  
+  
 
 ## Conceitos de Bancos de Dados
 
@@ -281,7 +289,7 @@ Assegura que valores de uma coluna em uma tabela são válidos baseados nos valo
 
 Ex: Se um produto de ID 532 foi cadastrado em uma tabela de Vendas, então um produto com ID 523 deve existir na tabela de Produtos relacionada.
 
-#### Integridade de Domínio
+#### Integridade de Dominio
 
 Valores inseridos em uma coluna devem sempre obedecer á definição dos valores que são permitidos para essa coluna.
 
