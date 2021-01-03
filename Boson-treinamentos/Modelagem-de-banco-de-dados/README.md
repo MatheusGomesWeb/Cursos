@@ -266,3 +266,55 @@ Ex: (1, N) - no mínimo um no maximo N (muitos)
 #### Relacionamento Binario Muitos para Muitos
 
 - **N:M**: Muitas instâncias em uma entidade estão relacionadas a muitas instâncias de entidade em outra entidade.
+
+---
+
+### Restricoes e integridade de dados
+
+Manutenção e garantia da consistência e precisão dos dados, sendo um aspecto crítico no design, implementação e uso de sistemas de armazenamento de dados.
+
+A integrigade é atingida por meio da aplicação de **Restrições de Integridade**
+
+#### Integridade Referencial
+
+Assegura que valores de uma coluna em uma tabela são válidos baseados nos valores em uma outra tabela relacionada.
+
+Ex: Se um produto de ID 532 foi cadastrado em uma tabela de Vendas, então um produto com ID 523 deve existir na tabela de Produtos relacionada.
+
+#### Integridade de Domínio
+
+Valores inseridos em uma coluna devem sempre obedecer á definição dos valores que são permitidos para essa coluna.
+
+Ex: em uma coluna que armazena preços de mercadorias, os valores admitidos são do domínio número - ou seja, apenas números.
+
+#### Integridade de Vazio
+
+Informa se a coluna é obrigatória ou opcional - ou seja, se é possível não inserir um valor na coluna.
+
+Uma coluna de chave primária, por exemplo, sempre deve ter dados inseridos, e nunca pode estar vazia, para nenhum registro.
+
+**Valores NULL**
+
+Um valor NULL significa que não existem dados. É diferente de zero, espaço, string vazia ou tabulação.
+
+Os nulos podem ser problemáticos, pois indicam:
+
+- O valor da coluna não é apropriado.
+- O valor não foi inserido.
+- O valor é desconhecido.
+
+Ex: Nem todo aluno possui telefone, portando este campo não é obrigatório (atributo NULL).
+
+#### Integridade de Chave
+
+Os valores inseridos na coluna de chave primária (PK) devem ser sempre únicos, não admitindo-se repetições nesses valores.
+
+Deste forma, as tuplas (registros) serão sempre distintas.
+
+Os valores de chave primária também não podem ser nulos.
+
+#### Integridade Definida pelo Usuário
+
+Diz respeito as regras de negócio específicas que são definidas pelo usuário do banco de dados.
+
+Por exemplo, pode-se definir que uma coluna somente aceitará um conjunto restrito de valores.
