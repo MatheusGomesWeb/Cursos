@@ -31,10 +31,10 @@
   - [Integridade de Chave](#integridade-de-chave)
   - [Integridade definida pelo Usuário](#integridade-definida-pelo-usuario)
 - [Normalização](#normalizacao)
-  - [Primeira Forma Normal - 1FN](#)
-  - [Segunda Forma Normal - 2FN](#)
-  - [Terceira Forma Normal - 3FN](#)
-  - [Forma Normal de Boyce-Codd - FNBC](#)
+  - [Primeira Forma Normal - 1FN](#primeira-forma-normal-1fn)
+  - [Segunda Forma Normal - 2FN](#segunda-forma-normal-2fn)
+  - [Terceira Forma Normal - 3FN](#terceira-forma-normal-3fn)
+  - [Forma Normal de Boyce-Codd - FNBC](#forma-normal-de-boyce-codd)
 
 ## Conceitos de Bancos de Dados
 
@@ -344,3 +344,63 @@ Por exemplo, pode-se definir que uma coluna somente aceitará um conjunto restri
 Ou seja, em uma relação normalizada podemos inserir, excluir ou modificar registros sem criar anomalias.
 
 **Obs**: O ideal é que o projeto do banco de dados relacional alcance a FNBC ou a 3FN para cada tabela. Não é adequado normalizar apenas até a 1FN ou á 2FN, pois na verdade essas formas normais são usadas para se chegar á 3FN ou FNBC.
+
+#### Primeira Forma Normal 1FN
+
+Definida historicamente para reprovar atributos multivalorados, compostos e suas combinações.
+O domínio de um atributo deve incluir apenas valores atômicos (indivisíveis), e o valor de qualquer atributo em uma tupla deve ser único valor do domínio desse atributo.
+
+**Uma tabela está na Primeira Forma Normal (1FN) quando**:
+
+- Somente possui valores atômicos (campos que podem ser subdivididos em mais de um campo).
+- Não ha grupos de atributos repetidos (há apenas um dado por coluna nas linhas)
+- Existe uma chave primária
+- Relação não possui atributos multivalorados ou relações aninhadas.
+
+#### Segunda Forma Normal 2FN
+
+- Baseada no conceito de Dependência Funcional Total.
+- Um esquema de relação R está na 2FN se cada atributo não-chave de R for total e funcionalmente dependente da PK de R.
+- Para testar a 2FN, testamos as dependências funcionais cujos atributos fazem parte da chave primária.
+- Caso a PK tenha um único atributo, esse teste não precisa ser aplicado.
+
+**Uma tabela está na Segunda Forma Normal (2FN) quando**:
+
+- Está na 1ªFN
+- Todos os atributos não-chave são funcionalmente dependentes de todas as partes da chave primária.
+- Não existem dependências parciais.
+- Caso contrário, deve-se gerar uma nova tabela com os dados.
+
+#### Terceira Forma Normal 3FN
+
+- Baseada no conceito de Dependência Transitiva
+- A relação não deve ter um atributo não-chave determinado funcionalmente por outro atributo não-chave (ou conjunto).
+- Não deve haver dependência transitiva de um atributo não-chave sobre a PK.
+- Deve-se decompor e montar uma nova relação que inclua os atributos não-chave que determinam funcionalmente outros atributos não-chave.
+
+**Uma tabela está na Terceira Forma Normal (3FN) quando**:
+
+- Estiver na 2FN
+- Não existirem dependências transitivas
+- Uma tabela está na Terceira Forma Normal se ela estiver na segunda forma normal e se nenhuma coluna não-chave depender de outra coluna não-chave.
+
+Uma dependência transitiva em uma tabela é uma dependência funcional entre dois ou mais atributos não-chave.
+
+**Passos para Normalização, Resumo**:
+
+- Tabela Não Normalizada
+- Remover atributos multivalorados e compostos (1FN)
+- Remover Dependências Parciais (2FN)
+- Remover Dependências Transitivs (3FN)
+
+#### Forma Normal de Boyce Codd
+
+A definição original da 3FN de Codd não lidava adequadamente com uma relação que:
+
+- Tivesse duas ou mais chaves canditadas.
+- Essas chaves candidatas fossem compostas
+- Elas tivessem superposição (atributos em comum)
+
+Caso a combinação das condiçôes acima não ocorra em uma tabela, basta aplicar a 3FN.
+
+Uma relação está em FNBC se e somente se os únicos determinantes são chaves candidatas.
