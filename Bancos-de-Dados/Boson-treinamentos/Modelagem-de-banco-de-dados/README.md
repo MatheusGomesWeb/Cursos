@@ -35,6 +35,13 @@
   - [Segunda Forma Normal - 2FN](#segunda-forma-normal-2fn)
   - [Terceira Forma Normal - 3FN](#terceira-forma-normal-3fn)
   - [Forma Normal de Boyce-Codd - FNBC](#forma-normal-de-boyce-codd)
+- [Projeto Prático](#projeto-pratico)
+  - [Apresentação](#apresentacao)
+  - [Fases do Projeto](#fases-do-projeto)
+  - [Regras de Negócio](#regras-de-negocio)
+  - [Identificando Entidade](#identificando-entidades)
+  - [Identificando Relacionamentos](#identificando-relacionamentos)
+  - [Identificando Atributos](#identificando-atributos)
 
 ## Conceitos de Bancos de Dados
 
@@ -404,3 +411,110 @@ A definição original da 3FN de Codd não lidava adequadamente com uma relaçã
 Caso a combinação das condiçôes acima não ocorra em uma tabela, basta aplicar a 3FN.
 
 Uma relação está em FNBC se e somente se os únicos determinantes são chaves candidatas.
+
+---
+
+### Projeto Pratico
+
+#### Apresentacao
+
+Banco de dados para Gerenciamento de uma Faculdade.
+
+**Objetivos do Banco de dados**
+
+- Realizar controle centralizado de alunos, professores, cursos, disciplinas, histórico escolar e turmas.
+
+#### Fases do Projeto
+
+- Levantamento dos Requisitos
+- Identificação de Entidades e Relacionamentos
+- Modelo E-R
+- Diagrama E-R
+- Dicionário de dados
+- Normalização
+- Implementação
+- Testes básicos
+
+#### Regras de negocio
+
+- Um aluno só pode estar matriculado em um curso por vez
+- Alunos possuem um código de identificação (RA)
+- Cursos são compostos por disciplinas
+- Cada disciplina terá no maximo 30 alunos por turma.
+- As disciplinas podem ser obrigatórias ou optativas, dependendo do curso
+- As disciplinas pertencem a departamentos específicos
+- Cada disciplina possui um código de identificação
+- Alunos podem trancar matrícula, não estando então matriculados em nenhuma disciplina no semestre
+- Em cada semeste, cada aluno pode se matricular em no máximo 9 disciplinas
+- O aluno só pode ser reprovado no máximo 3 vezes na mesma disciplina.
+- A faculdade terá no máximo 3.000 alunos matriculados simultâneamente, em 10 cursos distintos.
+- Entram 300 alunos novos por ano.
+- Existem 90 disciplinas no total disponíveis.
+- Um Histórico Escolar traz todas as disciplinas cursadas por um aluno, incluindo nota final, frequência e período do curso realizado.
+- Professores podem ser cadastrados mesmo sem lecionar disciplinas
+- Existem 40 professores trabalhando na escola.
+- Cada professor irá lecionar no máximo 4 disciplinas diferentes
+- Cada professor é vinculado a um departamento
+- Professores são identificados por um código de professor.
+
+#### Identificando Entidades
+
+- Aluno
+- Professor
+- Disciplina
+- Curso
+- Departamento
+
+#### Identificando Relacionamentos
+
+- Aluno está matriculado em curso
+- Aluno cursa disciplina
+- Aluno realizou disciplina
+- Disciplina pertence a curso
+- Professor ministra disciplina
+- Professor pertence a departamento
+- Departamento é responsável por disciplina
+- Departamento controla curso
+- Disciplina depende de disciplina
+
+#### Identificando Atributos
+
+**Professor**
+
+- Código do professor
+- Nome
+- Sobrenome
+- Código do departamento
+
+**Aluno**
+
+- Número de matrícula
+- Nome
+- Sobrenome
+- Endereço
+  - Rua
+  - Número
+  - Bairro
+  - Cep
+  - Cidade
+  - Estado
+- Código do curso
+
+**Disciplina**
+
+- Código da disciplina
+- Nome da disciplina
+- Descrição curricular
+- Código do departamento
+- Número de alunos
+
+**Curso**
+
+- Código do curso
+- Nome do curso
+- Código do Departamento
+
+**Departamento**
+
+- Código do departamento
+- Nome do departamento
