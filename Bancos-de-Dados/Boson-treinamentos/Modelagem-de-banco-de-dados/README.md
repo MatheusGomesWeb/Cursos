@@ -42,6 +42,8 @@
   - [Identificando Entidade](#identificando-entidades)
   - [Identificando Relacionamentos](#identificando-relacionamentos)
   - [Identificando Atributos](#identificando-atributos)
+- [12 Dicas e Boas Praticas na Modelagem de Dados](#12-dicas-e-boas-praticas-na-modelagem-de-dados)
+- [Dica Bonus Programacao SQL](#dica-bonus-programacao-sql)
 
 ## Conceitos de Bancos de Dados
 
@@ -518,3 +520,91 @@ Banco de dados para Gerenciamento de uma Faculdade.
 
 - Código do departamento
 - Nome do departamento
+
+---
+
+### 12 Dicas e Boas Praticas na Modelagem de Dados
+
+1. **Nome dos Objetos**: Use apenas nomes significativos para os objetos do banco, como tabelas, colunas e procedimentos armazenados.
+
+Os nomes devem ser descritivos. Evite abreviações e siglas obscuras que possam atrapalhar a compreensão da finalidade do objeto.
+
+2. **Tipos Corretos de Dados**: Usar os menores valores possíveis, A performance do banco é melhorada se usarmos os menores valores possíveis para os dados que os requisitos permitirem.
+
+3. **Normalizar as Tabelas**: A Normalização de Dados é um princípio base dos bancos de dados relacionais, no qual os dados são organizados para minimizar ou eliminar a redundância.
+
+Normalizar até a 3FN e Desnormalizar se for necessário.
+
+4. **Usar e nomear Constraints**: Ao nomear Restrições, use prefixos que as descrevam, como por exemplo "PK" para chave primária e "FK" para chave estrangeira, seguidos do nome da tabela (ou tabelas) envolvidas.
+
+- pk_idAutor
+- fk_idEditora
+
+5. **Identificação dos Elementos do MER**: Identifique os elementos de um modelo entidade relacionamento na seguinte ordem:
+
+- Entidades Primeiro
+- Relacionamentos na sequência
+- Atributos de entidades por último
+- Atributos de relacionamentos, se houver
+
+6. **Tabelas Associativas**: Prestar sempre atenção em relacionamentos muitos-para-muitos (N:M), sempre que houver, simplificá-lo criando uma tabela associativa.
+
+7. **Relacionamentos n-ários**: Também prestar sempre muita atenção quando surgirem relacionamentos n-ários, como ternários ou quaternários.
+
+Sempre que um relacionamentos desse tipo ocorrer, simplificá-lo criando tabelas associativas.
+
+8. **Documentação**: Documentar o processo de modelagem é de crucial importância.
+
+- Criar o DER detalhado
+- Criar Dicionário de dados
+- Na codificação, usar comentários para descrever os scripts.
+
+9. **Prefixos de nomes de Objetos**: Prefixar nomes de objetos para identificar sua categoria.
+
+- tb ou tbl para tabelas
+- vw para view
+- db para banco de dados
+- sp para procedimentos armazenados
+- tg para triggers
+  etc...
+
+10. **Nomes de tabelas e colunas**: Use termos no singular para nomes de tabelas, ex: tblCliente, pois uma tabela representa uma coleção de entidades.
+
+Igualmente para atributos, ex: nomeLivro.
+
+Procure não usar acentuação, espaços e caracteres especiais !.
+
+11. **Levantamento e análise de requisitos**: Extremamente importante, saiba levantar todas as informações necessárias para o processo de modelagem.
+
+Pergunte ao máximo que puder, e anote toda informação fornecida pelo cliente / usuário. Interação sempre !
+
+Na dúvida, entre em contato com o cliente e pergunte novamente.
+
+12. **Campos de chave primária**:
+
+- Tabelas sempre devem possuir uma chave primária
+- Procura usar chaves naturais, sempre que possível
+- Entre uma chave composta ou surrogada, prefira surrogada
+- Procure usar tipos numéricos em vez de caracteres para economizar recursos e aumentar a performance de busca.
+
+---
+
+### Dica Bonus Programacao SQL
+
+A seguir, 5 dicas bônus relacionadas á programação do banco de dados usando a linguagem de consulta estruturada SQL.
+
+1 - **Usar views**: Procure usar views para ocultar a complexidade, fornecer dados agregados e restringir o acesso a linhas e colunas de tabelas.
+
+2 - **SELECT \***: Evite realizar consultar utilizando SELECT \*, a não ser que sejam realmente necessárias, o ideal é retornar apenas as colunas necessárias, isso aumentará a performance da aplicação.
+
+3 - **Campos de Senha**: Senhas sempre devem ser guardadas criptografadas usando algoritmos fortes, A Decriptação deve ocorrer na aplicação quando for necessário.
+
+4 - **Sempre usar Procedures e Views**:
+
+- Aumentam a performance em consultas.
+- Diminuem possibilidade de erros
+- Simplificam codificação da aplicação
+
+5 - **Usar índices em colunas muito consultadas**: Ìndices podem aumentar significativamente a performance de acesso em consultas, caso colunas sejam muito frequentemente acessadas.
+
+Crie índices sempre que detectar essa necessidade, mas cuidado com colunas que não são modificadas com frequência.
