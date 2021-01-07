@@ -15,16 +15,21 @@
   - [Sites em Wordpress são facilmente invadidos ?](#sites-em-wordpress-sao-facilmente-invadidos)
   - [Sites em Wordpress são otimizados para SEO ?](#sites-em-wordpress-sao-otimizados-para-seo)
   - [Sites em Wordpress são lentos e pesados ?](#sites-em-wordpress-sao-lentos-e-pesados)
+- [Ferramentas Úteis para Desenvolvedores](#ferramentas-uteis-para-desenvolvedores)
 
 ### Apresentação do Projeto do Curso
 
 - https://www.cursoemvideo.com/cursowp/manual/
+
+---
 
 ### O que e o Wordpress
 
 O Wordpress é um CMS (Content Management System - Sistema Gerênciador de Conteúdo), onde disponibiliza funções e recursos para manter e administrar sites e sistemas de maneira simples e eficiente.
 
 Hoje em dia o Wordpress pode ser considerado uma plataforma, pois tem recursos, que permite criar diversos tipos de sites, lojas virtuais e sistemas apenas instalando plugins e temas.
+
+---
 
 ### Evolucao do Wordpress
 
@@ -33,6 +38,8 @@ Hoje em dia o Wordpress pode ser considerado uma plataforma, pois tem recursos, 
 - 2010 os direitos do Wordpress foi passado para a Wordpress Foundation, e foi o começo do wordpress com cara de software livre.
 - 2015 foi incorparada a API REST, tornando o wordpress mais personalizavel.
 - 2018 o wordpress lançou o editor de blocos chamado de **Guttenberg**.
+
+---
 
 ### Mitos e Verdades sobre o Wordpress
 
@@ -59,3 +66,16 @@ O Wordpress é leve e rápido, porém muitos desenvolvedores instalam ferramenta
 È importante também tomar cuidado com tamanho de imagens, usar sempre tamanhos adequados para as diferentes situações
 
 Uma ótima ferramenta para melhorar a performance é a utilização de plugins de CACHE ou CDNS.
+
+---
+
+## Ferramentas Uteis para Desenvolvedores
+
+- **FileZilla**: Ferramenta cliente FTP para transferir arquivos para o seu servidor.
+- **Putty**: Ferramenta de SSH para acesso remoto ao seu servidor.
+- **ColorZilla**: Ferramenta para capturar cores em sites. Muito útil para manter a identidade de um site.
+- **Fontface Ninja**: Ferramenta para identificar fontes usadas em sites.
+- **Notepad++**: Editor de código bem leve e eficiente, incluindo um cliente FTP.
+- **XAMPP**: Pacote que inclui o Apache + Mysql/MariaDB, PHP e PHPMyAdmin. Crie um servidor na sua própria casa.
+
+---
