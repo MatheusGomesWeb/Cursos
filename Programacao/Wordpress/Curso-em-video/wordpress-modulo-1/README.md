@@ -24,3 +24,6 @@ Hoje em dia o Wordpress pode ser considerado uma plataforma, pois tem recursos, 
 
 - Em 2001 Michel Voldrighi criou uma ferramenta chamada B2, que foi muito utilizado até 2003 para criação de Blogs.
 - Em 2003, dois integrantes da equipe (Matt Mullenweg e Mike Little) do B2 resolveram melhorar o B2 e através de um Fork dele, criaram outra ferramenta chamada **Wordpress**.
+- 2010 os direitos do Wordpress foi passado para a Wordpress Foundation, e foi o começo do wordpress com cara de software livre.
+- 2015 foi incorparada a API REST, tornando o wordpress mais personalizavel.
+- 2018 o wordpress lançou o editor de blocos chamado de **Guttenberg**.
