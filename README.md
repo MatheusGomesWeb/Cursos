@@ -39,4 +39,4 @@ ___
 
 **Categoria**: Wordpress
 
-- [Wordpress Módulo - 01](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/Wordpress/Curso-em-video/wordpress-modulo-1) - Criação de sites de forma profissional utilizando plugins e temas gratuitos e mostrando como definir paletas de cores, fontes, imagens de qualidade e mais.
+- [Wordpress Módulo 1](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/Wordpress/Curso-em-video/wordpress-modulo-1) - Criação de sites de forma profissional utilizando plugins e temas gratuitos e mostrando como definir paletas de cores, fontes, imagens de qualidade e mais.
