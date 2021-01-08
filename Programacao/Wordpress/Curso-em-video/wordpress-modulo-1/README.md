@@ -20,6 +20,7 @@
   - [Temas](#temas)
   - [Plugins](#plugins)
   - [Dicas Importantes](#dicas-importantes)
+- [Configurações Importantes](#configuracoes-importantes)
 
 ### Apresentação do Projeto do Curso
 
@@ -106,3 +107,23 @@ Uma ótima ferramenta para melhorar a performance é a utilização de plugins d
 - Sempre manter os plugins e temas atualizados.
 
 **Resolvendo Conflito editor**: Editor de bloco, permitir trocar o editor padrão.
+
+---
+
+## Configuracoes Importantes
+
+**Configurações -> opção**
+
+- **Título e Descrição do Site**
+- **Protocolo HTTPS na URL**
+- **Endereço de Email geral do site**
+- **Idioma do Site**
+- **Fuso Horário**
+- **Formato de Data e Hora**
+- **URL do Painel Login Admin Personalizado (WPHide Login)**
+- **Endereço de Email para envio de emails e configurações de email**
+- **Editor padrão e formatos de post**
+
+ler todas as configurações e selecionar oque desejar.
+
+---
