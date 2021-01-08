@@ -2,7 +2,7 @@
 
 **Clique no Curso** para visualizar o Projeto Final, e visualizar todo o conteudo que foi adquirido no Curso.
 
-## Cursos de Programação Web - Escola: Origamid
+## Escola: Origamid
 
 **Categoria**: JavaScript
 
@@ -32,3 +32,11 @@
 **Categoria**: Ferramentas de Automação de Tarefas
 
 - [Automação Front End com NPM](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/FrontEnd/Cursos-Origamid/Automacao-FrontEnd-com-NPM) - Automatizar Tarefas utilizando o **Gulp** para Minificar, Converter JavaScript moderno para JavaScript suportado por Browsers Antigos, Agrupar arquivos, reduzir tamanho de imagens, emular um servidor com LiveReload e adicionar Prefixos CSS para Browsers antigos de forma automatica enquanto desenvolve um Projeto.
+
+___
+
+## Escola: Curso em Vídeo
+
+**Categoria**: Wordpress
+
+- [Wordpress - Módulo 1](https://github.com/MatheusGomesWeb/Cursos/tree/master/Programacao/Wordpress/Curso-em-video/wordpress-modulo-1) - Criação de sites de forma profissional utilizando plugins e temas gratuitos e mostrando como definir paletas de cores, fontes, imagens de qualidade e mais.
