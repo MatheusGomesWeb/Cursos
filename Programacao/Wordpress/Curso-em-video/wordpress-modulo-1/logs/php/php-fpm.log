@@ -1,0 +1,10 @@
+[08-Jan-2021 11:54:30] NOTICE: fpm is running, pid 21983
+[08-Jan-2021 11:54:30] NOTICE: ready to handle connections
+[08-Jan-2021 11:56:13] ERROR: Another FPM instance seems to already listen on /home/matheus/.config/Local/run/BbK3QJNUM/php/php-fpm.socket
+[08-Jan-2021 11:56:13] ERROR: FPM initialization failed
+[08-Jan-2021 11:56:13] ERROR: Another FPM instance seems to already listen on /home/matheus/.config/Local/run/BbK3QJNUM/php/php-fpm.socket
+[08-Jan-2021 11:56:13] ERROR: FPM initialization failed
+[08-Jan-2021 11:56:14] ERROR: Another FPM instance seems to already listen on /home/matheus/.config/Local/run/BbK3QJNUM/php/php-fpm.socket
+[08-Jan-2021 11:56:14] ERROR: FPM initialization failed
+[08-Jan-2021 11:56:14] ERROR: Another FPM instance seems to already listen on /home/matheus/.config/Local/run/BbK3QJNUM/php/php-fpm.socket
+[08-Jan-2021 11:56:14] ERROR: FPM initialization failed
