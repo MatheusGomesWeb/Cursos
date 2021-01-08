@@ -16,6 +16,10 @@
   - [Sites em Wordpress são otimizados para SEO ?](#sites-em-wordpress-sao-otimizados-para-seo)
   - [Sites em Wordpress são lentos e pesados ?](#sites-em-wordpress-sao-lentos-e-pesados)
 - [Ferramentas Úteis para Desenvolvedores](#ferramentas-uteis-para-desenvolvedores)
+- [Temas e Plugins utilizados no Curso](#temas-e-plugins-utilizados-no-curso)
+  - [Temas](#temas)
+  - [Plugins](#plugins)
+  - [Dicas Importantes](#dicas-importantes)
 
 ### Apresentação do Projeto do Curso
 
@@ -79,3 +83,26 @@ Uma ótima ferramenta para melhorar a performance é a utilização de plugins d
 - **XAMPP**: Pacote que inclui o Apache + Mysql/MariaDB, PHP e PHPMyAdmin. Crie um servidor na sua própria casa.
 
 ---
+
+## Temas e Plugins utilizados no Curso
+
+### Temas
+
+- Astra (Astra Child Generator)
+
+### Plugins
+
+- Microthemer Lite
+- Editor Clássico
+- Gutenberg Blocks – Ultimate Addons for Gutenberg
+- EWWW Image Optimizer
+- Contact Form by WPForms – Drag & Drop Form Builder for Wordpress (WPForms Lite)
+- WPS Hide Login
+
+### Dicas Importantes
+
+- Sempre disponibilizar os 2 editores (classico e guttenberg) para os usuários que não estão familiarizados com o novo editor, evitando muitos pedidos de suporte desnecessário.
+- Sempre remover plugins não utilizados
+- Sempre manter os plugins e temas atualizados.
+
+**Resolvendo Conflito editor**: Editor de bloco, permitir trocar o editor padrão.
