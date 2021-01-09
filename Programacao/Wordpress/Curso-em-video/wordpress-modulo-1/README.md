@@ -21,6 +21,10 @@
   - [Plugins](#plugins)
   - [Dicas Importantes](#dicas-importantes)
 - [Configurações Importantes](#configuracoes-importantes)
+- [Etapas para Iniciar o Projeto](#etapas-para-iniciar-o-projeto)
+  - [Palleta de Cores](#palleta-de-cores)
+  - [Fontes](#fontes)
+  - [Imagens Gratuitas](#imagens-gratuitas)
 
 ### Apresentação do Projeto do Curso
 
@@ -127,3 +131,22 @@ Uma ótima ferramenta para melhorar a performance é a utilização de plugins d
 ler todas as configurações e selecionar oque desejar.
 
 ---
+
+## Etapas para iniciar o projeto
+
+Dicas para definir paleta de cores, fontes e baixar imagens gratuitas
+
+### Palleta de Cores
+
+- [Collors.co](https://coolors.co/)
+- [Canva](https://www.canva.com)
+- [Color Adobe](https://color.adobe.com/pt/create/color-wheel)
+- [Color Hunt](https://colorhunt.co/)
+
+### Fontes
+
+- [Google Fonts](https://fonts.google.com/)
+
+### Imagens Gratuitas
+
+- [Unsplash](https://unsplash.com/)

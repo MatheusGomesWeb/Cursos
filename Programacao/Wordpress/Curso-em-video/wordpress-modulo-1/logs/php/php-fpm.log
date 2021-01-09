@@ -8,3 +8,5 @@
 [08-Jan-2021 11:56:14] ERROR: FPM initialization failed
 [08-Jan-2021 11:56:14] ERROR: Another FPM instance seems to already listen on /home/matheus/.config/Local/run/BbK3QJNUM/php/php-fpm.socket
 [08-Jan-2021 11:56:14] ERROR: FPM initialization failed
+[08-Jan-2021 14:46:00] NOTICE: Terminating ...
+[08-Jan-2021 14:46:00] NOTICE: exiting, bye-bye!
