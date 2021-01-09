@@ -10,3 +10,5 @@
 [08-Jan-2021 11:56:14] ERROR: FPM initialization failed
 [08-Jan-2021 14:46:00] NOTICE: Terminating ...
 [08-Jan-2021 14:46:00] NOTICE: exiting, bye-bye!
+[09-Jan-2021 11:52:35] NOTICE: fpm is running, pid 13019
+[09-Jan-2021 11:52:35] NOTICE: ready to handle connections
