@@ -16,3 +16,11 @@
 [09-Jan-2021 16:28:22] NOTICE: exiting, bye-bye!
 [10-Jan-2021 11:46:37] NOTICE: fpm is running, pid 9064
 [10-Jan-2021 11:46:37] NOTICE: ready to handle connections
+[10-Jan-2021 18:48:26] ERROR: Another FPM instance seems to already listen on /home/matheus/.config/Local/run/BbK3QJNUM/php/php-fpm.socket
+[10-Jan-2021 18:48:26] ERROR: FPM initialization failed
+[10-Jan-2021 18:48:27] ERROR: Another FPM instance seems to already listen on /home/matheus/.config/Local/run/BbK3QJNUM/php/php-fpm.socket
+[10-Jan-2021 18:48:27] ERROR: FPM initialization failed
+[10-Jan-2021 18:48:27] ERROR: Another FPM instance seems to already listen on /home/matheus/.config/Local/run/BbK3QJNUM/php/php-fpm.socket
+[10-Jan-2021 18:48:27] ERROR: FPM initialization failed
+[10-Jan-2021 18:48:28] ERROR: Another FPM instance seems to already listen on /home/matheus/.config/Local/run/BbK3QJNUM/php/php-fpm.socket
+[10-Jan-2021 18:48:28] ERROR: FPM initialization failed
