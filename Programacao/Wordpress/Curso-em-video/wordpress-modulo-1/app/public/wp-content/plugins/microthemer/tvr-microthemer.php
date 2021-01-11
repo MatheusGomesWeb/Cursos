@@ -5,7 +5,7 @@ Plugin URI: https://themeover.com/microthemer
 Text Domain: microthemer
 Domain Path: /languages
 Description: Microthemer is a feature-rich visual design plugin for customizing the appearance of ANY WordPress Theme or Plugin Content (e.g. posts, pages, contact forms, headers, footers, sidebars) down to the smallest detail. For CSS coders, Microthemer is a proficiency tool that allows them to rapidly restyle a WordPress theme or plugin. For non-coders, Microthemer's intuitive point and click editing opens the door to advanced theme and plugin customization.
-Version: 6.3.5.0
+Version: 6.3.5.2
 Author: Themeover
 Author URI: https://themeover.com
 */
@@ -318,7 +318,7 @@ if ( is_admin() ) {
 		// define
 		class tvr_microthemer_admin {
 
-			var $version = '6.3.5.0';
+			var $version = '6.3.5.2';
 			var $db_chg_in_ver = '6.0.6.5';
 
 			var $locale = ''; // current language
@@ -1828,7 +1828,7 @@ if ( is_admin() ) {
 					}
 
 					// Run pre-wordPress 5.6 jQuery and jQuery UI (temp fix to give me time to update MT)
-					$runLegacyJquery = true;
+					$runLegacyJquery = false;
 
 					// jQuery UI scripts
 					$jqueryUIScripts = array(
@@ -1857,16 +1857,16 @@ if ( is_admin() ) {
 								: false,
 							//'footer' => true
 						),
-						array(
+						/*array(
 							'h' => 'jquery-migrate',
 							'dep' => 'jquery',
 							'alwaysInc' => 1,
 							'dequeue' => $runLegacyJquery,
-							'f' => $runLegacyJquery
+							'f' => ($runLegacyJquery)
 								? '../js-min/legacy-jquery/jquery-migrate-1.4.1-wp.js'
 								: false,
 							//'footer' => true
-						)
+						)*/
 					);
 
 					$prevScript = false;
@@ -1933,14 +1933,13 @@ if ( is_admin() ) {
 						array('h' => 'tvr_gridstack', 'f' => 'lib/gridstack/gridstack.js'),
 						array('h' => 'tvr_gridstack_ui', 'f' => 'lib/gridstack/gridstack.jQueryUI.js'),
 						array('h' => 'tvr_extend_regexp', 'f' => 'lib/extend-native-regexp.js'),
-						array('h' => 'tvr_mcth_colorbox', 'f' => 'lib/colorbox/1.3.19/jquery.colorbox-min.js'),
+						array('h' => 'tvr_mcth_colorbox', 'f' => 'lib/colorbox/1.6.4/jquery.colorbox-min.js'),
 						array('h' => 'tvr_spectrum', 'f' => 'lib/colorpicker/mt-spectrum.js', 'dep' => array( 'jquery' )),
 
 						// https://github.com/beautify-web/js-beautify
 						array('h' => 'tvr_html_beautify', 'f' => 'lib/beautify-html.min.js'),
 						array('h' => 'tvr_sprintf', 'f' => 'lib/sprintf/sprintf.min.js'),
 						array('h' => 'tvr_parser', 'f' => 'lib/parser.js'),
-						//array('h' => 'tvr_scss_parser', 'f' => 'lib/scss-parser.js'), // unreliable
 						//array('h' => 'tvr_ast_query', 'f' => 'lib/query-ast.js'), // doesn't play well with gonz
 						array('h' => 'tvr_scss_parser', 'f' => 'lib/gonzales.js'),
 						array('h' => 'tvr_cssutilities', 'f' => 'lib/mt-cssutilities.js'),
@@ -12140,7 +12139,7 @@ if (!is_admin()) {
 			var $preferencesName = 'preferences_themer_loader';
 			// @var array $preferences Stores the ui options for this plugin
 			var $preferences = array();
-			var $version = '6.3.5.0';
+			var $version = '6.3.5.2';
 			var $microthemeruipage = 'tvr-microthemer.php';
 			var $file_stub = '';
 			var $min_stub = '';

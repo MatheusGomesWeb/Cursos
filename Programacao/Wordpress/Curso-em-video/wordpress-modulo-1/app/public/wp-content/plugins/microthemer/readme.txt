@@ -101,7 +101,13 @@ Microthemer has built-in documentation! Just click the Help option (top right of
 
 == Changelog ==
 
-= 6.3.5.0 (February 2nd, 2021) =
+= 6.3.5.2 (January 11th, 2020) =
+
+# Bugs fixed
+* Removed deprecated jQuery functions that are not compatible with the native version of jQuery that ships with WordPress 5.6 and later.
+* Using the icons in the CSS property menus (e.g. clear/save) triggered focus on the current value.
+
+= 6.3.5.0 (January 2nd, 2020) =
 
 # Change
 * Updated the Sass compiler to the latest version.

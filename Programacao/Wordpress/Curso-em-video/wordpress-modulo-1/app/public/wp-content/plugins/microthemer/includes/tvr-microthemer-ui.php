@@ -5,14 +5,6 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) {
 	die('Please do not call this page directly.');
 }
 
-
-/*if (method_exists('Elementor\Core\Responsive\Responsive', 'get_breakpoints')){
-	$this->show_me = '<pre>'.print_r(Elementor\Core\Responsive\Responsive::get_breakpoints(), true). '</pre>';
-}*/
-/*$this->show_me = '<pre>'.print_r($this->strip_preview_params('http://fonts.themeover.com/about/?elementor-preview=55&ver=1531395726'), true). '</pre>';*/
-//$this->show_me = 'result: ' . $this->is_time_prop('animation_duration');
-
-/*$item = &$this->get_or_update_item($this->preferences['my_props']['sug_values']['background_image']['recent'], array('trail' => array($key), 'action' => 'get', 'data' => array('cows')));*/
 /*global $media_queries_list_above, $media_queries_list;
 $this->show_me = '<pre>$media_queries_list: '.print_r($this->oxygen_mqs, true). '</pre>' .
                  '<pre>$media_queries_list_above: '.print_r($media_queries_list_above, true). '</pre>';*/
@@ -24,56 +16,6 @@ if ($debug_unlock){
 	$this->show_me.= 'buyer_email: ' . $this->preferences['buyer_email'] . '<br />';
 	$this->show_me.= 'retro_sub_check_done: ' . $this->preferences['retro_sub_check_done'] . '<br />';
 }
-
-/*$px_value = '10px';
-preg_match('/(px|em)$/', $px_value, $unit_match);
-//$this->show_me = '$pattern_match' . print_r($unit_match, true);
-$this->show_me = preg_replace('/'.$unit_match[1].'$/', '', $px_value);*/
-//$pattern_match = preg_replace('/(px|em)$/', '', '10px');
-
-/*$this->log(
-	esc_html__('The cur $this->preferences', 'microthemer'),
-	'<pre>' . $this->preferences['manual_recompile_all_css']. '</pre>',
-	'notice'
-);*/
-
-/*preg_match_all("/(?<!^)(\n)[^}]/", ".comment-content p {
-	font-family: Tahoma;
-	line-height: 1.8;
-	font-weight: 200;
-	min-width: 100%;
-	max-width: 50%;
-}", $matches);
-$this->show_me = 'Yooorr' . print_r($matches, true);*/
-
-//$this->show_me = $this->adjust_unix_timestamp_for_local(time());
-
-//$this->do_data_conversions_for_speed();
-
-/*$this->apply_save_package([[
-                'trail' => ['non_section', 'meta', 'animations'],
-                'action'=> 'replace',
-                'data'=> 'purple cow'
-            ]], $this->options);
-$this->show_me.= '<pre>hello there'.print_r($this->options['non_section']['meta'], true). '</pre>';*/
-//$inner_item = $this->checkObject($this->options, ['non_section', 'meta', 'last_viewed_selector']);
-//$this->show_me = '<pre>'.print_r($inner_item, true). '</pre>';
-
-// test root_rel
-//$this->root_rel_old($this->site_url.'/wp-content/uploads/2015/08/logo-arcobaleno96-tablet-ph.gif', false, true, true);
-//$this->root_rel($this->site_url.'/wp-content/uploads/2015/08/logo-arcobaleno96-tablet-ph.gif', false, true, true);
-
-//$this->show_me = 'eval? ' . $this->is_single_keyword(0);
-
-/*$item = &$this->get_or_update_item($this->options,
-array('trail' =>
-  array('general', 'this', 'cabbage'),
-  'action' => 'get')
-);
-$this->show_me = '$item ' . $item;*/
-/*$test =  array('general', 'this', 'cabbage');
-unset($test[1]);
-$this->show_me = print_r($test, true);*/
 
 // is edge mode active?
 if ($this->edge_mode['available'] and !empty($this->preferences['edge_mode'])){

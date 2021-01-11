@@ -1,0 +1,15 @@
+/*  MICROTHEMER STYLES  */
+
+
+/*= General =================== */
+
+/** General >> Titulo cardápio preço em linha **/
+#post-6 .cardapio_home .uagb-rm__title-wrap {
+	width: 250px !important;
+}
+
+/** General >> Cardapio home preço **/
+#post-6 .cardapio_home .uagb-rm__price {
+	width: 100px !important;
+}
+
