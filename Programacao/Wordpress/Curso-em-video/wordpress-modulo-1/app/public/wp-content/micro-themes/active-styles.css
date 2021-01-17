@@ -13,3 +13,20 @@
 	width: 100px !important;
 }
 
+/** General >> Footer **/
+#colophon .ast-footer-overlay {
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
+}
+
+/** General >> menu cardapio **/
+#menu-item-19 > .menu-link {
+	color: white !important;
+	background-color: rgb(255, 136, 0) !important;
+	height: 45px !important;
+	border-radius: 22.5px !important;
+}
+#menu-item-19 > .menu-link:hover {
+	background-color: black !important;
+}
+
