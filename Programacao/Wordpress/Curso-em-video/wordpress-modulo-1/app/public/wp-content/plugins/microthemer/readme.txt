@@ -101,6 +101,11 @@ Microthemer has built-in documentation! Just click the Help option (top right of
 
 == Changelog ==
 
+= 6.3.5.3 (January 15th, 2020) =
+
+# Bugs fixed
+* Tooltips had very low opacity.
+
 = 6.3.5.2 (January 11th, 2020) =
 
 # Bugs fixed
