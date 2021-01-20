@@ -25,19 +25,10 @@
     - [DEFAULT](#default)
   - [Tipos de Dados](#tipos-de-dados)
   - [Grupos de Comandos](#grupos-de-comandos)
-    - [DDL - Data Definition Language](#ddl)
-      - [Criar Banco de dados](#criar-banco-de-dados)
-      - [Excluir Banco de dados](#excluir-banco-de-dados)
-      - [Listar Bancos de dados](#listar-bancos-de-dados)
-      - [Selecionar Banco de dados](#selecionar-banco-de-dados)
-      - [Mostrar Banco de dados selecionado](#mostrar-banco-de-dados-selecionado)
-      - [Mostrar Tabelas](#mostrar-tabelas)
-      - [Criar Tabelas](#criar-tabelas)
-    - [DML - Data Manipulation Language](#dml)
-      - [Inserir Registros](#inserir-registros)
-    - [DCL - Data Control Language](#dcl)
-    - [DQL - Data Query Language](#dql)
-      - [Selecionar Registros](#selecionar-registros)
+    - [DDL - Data Definition Language - CREATE, ALTER, DROP](#ddl)
+    - [DML - Data Manipulation Language - INSERT, UPDATE, DELETE](#dml)
+    - [DCL - Data Control Language - GRANT, REVOKE](#dcl)
+    - [DQL - Data Query Language - SELECT](#dql)
 
 ---
 
@@ -161,75 +152,6 @@ GRANT ALL PRIVILEGES ON banco_teste.* TO root@localhost
 - Permite a criação de visões (exibições), Stored Procedures e Funçôes em um banco de dados.
 - Permite configurar permissôes de acesso em tabelas, procedimentos e visôes.
 
-### Grupos de Comandos
-
-Os comandos SQL podem ser divididos em quatro grupos principais:
-
-#### DDL
-
-**Comandos DDL (Data Definition Language)**
-
-- **CREATE**: Cria uma nova tabela, visão ou outro objeto no banco de dados.
-- **ALTER**: Modifica um objeto existente no banco de dados, como uma tabela.
-- **DROP**: Exclui uma tabela inteira, uma exibição de uma tabela ou outro objeto no banco de dados.
-
-#### Criar Banco de dados
-
-```
-CREATE DATABASE nome_banco;
-
-// (opcional) - Verifica se o banco ja existe (não é possível ter 2 bancos de dados iguais)
-CREATE DATABASE [IF NOT EXISTS] nome_banco;
-```
-
-#### Excluir Banco de dados
-
-```
-DROP DATABASE nome_banco;
-
-// opcional
-DROP DATABASE [IF EXISTS]
-```
-
-#### Listar Bancos de dados
-
-```
-SHOW DATABASES;
-```
-
-#### SELECIONAR Banco de dados
-
-```
-USE DATABASE nome_db;
-```
-
-#### Mostar Banco de dados selecionado
-
-```
-SELECT DATABASE();
-```
-
----
-
-#### Mostrar tabelas
-
-```
-SHOW TABLES;
-```
-
-#### Criar tabelas
-
-```
-// IF NOT EXISTS é opcional
-CREATE TABLE IF NOT EXISTS nome_tabela(
-  id_livro INT AUTO_INCREMENT PRIMARY KEY,
-  nome_livro VARCHAR(50) NOT NULL,
-  data_pub DATE NOT NULL,
-  preco_livro DECIMAL NOT NULL,
-  FOREIGN KEY (data_pub) REFERENCES livro(cod_livro)
-);
-```
-
 #### Sql Constraints ou Restricoes
 
 ##### AUTO INCREMENT
@@ -285,38 +207,3 @@ CREATE TABLE IF NOT EXISTS nome_tabela(
 - YEAR: Ano nos formatos de 2 a 4 digitos.
 
 ---
-
-#### DML
-
-**Comandos DML (Data Manipulation Language)**
-
-- **INSERT**: Cria um registro (linha/tupla)
-- **UPDATE**: Modifica registros
-- **DELETE**: Excluir registros
-
-#### Inserir Registros
-
-```
-INSERT INTO nome_tabela (campo1, campo2) VALUES (valor1, valor2);
-INSERT INTO nome_tabela (campo1, campo2) VALUES (valor1, valor2) WHERE id = 4;
-```
-
-#### DCL
-
-**Comandos DCL (Data Control Language)**
-
-- **GRANT**: Dá privilégios a um usuário
-- **REVOKE**: Retira privilégios fornecidos a um usuário
-
-#### DQL
-
-**Comandos DQL (Data Query Language)**
-
-- **SELECT**: Obtém registros especificados de uma ou mais tabelas. (consulta)
-
-#### Selecionar Registros
-
-```
-SELECT * FROM nome_tabela;
-SELECT nome FROM nome_tabela;
-```
