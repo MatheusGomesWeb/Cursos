@@ -103,6 +103,9 @@ Uma ótima ferramenta para melhorar a performance é a utilização de plugins d
 - EWWW Image Optimizer
 - Contact Form by WPForms – Drag & Drop Form Builder for Wordpress (WPForms Lite)
 - WPS Hide Login
+- Simple Lightbox - Lightbox na galeria
+- Post Expirator - Configura data de expiração do post
+- Post Types Order - Drag in Drop para ordenar posts
 
 ### Dicas Importantes
 
@@ -111,6 +114,8 @@ Uma ótima ferramenta para melhorar a performance é a utilização de plugins d
 - Sempre manter os plugins e temas atualizados.
 
 **Resolvendo Conflito editor**: Editor de bloco, permitir trocar o editor padrão.
+
+**Importante**: Configurar o editor clássico para usuarios leigos, porque é mais facil de utilizar.
 
 ---
 
