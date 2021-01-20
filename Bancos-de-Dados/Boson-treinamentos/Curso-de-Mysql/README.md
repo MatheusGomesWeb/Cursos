@@ -24,11 +24,11 @@
     - [FOREIGN KEY](#foreign-key)
     - [DEFAULT](#default)
   - [Tipos de Dados](#tipos-de-dados)
-  - [Grupos de Comandos](#grupos-de-comandos)
-    - [DDL - Data Definition Language - CREATE, ALTER, DROP](#ddl)
-    - [DML - Data Manipulation Language - INSERT, UPDATE, DELETE](#dml)
-    - [DCL - Data Control Language - GRANT, REVOKE](#dcl)
-    - [DQL - Data Query Language - SELECT](#dql)
+  - [Grupos de Comandos](https://github.com/MatheusGomesWeb/Cursos/blob/master/Bancos-de-Dados/Boson-treinamentos/Curso-de-Mysql/comandos_sql.sql)
+    - [DDL - Data Definition Language - CREATE, ALTER, DROP](https://github.com/MatheusGomesWeb/Cursos/blob/master/Bancos-de-Dados/Boson-treinamentos/Curso-de-Mysql/comandos_sql.sql)
+    - [DML - Data Manipulation Language - INSERT, UPDATE, DELETE](https://github.com/MatheusGomesWeb/Cursos/blob/master/Bancos-de-Dados/Boson-treinamentos/Curso-de-Mysql/comandos_sql.sql)
+    - [DCL - Data Control Language - GRANT, REVOKE](https://github.com/MatheusGomesWeb/Cursos/blob/master/Bancos-de-Dados/Boson-treinamentos/Curso-de-Mysql/comandos_sql.sql)
+    - [DQL - Data Query Language - SELECT](https://github.com/MatheusGomesWeb/Cursos/blob/master/Bancos-de-Dados/Boson-treinamentos/Curso-de-Mysql/comandos_sql.sql)
 
 ---
 
