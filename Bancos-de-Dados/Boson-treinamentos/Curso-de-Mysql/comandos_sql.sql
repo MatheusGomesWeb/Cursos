@@ -21,6 +21,11 @@
 
 # ---------------------------
 
+# DROP - Deletar o banco de dados
+# DROP DATABASE IF EXISTS db_boson;
+
+# ---------------------------
+
 # CREATE - Criar Tabela
 /* CREATE TABLE IF NOT EXISTS tb_autor(
 	id_autor INT AUTO_INCREMENT PRIMARY KEY,
@@ -38,9 +43,22 @@ CREATE TABLE IF NOT EXISTS tb_livro (
 
 # ---------------------------
 
-# DROP - Deletar o banco de dados
-# DROP DATABASE IF EXISTS db_boson;
+# DROP - Deletar Coluna de uma Tabela
+# ALTER TABLE tb_livro DROP COLUMN testando;
 
+# DROP - Deletar Chave Primária de uma Tabela
+# ALTER TABLE tb_livro DROP PRIMARY KEY;
+
+# ---------------------------
+
+# ALTER - Alterar tabela e adicionar nova Coluna
+# ALTER TABLE tb_livro ADD COLUMN testando VARCHAR(50); 
+
+# ALTER - Alterar tabela e adicionar chave estrangeira (CONSTRAINT) na Coluna
+# ALTER TABLE tb_autor ADD CONSTRAINT fk_livro_recente FOREIGN KEY(livro_recente) REFERENCES tb_livro(id_livro);
+
+# ALTER - Adicionar Chave Primaria a uma Coluna
+# ALTER TABLE tb_autor ADD PRIMARY KEY (id_campo)
 # -----------------------------------------------------------------------------
 
 ##########################################
