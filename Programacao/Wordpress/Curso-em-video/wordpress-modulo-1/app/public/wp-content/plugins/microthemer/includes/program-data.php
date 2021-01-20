@@ -570,6 +570,7 @@ $this->default_preferences = array(
 	"allow_scss" => 0, // if enabled by default, invalid css/scss will prevent stylesheet update.
 	"server_scss" => 0, // give user option to compile scss on the server
 	"specificity_preference" => 1, // 1 = high, 0 = low
+	"wp55_jquery_version" => 0,
 	"inlineJsProgData" => 0,
 	"tape_measure_slider" => 1,
 	"grid_focus" => 'gridtemplate',

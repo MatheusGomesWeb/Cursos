@@ -1,5 +1,10 @@
 CHANGELOG
 
+= 6.3.5.4 (January 19th, 2020) =
+
+# Enhancement
+* Added a temporary 'Compatibility' tab to the preferences where you can choose to load an older version of jQuery. This was to address a number of reports from customers that are having issues with WordPress 5.6 and Microthemer 6.3.5.2, which stopped reverting jQuery by default.
+
 = 6.3.5.3 (January 15th, 2020) =
 
 # Bugs fixed

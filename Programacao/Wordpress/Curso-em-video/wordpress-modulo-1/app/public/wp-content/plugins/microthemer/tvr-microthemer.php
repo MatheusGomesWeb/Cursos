@@ -5,7 +5,7 @@ Plugin URI: https://themeover.com/microthemer
 Text Domain: microthemer
 Domain Path: /languages
 Description: Microthemer is a feature-rich visual design plugin for customizing the appearance of ANY WordPress Theme or Plugin Content (e.g. posts, pages, contact forms, headers, footers, sidebars) down to the smallest detail. For CSS coders, Microthemer is a proficiency tool that allows them to rapidly restyle a WordPress theme or plugin. For non-coders, Microthemer's intuitive point and click editing opens the door to advanced theme and plugin customization.
-Version: 6.3.5.3
+Version: 6.3.5.4
 Author: Themeover
 Author URI: https://themeover.com
 */
@@ -318,7 +318,7 @@ if ( is_admin() ) {
 		// define
 		class tvr_microthemer_admin {
 
-			var $version = '6.3.5.3';
+			var $version = '6.3.5.4';
 			var $db_chg_in_ver = '6.0.6.5';
 
 			var $locale = ''; // current language
@@ -1828,7 +1828,7 @@ if ( is_admin() ) {
 					}
 
 					// Run pre-wordPress 5.6 jQuery and jQuery UI (temp fix to give me time to update MT)
-					$runLegacyJquery = false;
+					$runLegacyJquery = !empty($this->preferences['wp55_jquery_version']);
 
 					// jQuery UI scripts
 					$jqueryUIScripts = array(
@@ -1857,7 +1857,7 @@ if ( is_admin() ) {
 								: false,
 							//'footer' => true
 						),
-						/*array(
+						array(
 							'h' => 'jquery-migrate',
 							'dep' => 'jquery',
 							'alwaysInc' => 1,
@@ -1866,7 +1866,7 @@ if ( is_admin() ) {
 								? '../js-min/legacy-jquery/jquery-migrate-1.4.1-wp.js'
 								: false,
 							//'footer' => true
-						)*/
+						)
 					);
 
 					$prevScript = false;
@@ -12139,7 +12139,7 @@ if (!is_admin()) {
 			var $preferencesName = 'preferences_themer_loader';
 			// @var array $preferences Stores the ui options for this plugin
 			var $preferences = array();
-			var $version = '6.3.5.3';
+			var $version = '6.3.5.4';
 			var $microthemeruipage = 'tvr-microthemer.php';
 			var $file_stub = '';
 			var $min_stub = '';

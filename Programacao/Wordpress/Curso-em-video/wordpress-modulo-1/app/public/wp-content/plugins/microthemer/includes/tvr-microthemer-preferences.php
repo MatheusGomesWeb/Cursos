@@ -29,7 +29,8 @@ $this->display_log();
 		array(
 			esc_html_x('General', '(General Preferences)', 'microthemer' ),
 			esc_html__('Units', 'microthemer'),
-			esc_html__('Inactive', 'microthemer')
+			esc_html__('Inactive', 'microthemer'),
+			esc_html__('Compatibility', 'microthemer')
 		)
 	); ?>
 
@@ -339,8 +340,6 @@ $this->display_log();
 
     </div>
 
-
-
 	<!-- Tab 3 (Inactive) -->
 	<div class="dialog-tab-field dialog-tab-field-<?php echo ++$tab_count; ?> hidden">
 		<ul class="form-field-list css_units">
@@ -378,6 +377,25 @@ $this->display_log();
             <br /><br />
 		</div>
 	</div>
+
+    <!-- Tab 4 (Compatibility) -->
+    <div class="dialog-tab-field dialog-tab-field-<?php echo ++$tab_count; ?> hidden">
+        <ul class="form-field-list compatibility-settings">
+			<?php
+
+			// yes no options
+			$yes_no = array(
+				'wp55_jquery_version' => array(
+					'label' => __('Load a legacy version of jQuery', 'microthemer'),
+					'explain' => __('This is a temporary setting to fix issues some sites may have with the new version of jQuery and jQueryUI WordPress 5.6+ uses', 'microthemer'),
+				)
+			);
+
+			$this->output_radio_input_lis($yes_no);
+
+			?>
+        </ul>
+    </div>
 
 	<?php
 	// standalone needs inline button
