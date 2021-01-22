@@ -26,7 +26,7 @@
   - [Fontes](#fontes)
   - [Imagens Gratuitas](#imagens-gratuitas)
 
-### Apresentação do Projeto do Curso
+### Projeto Final do Curso
 
 - https://www.cursoemvideo.com/cursowp/manual/
 

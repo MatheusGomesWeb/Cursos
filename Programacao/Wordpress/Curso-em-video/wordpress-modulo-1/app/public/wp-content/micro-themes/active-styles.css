@@ -13,12 +13,6 @@
 	width: 100px !important;
 }
 
-/** General >> Footer **/
-#colophon .ast-footer-overlay {
-	padding-top: 30px !important;
-	padding-bottom: 30px !important;
-}
-
 /** General >> menu cardapio **/
 #menu-item-19 > .menu-link {
 	height: 45px !important;
@@ -94,5 +88,80 @@
 /** General >> Uagb infobox has image uagb ifb content **/
 .uagb-infobox-has-image .uagb-ifb-content {
 	padding-right: 30px !important;
+}
+
+/** General >> formulario container **/
+#wpforms-form-223 > .wpforms-field-container {
+	padding: 30px !important;
+	display: -webkit-box !important;
+	display: -moz-box !important;
+	display: -ms-flexbox !important;
+	display: -webkit-flex !important;
+	display: flex !important;
+	-webkit-flex-direction: column !important;
+	-moz-flex-direction: column !important;
+	-ms-flex-direction: column !important;
+	flex-direction: column !important;
+}
+
+/** General >> input submit **/
+#wpforms-form-223 > .wpforms-submit-container {
+	margin-left: 30px !important;
+}
+
+
+/*( Large Desktop )*/
+@media (min-width: 1200px) {
+
+	/*= General =================== */
+
+	/** General >> formulario container **/
+	#wpforms-form-223 > .wpforms-field-container {
+	
+}
+
+
+}
+
+
+/*( Desktop & Tablet )*/
+@media (min-width: 768px) and (max-width: 979px) {
+
+	/*= General =================== */
+
+	/** General >> formulario container **/
+	#wpforms-form-223 > .wpforms-field-container {
+	
+}
+
+
+}
+
+
+/*( Tablet & Phone )*/
+@media (max-width: 767px) {
+
+	/*= General =================== */
+
+	/** General >> formulario container **/
+	#wpforms-form-223 > .wpforms-field-container {
+	
+}
+
+
+}
+
+
+/*( Phone )*/
+@media (max-width: 480px) {
+
+	/*= General =================== */
+
+	/** General >> formulario container **/
+	#wpforms-form-223 > .wpforms-field-container {
+	
+}
+
+
 }
 
