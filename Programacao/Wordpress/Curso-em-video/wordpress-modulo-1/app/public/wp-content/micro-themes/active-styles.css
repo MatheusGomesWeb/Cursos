@@ -21,13 +21,14 @@
 
 /** General >> menu cardapio **/
 #menu-item-19 > .menu-link {
-	color: white !important;
-	background-color: rgb(255, 136, 0) !important;
 	height: 45px !important;
 	border-radius: 22.5px !important;
 }
 #menu-item-19 > .menu-link:hover {
-	background-color: black !important;
+	background-color: rgb(255, 136, 0) !important;
+	color: white !important;
+	height: 45px !important;
+	border-radius: 22.5px !important;
 }
 
 /** General >> Titulo do Post **/
@@ -67,5 +68,31 @@
 	color: white !important;
 	font-size: 14px !important;
 	background: #ff8800 !important;
+}
+
+/** General >> imagem cardapio **/
+.uagb-rm__image > img {
+	border-radius: 8px !important;
+}
+
+/** General >> cardapio preco **/
+#post-8 .uagb-rm__price {
+	color: #ff8800 !important;
+}
+
+/** General >> Post 16 wp image 399 **/
+#post-16 .wp-image-399 {
+	height: 300px !important;
+	border-radius: 30px !important;
+}
+
+/** General >> Post 16 uagb ifb img src **/
+#post-16 .uagb-ifb-img-src {
+	width: 60px !important;
+}
+
+/** General >> Uagb infobox has image uagb ifb content **/
+.uagb-infobox-has-image .uagb-ifb-content {
+	padding-right: 30px !important;
 }
 
