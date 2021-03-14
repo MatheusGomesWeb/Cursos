@@ -132,7 +132,7 @@ const Produto = () => {
 
 ## nestedRoutes
 
-Utilizamos nestedRoutes quando precisamos de rotas dentro de rotas. Como por exemplo: perfil/editar e perfil/certificados e etc. Utilize o \\\* para definir que exentem outras rptas dentro.
+Utilizamos nestedRoutes quando precisamos de rotas dentro de rotas. Como por exemplo: perfil/editar e perfil/certificados e etc. Utilize o \* para definir que existem outras rotas dentro.
 
 ```
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
