@@ -14,7 +14,7 @@ npm install history react-router-dom@next
 
 ## BrowserRouter, Routes e Route
 
-O BrowserRouter deve ser o componente pai que envolve tudo que depender do react-router. O Routes defina a área em que vamos colocar os nossos Route. O Route recebe um caminho em path, se esse caminho for o mesmo do URL ele irá renderizar o component que estiver dentro de element={}.
+O BrowserRouter deve ser o componente pai que envolve tudo que depender do react-router. O Routes define a área em que vamos colocar os nossos Route. O Route recebe um caminho em path, se esse caminho for o mesmo do URL ele irá renderizar o component que estiver dentro de element={}.
 
 ```
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
