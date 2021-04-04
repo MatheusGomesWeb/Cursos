@@ -62,7 +62,7 @@ const Slide = ({ slides }) => {
       <div
         ref={contentRef}
         className={styles.content}
-     style={{  }} 
+     style={{ tranform translate 3d  }} 
       >
         {slides.map((slide) => (
           <div key={slide.id} className={styles.item}>
