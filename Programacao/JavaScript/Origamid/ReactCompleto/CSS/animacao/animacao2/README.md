@@ -62,7 +62,7 @@ const Slide = ({ slides }) => {
       <div
         ref={contentRef}
         className={styles.content}
-     /*   style={{ transform: translateX(`${position}px`) }} */
+     style={{  }} 
       >
         {slides.map((slide) => (
           <div key={slide.id} className={styles.item}>
