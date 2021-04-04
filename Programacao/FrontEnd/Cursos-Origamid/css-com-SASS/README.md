@@ -2,7 +2,7 @@
 
 <img src="./readme/lescone.png" height="450">
 
-## Projeto Final: Le Scone - [Demo](https://matheusgomesweb.github.io/Cursos/Programacao/FrontEnd/Cursos-Origamid/css-com-SASS/Projeto-Final/le-scone//index.html)
+## Projeto Final: Le Scone - [Demo](https://matheusgomesweb.github.io/cursos/Programacao/FrontEnd/Cursos-Origamid/css-com-SASS/Projeto-Final/le-scone//index.html)
 
 **Módulos**
 
