@@ -8,6 +8,9 @@
 - [Redux básico](#redux-basico)
   - [Store](#store)
   - [Action](#action)
+  - [Dispatch](#dispatch)
+  - [Subscribe e Unsubscribe](#subscribe-e-unsubscribe)
+  - [CompínedReducers](#combinedReducers)
 
 ## Introducao ao redux
 
@@ -80,3 +83,33 @@ O método dispatch recebe como parâmetro um objeto com dois atributos (type: an
 ### subscribe e unsubscribe
 
 O metodo subscribe e unsubscribe, serve para 'observar' alterações no estado e retornar o novo valor atualizado, que foi setado depois de executar o 'dispatch'.
+
+### combinedReducers
+
+É utilizado para combinar varias funções redutoras de uma vez, vale lembrar que ao executa-lo, ele irá passar por todas as funções declaradas.
+
+    function contador(state = 0, action) {
+      switch (action.type) {
+        case 'INCREMENTAR':
+          return state + 1;
+        case 'REDUZIR':
+          return state - 1;
+        default:
+          return state;
+      }
+    }
+    function modal(state = false, action) {
+      switch (action.type) {
+        case 'ABRIR':
+          return true;
+        case 'FECHAR':
+          return false;
+        default:
+          return state;
+      }
+    }
+    const reducer = Redux.combineReducers({ contador, modal });
+    const store = Redux.createStore(reducer);
+
+    const state = store.getState();
+    console.log(state); // { contador: 0, modal: false }
