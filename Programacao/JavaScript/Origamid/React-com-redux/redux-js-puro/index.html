@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+  <button data-value="100">Somar</button>
   <script src="./js/redux.min.js"></script>
   <script>
     // constantes globais para evitar erros de código
@@ -48,7 +50,25 @@
     // Atualizar o estado com o novo valor
     estadoAtual = armazenamento.getState();
 
-    console.log(estadoAtual);
+    // Atualizando o valor do estado ao clicar no botao
+    const botao = document.querySelector('button');
+
+
+    if (botao) {
+      botao.addEventListener('click', ({ target }) => {
+        armazenamento.dispatch({
+          type: SOMA,
+          payload: parseInt(target.dataset.value)
+        });
+
+        estadoAtual = armazenamento.getState();
+        console.log(estadoAtual);
+      })
+    }
+
+
+
+
   </script>
 </body>
 
