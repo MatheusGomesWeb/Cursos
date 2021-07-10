@@ -5,6 +5,9 @@
    - [Redux Toolkit](#reduxtoolkit)
    - [Redux DevTools](#reduxdevtools)
   - [Instalação](#instalacao)
+- [Redux básico](#redux-basico)
+  - [Store](#store)
+  - [Action](#action)
 
 ## Introducao ao redux
 
@@ -51,3 +54,9 @@ A biblioteca principal do Redux está disponível como um pacote no NPM para uso
     yarn add redux
 
 Também está disponível como um pacote UMD pré-compilado que define uma variavel window.Redux global. O pacote UMD pode ser usado diretamente no HTML na tag \<script> diretamente.
+
+## Redux basico
+
+Todo o estado global da aplicação é armazenado em uma arvore de objetos dentro de um único **Store** (armazenamento). A única maneira de alterar a árvore de estado global é criando uma **Action** (ação), e despachar (**dispatch**) esta ação.
+
+Para especificar como o estado é atualizado em resposta a uma ação, é necessários criar funções redutoras (**reducers**) que calculam um novo estado com base no antigo estado e na ação.

@@ -9,24 +9,46 @@
 </head>
 
 <body>
-
-
   <script src="./js/redux.min.js"></script>
-
   <script>
+    // constantes globais para evitar erros de código
+    const SOMA = "SOMA";
+    const SUBTRACAO = "SUBTRACAO";
+    const MULTIPLICACAO = "MULTICICACAO"
 
-    const initialState = {
-      nome: "matheus",
-      id: "1"
-    };
-
-    function reducer(initial = initialState, action) {
-      return initialState;
+    // Action Creators (retornar o objeto do dispatch de uma forma mais organizada)
+    function multiplicacao(payload) {
+      return { type: MULTIPLICACAO, payload };
     }
 
-    const store = Redux.createStore(reducer);
+    // Funçaõ Reducer (estadoAtual (object), action (callback))
+    function reducer(state = { id: 1, nome: "Matheus" }, action) {
+      if (action.type === SOMA) {
+        return action.payload + 50;
+      } else if (action.type === SUBTRACAO) {
+        return action.payload - 50;
+      } else if (action.type === MULTIPLICACAO) {
+        return action.payload * 50;
+      } else {
+        return state;
+      }
+    }
 
-    console.log(store.getState());
+    // Estado global da aplicação (store)
+    const armazenamento = Redux.createStore(reducer);
+
+    // Estado atual do armazenamento
+    let estadoAtual = armazenamento.getState();
+
+    // Dispatch (executar a action) - ({type: string, value?})
+    armazenamento.dispatch({ type: SOMA, payload: 100 });
+    armazenamento.dispatch({ type: SUBTRACAO, payload: 100 })
+    armazenamento.dispatch(multiplicacao(100));
+
+    // Atualizar o estado com o novo valor
+    estadoAtual = armazenamento.getState();
+
+    console.log(estadoAtual);
   </script>
 </body>
 
