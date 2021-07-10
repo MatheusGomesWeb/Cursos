@@ -47,38 +47,25 @@ const aulasReducer = (state = aulas, action) => {
   switch (action.type) {
     // Completar aula pelo ID
     case COMPLETAR_AULA:
-      let completar_aula = [];
-      completar_aula.push(...state);
-      completar_aula[action.payload - 1].completa = true;
-      return completar_aula;
+      aulas[action.payload - 1].completa = true;
+      return state;
       break;
     // Completar o curso (todas as aulas)
     case COMPLETAR_CURSO:
-      let completar_curso = [];
-
-      state.forEach((value, key) => {
-        completar_curso.push(value);
-
-        completar_curso[key].completa = true;
+      aulas.forEach((aula) => {
+        aula.completa = true;
       });
-
-      return completar_curso;
+      return state;
       break;
 
     // Resetar todas as aulas
     case RESETAR_CURSO:
-      let resetar_curso = [];
-
-      state.forEach((value, key) => {
-        resetar_curso.push(value);
-
-        if (resetar_curso[key].completa) {
-          resetar_curso[key].completa = false;
+      aulas.forEach((aula) => {
+        if (aula.completa) {
+          aula.completa = false;
         }
       });
-
-      return resetar_curso;
-
+      return state;
     // Default state
     default:
       return state;

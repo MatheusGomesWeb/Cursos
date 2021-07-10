@@ -15,7 +15,7 @@ export const reduzir_tempo_creator = () => ({ type: REDUZIR_TEMPO });
 export const modificar_email_creator = (email) => {
   return {
     type: MODIFICAR_EMAIL,
-    payload: email ? email : null,
+    payload: email,
   };
 };
 
