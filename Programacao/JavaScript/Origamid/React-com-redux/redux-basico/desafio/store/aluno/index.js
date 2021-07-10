@@ -15,7 +15,7 @@ export const reduzir_tempo_creator = () => ({ type: REDUZIR_TEMPO });
 export const modificar_email_creator = (email) => {
   return {
     type: MODIFICAR_EMAIL,
-    payload: email,
+    payload: email ? email : null,
   };
 };
 
@@ -42,7 +42,9 @@ function alunoReducer(state = aluno, action) {
     // Modificar e-mail
     case MODIFICAR_EMAIL:
       let modificarEmailObj = Object.assign({}, state);
-      modificarEmailObj.email = action.payload;
+      modificarEmailObj.email = action.payload
+        ? action.payload
+        : modificarEmailObj.email;
 
       return modificarEmailObj;
     default:

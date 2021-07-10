@@ -22,7 +22,6 @@ const render = (estado) => {
   if (table && tableContent) {
     const reducers = { ...estado };
 
-    console.log(reducers);
     // Percorre o array e retorna apenas as aulas completas (true)
     const aulas_completas = reducers.aulasReducer.filter(
       (aulas) => aulas.completa
@@ -44,13 +43,13 @@ store.subscribe(() => render(store.getState()));
 // ============ ALUNO ==================
 
 //Incrementar tempo
-// store.dispatch(incrementar_tempo_creator());
-//store.dispatch(reduzir_tempo_creator());
-store.dispatch(modificar_email_creator("topete.matheus@gmail.com"));
+store.dispatch(incrementar_tempo_creator());
+store.dispatch(reduzir_tempo_creator());
+store.dispatch(modificar_email_creator());
 
 // ============ AULAS ==================
 // Completar aula pelo ID
-// store.dispatch(completar_aula_creator(2));
+store.dispatch(completar_aula_creator(2));
 
 // Completar curso (Todas as aulas)
 // store.dispatch(completar_curso_creator());

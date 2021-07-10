@@ -11,7 +11,7 @@
     // aulas/RESETAR_CURSO, reseta todas as aulas completas - [OK]
     // Crie constantes e action creators para as ações. - [OK]
     // Crie um reducer para aluno e um para aulas. - [OK]
-    // Renderize na tela o nome, email, tempo restante e o total de aulas completas
+    // Renderize na tela o nome, email, tempo restante e o total de aulas completas - [OK]
     // Configure a DevTools
 
     const aluno = {
