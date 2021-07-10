@@ -1,9 +1,10 @@
 import aulasReducer from "./aulas/index.js";
+import alunoReducer from "./aluno/index.js";
 
-// const reducer = Redux.combineReducers({ aulasReducer });
+const reducer = Redux.combineReducers({ aulasReducer, alunoReducer });
 
 const store = Redux.createStore(
-  aulasReducer,
+  reducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
