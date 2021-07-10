@@ -60,3 +60,23 @@ Também está disponível como um pacote UMD pré-compilado que define uma varia
 Todo o estado global da aplicação é armazenado em uma arvore de objetos dentro de um único **Store** (armazenamento). A única maneira de alterar a árvore de estado global é criando uma **Action** (ação), e despachar (**dispatch**) esta ação.
 
 Para especificar como o estado é atualizado em resposta a uma ação, é necessários criar funções redutoras (**reducers**) que calculam um novo estado com base no antigo estado e na ação.
+
+### Store
+
+Store é o estado global da aplicação, que guarda todo o armazenamento de estados da aplicação.
+
+### Action
+
+Para alterar o estado da aplicação, é necessário executar um método específico da instancia do Store, que é uma 'action'. Essa action é uma função que recebe dois parâmetros (state, callback).
+
+A Action é passada como parâmetro na instancia do Store.
+
+### Dispatch
+
+Para executar uma action, é necessário executar o método 'dispatch' da instância de Store.
+
+O método dispatch recebe como parâmetro um objeto com dois atributos (type: any, payload?: any)
+
+### subscribe e unsubscribe
+
+O metodo subscribe e unsubscribe, serve para 'observar' alterações no estado e retornar o novo valor atualizado, que foi setado depois de executar o 'dispatch'.

@@ -10,6 +10,7 @@
 
 <body>
 
+  <h1></h1>
   <button data-value="100">Somar</button>
   <script src="./js/redux.min.js"></script>
   <script>
@@ -24,15 +25,15 @@
     }
 
     // Funçaõ Reducer (estadoAtual (object), action (callback))
-    function reducer(state = { id: 1, nome: "Matheus" }, action) {
+    function reducer(salario = 5000, action) {
       if (action.type === SOMA) {
-        return action.payload + 50;
+        return salario + action.payload;
       } else if (action.type === SUBTRACAO) {
         return action.payload - 50;
       } else if (action.type === MULTIPLICACAO) {
         return action.payload * 50;
       } else {
-        return state;
+        return salario;
       }
     }
 
@@ -40,19 +41,27 @@
     const armazenamento = Redux.createStore(reducer);
 
     // Estado atual do armazenamento
-    let estadoAtual = armazenamento.getState();
+    // let estadoAtual = armazenamento.getState();
+
+    armazenamento.dispatch({ type: SOMA, payload: 50 });
+
+    function updateVal() {
+      document.querySelector('h1').textContent = armazenamento.getState();
+    }
+    updateVal();
+
+    armazenamento.subscribe(updateVal);
 
     // Dispatch (executar a action) - ({type: string, value?})
-    armazenamento.dispatch({ type: SOMA, payload: 100 });
-    armazenamento.dispatch({ type: SUBTRACAO, payload: 100 })
-    armazenamento.dispatch(multiplicacao(100));
+    //armazenamento.dispatch({ type: SOMA, payload: 100 });
+    //armazenamento.dispatch({ type: SUBTRACAO, payload: 100 })
+    //armazenamento.dispatch(multiplicacao(100));
 
     // Atualizar o estado com o novo valor
-    estadoAtual = armazenamento.getState();
+    // estadoAtual = armazenamento.getState();
 
     // Atualizando o valor do estado ao clicar no botao
     const botao = document.querySelector('button');
-
 
     if (botao) {
       botao.addEventListener('click', ({ target }) => {
@@ -60,14 +69,8 @@
           type: SOMA,
           payload: parseInt(target.dataset.value)
         });
-
-        estadoAtual = armazenamento.getState();
-        console.log(estadoAtual);
       })
     }
-
-
-
 
   </script>
 </body>
