@@ -1,18 +1,18 @@
 import store from "./store/index.js";
 
-import userReducer, { fetch_started_creator } from "./store/user.js";
+import { tokenFetch } from "./store/token.js";
+import { userFetch } from "./store/user.js";
 
-// Middleware
-const logger = (store) => {
-  return (next) => {
-    return (action) => {
-      console.log(action);
-      return next(action);
-    };
-  };
+const login = async (user) => {
+  let state = store.getState();
+
+  if (state.tokenReducer.data === null) {
+    await store.dispatch(tokenFetch(user));
+  }
+  state = store.getState();
+
+  await store.dispatch(userFetch(state.tokenReducer.data));
 };
 
-// Apply middleware
-const middleware = Redux.applyMiddleware(logger);
-const armazenamento = Redux.createStore(userReducer, middleware);
-armazenamento.dispatch(fetch_started_creator());
+console.log(store.getState());
+login({ username: "dog", password: "dog" });
