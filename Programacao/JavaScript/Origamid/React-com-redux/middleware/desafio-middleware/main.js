@@ -1,4 +1,3 @@
-// Criando o store global do redux
-const store = Redux.createStore();
+import store from "./store/index.js";
 
-export default store;
+console.log(store);

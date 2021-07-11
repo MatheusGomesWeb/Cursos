@@ -7,3 +7,9 @@ const FETCH_ERROR = "user/FETCH_ERROR";
 const fetch_started_creator = () => ({ type: FETCH_STARTED });
 const fetch_success_creator = () => ({ type: FETCH_SUCCESS });
 const fetch_error_creator = () => ({ type: FETCH_ERROR });
+
+// Reducers
+export default function tokenReducer(state = 0, action) {
+  console.log(action);
+  return state;
+}
