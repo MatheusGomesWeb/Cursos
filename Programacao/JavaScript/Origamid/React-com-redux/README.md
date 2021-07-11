@@ -11,6 +11,12 @@
   - [Dispatch](#dispatch)
   - [Subscribe e Unsubscribe](#subscribe-e-unsubscribe)
   - [CompínedReducers](#combinedReducers)
+  - [Desafio Redux básico](redux-basico/desafio)
+- [Middleware](#middleware)
+  - [Curryng](#curryng)
+  - [Redux Middleware](#redux-middleware)
+  - [Redux Thunk](#redux-thunk)
+  - [Middleware desafio](middleware/desafio)
 
 ## Introducao ao redux
 
@@ -113,3 +119,11 @@ O metodo subscribe e unsubscribe, serve para 'observar' alterações no estado e
 
     const state = store.getState();
     console.log(state); // { contador: 0, modal: false }
+
+
+
+
+
+
+## Middleware
+
